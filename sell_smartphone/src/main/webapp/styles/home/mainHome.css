@@ -1,3 +1,13 @@
+:root {
+    --bs-white: #fff;
+    --bs-gray: #ccc;
+    --bs-gray-61: #616161;
+    --bs-black-3: #333333;
+    --bs-black-1: #111111;
+    --bs-white-rgba: rgba(0, 0, 0, 0.3);
+    --bs-font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,21 +16,15 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--bs-font-family);
 }
 
 html, body {
     font-size: 17px;
 }
 
-body {
-    color: #333333;
-    background-color: #fff;
-}
-
 #top-nav {
     position: relative;
-    z-index: 110;
 }
 
 #top-nav .top-nav-height {
@@ -30,9 +34,10 @@ body {
     bottom: 0;
     left: 100%;
     text-align: right;
-    background-color: #111111;
-    z-index: 100;
+    background-color: var(--bs-black-3);
 }
+
+/* general use for top-nav and header */
 
 .container {
     width: 93.075%;
@@ -40,63 +45,86 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    height: 25px;
+    height: inherit;
 }
 
-#top-nav .top-nav-height .pull-right {
+#top-nav .pull-right {
     float: right;
     height: 25px;
     width: 312px;
 }
 
 #top-nav a {
-    color: #fff;
-    text-decoration: none;
+    height: 25px;
     line-height: 25px;
-    cursor: pointer;
-    padding: 0 10px 0 10px;
     margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+    text-decoration: none;
+    color: var(--bs-gray)
+}
+
+#top-nav a .icon-login {
+    font-size: 15px;
+    margin-right: 5px;
 }
 
 #header {
     position: relative;
     width: 100%;
-    z-index: 120;
 }
 
-#header li a{
-    color: #616161;
-}
-
-#header .navbar-header {
-    position: relative;
-    height: 66px;
-    margin-left: 0;
-    margin-right: 0;
+#header #navbar {
+    height: 78px;
+    border: 1px solid var(--bs-white-rgba);
 }
 
 #header .container {
-    width: 93.705%;
+    position: relative;
 }
 
-#navbar .nav-container {
-    position: relative;
+#header .navbar-header {
+    position: absolute;
+    width: 133px;
     height: 66px;
 }
 
-#navbar {
-    height: 80px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 0;
-    
+#header .logo {
+    float: left;
+    width: 133px;
+    height: inherit;
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0;
+    line-height: 20px;
 }
 
-#htv-navbar{
+#header .logo>img {
+    display: block;
+    float: left;
+    height: auto;
+    top: 0;
+    width: 100%;
+}
+
+/* Change in to day */
+#header #htv-navbar {
+    height: inherit;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    margin-left: -300px;
+}
+
+#header li a {
+    color: var(--bs-gray-61);
+}
+
+#htv-navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     padding-bottom: 0;
     text-align: center;
 }
@@ -119,7 +147,7 @@ body {
 
 #nav li a {
     text-decoration: none;
-    line-height: 78px;
+    line-height: 76px;
     padding: 0 40px;
     display: block;
 }
@@ -135,26 +163,22 @@ body {
 }
 
 #nav>li>a {
-    
     text-transform: uppercase;
 }
 
 #nav .subnav {
-    
     position: absolute;
     display: none;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color:var(--bs-white);
+    box-shadow: 0 0 10px var(--bs-white-rgba);
 }
 
-#nav .subnav a{
-    
+#nav .subnav a {
     line-height: 70px;
     padding-right: 72px;
     font-size: 15px;
     width: 100%;
     text-align: left;
 }
-
