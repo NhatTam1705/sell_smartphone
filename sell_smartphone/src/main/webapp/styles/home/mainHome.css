@@ -6,6 +6,7 @@
     --bs-black-1: #111111;
     --bs-white-rgba: rgba(0, 0, 0, 0.3);
     --bs-font-family: Arial, Helvetica, sans-serif;
+    --bs-font-ti-icon: 30px;
 }
 
 * {
@@ -90,24 +91,23 @@ html, body {
 }
 
 #header .logo {
-    float: left;
     width: 133px;
     height: inherit;
+    float: left;
     margin-left: 0;
     margin-top: 10px;
     padding: 0;
     line-height: 20px;
 }
 
-#header .logo>img {
-    display: block;
-    float: left;
+#header .logo > img {
+    width: 100%;
     height: auto;
     top: 0;
-    width: 100%;
 }
 
 /* Change in to day */
+
 #header #htv-navbar {
     height: inherit;
     position: absolute;
@@ -127,6 +127,10 @@ html, body {
     top: 0;
     padding-bottom: 0;
     text-align: center;
+}
+
+#nav > li > a > i{
+    font-size: var(--bs-font-ti-icon);
 }
 
 #nav, .subnav {
@@ -156,8 +160,7 @@ html, body {
     display: block;
 }
 
-#nav>li:hover>a, 
-#nav .subnav li:hover a {
+#nav>li:hover>a, #nav .subnav li:hover a {
     color: #333;
     background-color: #ccc;
 }
@@ -171,7 +174,7 @@ html, body {
     display: none;
     top: 100%;
     left: 0;
-    background-color:var(--bs-white);
+    background-color: var(--bs-white);
     box-shadow: 0 0 10px var(--bs-white-rgba);
 }
 
