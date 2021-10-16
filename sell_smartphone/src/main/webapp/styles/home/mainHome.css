@@ -178,3 +178,41 @@ html, body {
     width: 100%;
     text-align: left;
 }
+
+#navbar .nav-right{
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    width: 200px;
+    height: 40px;
+    margin-top: 11px;
+    margin-right: -15px;
+    padding-right: 15px;
+    z-index: 20;
+}
+
+
+
+#navbar .nav-right span{
+    cursor: pointer;
+    line-height: 40px;
+    color: var(--bs-gray-61)
+}
+
+#navbar .nav-right .icon-arrow-down{
+    font-size: 14px;
+}
+
+.nav-right .icon-buy{
+    font-size: 30px;
+}
+
+.nav-right .icon-search{
+    font-size: 30px;
+    float: right;
+}
+
+.nav-right  .text-buy{
+    font-size: 19px;
+}
