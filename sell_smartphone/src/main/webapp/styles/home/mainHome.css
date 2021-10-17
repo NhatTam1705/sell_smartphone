@@ -7,7 +7,7 @@
     --bs-white-rgba: rgba(0, 0, 0, 0.3);
     --bs-font-family: Arial, Helvetica, sans-serif;
     --bs-font-ti-icon: 30x;
-    --bs-height-navbar: 96px;
+    --bs-height-navbar: 94px;
 }
 
 * {
@@ -122,7 +122,7 @@ html, body {
 
 #navbar .logo > img {
     position: absolute;
-    width: 72%;
+    width: 70%;
     height: auto;
     z-index: 20;
 }
