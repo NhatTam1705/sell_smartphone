@@ -31,7 +31,7 @@
     }
 }
 
-img {
+#navbar .logo > img{
     animation: circular 10s linear 0s infinite;
     -webkit-animation: circular 10s linear 0s infinite;
     -moz-animation: circular 10s linear 0s infinite;
@@ -230,7 +230,7 @@ html, body {
 .nav-right .icon-search{
     position: absolute;
     right: 0;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 15px;
 }
 
