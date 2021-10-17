@@ -6,7 +6,7 @@
     --bs-black-1: #111111;
     --bs-white-rgba: rgba(0, 0, 0, 0.3);
     --bs-font-family: Arial, Helvetica, sans-serif;
-    --bs-font-ti-icon: 30px;
+    --bs-font-ti-icon: 30x;
 }
 
 * {
@@ -92,7 +92,7 @@ html, body {
     height: inherit;
     float: left;
     margin-left: 0;
-
+    margin-top: 2px;
     padding: 0;
     line-height: 20px;
 }
@@ -120,8 +120,11 @@ html, body {
     z-index: 10;
 }
 
-#nav > li > a > i{
-    font-size: var(--bs-font-ti-icon);
+#nav .icon-font{
+    font-size: 30px;
+    line-height: 76px;
+    float: left;
+    padding-right: 5px;
 }
 
 #nav .nav-arrow-down{
