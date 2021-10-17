@@ -129,9 +129,12 @@ html, body {
 
 #nav .text{
     font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 76px;
 }
 
-#nav .icon-down{
+/* use for htv-navbar and nav-right */
+.icon-down{
     font-size: 13px;
 }
 
@@ -150,7 +153,6 @@ html, body {
 
 #nav li a {
     text-decoration: none;
-    line-height: 76px;
     padding: 0 20px;
     display: block;
 }
@@ -192,31 +194,26 @@ html, body {
     float: right;
     width: 200px;
     height: 40px;
-    margin-top: 11px;
+    margin-top: 17px;
     margin-right: -15px;
     padding-right: 15px;
     z-index: 20;
 }
 
-#navbar .nav-right span{
-    cursor: pointer;
+.nav-right .icon-bag{
+    font-size:30px;
+}
+
+.nav-right span{
+    float: left;
     line-height: 40px;
-    color: var(--bs-gray-61)
-}
-
-#navbar .nav-right .icon-arrow-down{
-    font-size: 14px;
-}
-
-.nav-right .icon-buy{
-    font-size: 30px;
+    padding-right: 3px;
+    color: var(--bs-gray-61);
+    cursor: pointer;
 }
 
 .nav-right .icon-search{
-    font-size: 30px;
     float: right;
+    font-size: 30px;
 }
 
-.nav-right  .text-buy{
-    font-size: 19px;
-}
