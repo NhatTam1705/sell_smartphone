@@ -92,7 +92,7 @@ html, body {
     height: inherit;
     float: left;
     margin-left: 0;
-    margin-top: 10px;
+
     padding: 0;
     line-height: 20px;
 }
@@ -144,7 +144,7 @@ html, body {
 #nav li a {
     text-decoration: none;
     line-height: 76px;
-    padding: 0 40px;
+    padding: 0 20px;
     display: block;
 }
 
