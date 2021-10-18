@@ -3,7 +3,7 @@
     Created on : Oct 14, 2021, 11:38:09 AM
     Author     : 19110
 --%>
-
+<%@ include file="/common/taglib.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
