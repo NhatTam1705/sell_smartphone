@@ -4,27 +4,40 @@
 
 @media (max-width: 1024px) {}
 
-@media(min-width: 1500px) {}
+@media(min-width: 1290px) {
+    .nav-right .icon-menu {
+        display: none;
+    }
+}
 
 /* Tablet */
 
-@media (min-width: 740px) and (max-width:1290px) {
+@media (max-width:1290px) {
     #nav, #nav>li {
         display: block;
     }
-    
-    #htv-navbar{
-        left: auto;
-        top: 100%;
+    #htv-navbar {
+        top: 0%;
     }
-
-    .nav-right span{
+    #nav li a {
+        margin-top: 80px;
+    }
+    .nav-right {
+        height: 30px;
+    }
+    .nav-right .hidden {
         display: none;
     }
-    .nav-rigth{
+    .nav-right .icon-search {
+        margin-left: 20px;
+        left: 0;
+    }
+    .nav-right .icon-menu {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+        font-size: 30px;
     }
 }
 
 /* Mobile */
-
-@media (max-width: 740px) {}
