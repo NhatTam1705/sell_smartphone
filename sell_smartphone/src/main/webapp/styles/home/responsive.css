@@ -1,0 +1,30 @@
+/* Break Point */
+
+/* PC */
+
+@media (max-width: 1024px) {}
+
+@media(min-width: 1500px) {}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width:1290px) {
+    #nav, #nav>li {
+        display: block;
+    }
+    
+    #htv-navbar{
+        left: auto;
+        top: 100%;
+    }
+
+    .nav-right span{
+        display: none;
+    }
+    .nav-rigth{
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 740px) {}

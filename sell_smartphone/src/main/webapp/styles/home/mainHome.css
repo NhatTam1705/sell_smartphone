@@ -140,6 +140,7 @@ html, body {
     text-align: center;
     z-index: 10;
     height: inherit;
+    /* overflow: hidden; */
 }
 
 .text{
