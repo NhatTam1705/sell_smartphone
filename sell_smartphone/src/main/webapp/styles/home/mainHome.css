@@ -139,11 +139,11 @@ html, body {
     top: 0;
     text-align: center;
     z-index: 10;
+    height: inherit;
 }
 
 .text{
     font-size: 15px;
-    letter-spacing: 1px;
     line-height:var(--bs-height-text);
     padding-left: 3px;
 }
@@ -171,7 +171,7 @@ html, body {
 #nav li a {
     text-decoration: none;
     padding: 0 20px;
-    display: block; 
+    /* display: inline-block;  */
 }
 
 #nav li:hover .subnav {
@@ -224,7 +224,7 @@ html, body {
 }
 
 .nav-right span{
-    float: left;
+    float: left ;
     line-height: 40px;
     padding-right: 3px;
     color: var(--bs-gray-61);
@@ -241,3 +241,4 @@ html, body {
 /* End header */
 
 /* Start slider */
+
