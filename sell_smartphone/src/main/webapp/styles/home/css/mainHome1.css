@@ -1,248 +1,246 @@
 :root {
-    --bs-white: #fff;
-    --bs-gray: #ccc;
-    --bs-gray-61: #616161;
-    --bs-black-3: #333333;
-    --bs-black-1: #111111;
-    --bs-red: #d81414;
-    --bs-white-rgba: rgba(0, 0, 0, 0.3);
-    --bs-font-family: Arial, Helvetica, sans-serif;
-    --bs-height-navbar: 83px;
-    --bs-height-text: 80px;
+  --bs-white: #fff;
+  --bs-gray: #ccc;
+  --bs-gray-61: #616161;
+  --bs-black-3: #333333;
+  --bs-black-1: #111111;
+  --bs-red: #d81414;
+  --bs-white-rgba: rgba(0, 0, 0, 0.3);
+  --bs-font-family: Arial, Helvetica, sans-serif;
+  --bs-height-navbar: 83px;
+  --bs-height-text: 80px;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
-
 
 @keyframes circular {
-    from{
-        -webkit-transform:rotate(0deg);
-        -moz-transform:rotate(0deg);
-        -o-transform:rotate(0deg);
-    }
-    to{
-        -webkit-transform:rotate(360deg);
-        -moz-transform:rotate(360deg);
-        -o-transform:rotate(360deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
-#navbar .logo > img{
-    animation: circular 30s linear 0s infinite;
-    -webkit-animation: circular 30s linear 0s infinite;
-    -moz-animation: circular 30s linear 0s infinite;
-    -o-animation: circular 30s linear 0s infinite; 
+#navbar .logo > img {
+  animation: circular 30s linear 0s infinite;
+  -webkit-animation: circular 30s linear 0s infinite;
+  -moz-animation: circular 30s linear 0s infinite;
+  -o-animation: circular 30s linear 0s infinite;
 }
 
 html {
-    font-family: var(--bs-font-family);
+  font-family: var(--bs-font-family);
 }
 
-html, body {
-    font-size: 17px;
+html,
+body {
+  font-size: 17px;
 }
 /* design top-nav */
 #top-nav {
-    position: relative;
+  position: relative;
 }
 
 #top-nav .top-nav-height {
-    position: static;
-    width: 100%;
-    height: 25px;
-    bottom: 0;
-    left: 100%;
-    text-align: right;
-    background-color: var(--bs-black-3);
+  position: static;
+  width: 100%;
+  height: 25px;
+  bottom: 0;
+  left: 100%;
+  text-align: right;
+  background-color: var(--bs-black-3);
 }
 
 /* use for top-nav and header */
 
 .container {
-    position: relative;
-    width: 93.075%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: inherit;
+  position: relative;
+  width: 93.075%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: inherit;
 }
 
 #top-nav .pull-right {
-    float: right;
-    height: 25px;
-    width: 312px;
+  float: right;
+  width: 312px;
+  height: 25px;
 }
 
 #top-nav a {
-    height: 25px;
-    line-height: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    float: right;
-    text-decoration: none;
-    color: var(--bs-gray)
+  height: 25px;
+  line-height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+  text-decoration: none;
+  color: var(--bs-gray);
 }
 
 #top-nav a .icon-login {
-    font-size: 15px;
-    margin-right: 5px;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
 #header {
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 /* design navbar */
 #navbar {
-    height: var(--bs-height-navbar);
-    border: 1px solid var(--bs-white-rgba);
+  height: var(--bs-height-navbar);
+  border: 1px solid var(--bs-white-rgba);
 }
 
 #header .navbar-header {
-    position: absolute  ;
-    width: 133px;
-    height: 66px;
+  position: absolute;
+  width: 133px;
+  height: 66px;
 }
 
 #header .logo {
-    width: 133px;
-    height: inherit;
-    float: left;
-    margin-left: 0;
-    margin-top: 11px;
-    padding: 0;
-    line-height: 20px;
+  width: 133px;
+  height: inherit;
+  float: left;
+  margin-left: 0;
+  margin-top: 11px;
+  padding: 0;
+  line-height: 20px;
 }
 
 #navbar .logo > img {
-    position: absolute;
-    width: 53%;
-    height: auto;
-    z-index: 20;
+  position: absolute;
+  width: 53%;
+  height: auto;
+  z-index: 20;
 }
 
 #navbar li a {
-    color: var(--bs-gray-61);
+  color: var(--bs-gray-61);
 }
 
 #htv-navbar {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    text-align: center;
-    z-index: 10;
-    height: inherit;
-    /* overflow: hidden; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 10;
+  height: inherit;
+  /* overflow: hidden; */
 }
 
-.text{
-    font-size: 1vw;
-    line-height:var(--bs-height-text);
-    padding-left: 3px;
+.text {
+  font-size: 1vw;
+  line-height: var(--bs-height-text);
+  padding-left: 3px;
 }
 
-.icon-font{
-    width: 2vw;
-    background-repeat: no-repeat;
-    background-position: center;
+.icon-font {
+  width: 2vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* use for htv-navbar and nav-right */
 
-#nav,  .subnav {
-    list-style-type: none;
+#nav,
+.subnav {
+  list-style-type: none;
 }
 
 #nav,
 #nav > li {
-    display: inline-block;
+  display: inline-block;
 }
 
 #nav li {
-    position: relative;
+  position: relative;
 }
 
 #nav li a {
-    text-decoration: none;
-    padding: 0 1.3vw;
-    display: block; 
+  text-decoration: none;
+  padding: 0 1.3vw;
+  display: block;
 }
 
 #nav li:hover .subnav {
-    display: block;
-    z-index: 1000;
+  display: block;
+  z-index: 1000;
 }
 
-#nav>li:hover>a {
-    border-bottom: 2px solid var(--bs-red);
-} 
+#nav > li:hover > a {
+  border-bottom: 2px solid var(--bs-red);
+}
 
 #nav .subnav li:hover a {
-    color: var(--bs-black-3);
-    background-color: var(--bs-gray);
+  color: var(--bs-black-3);
+  background-color: var(--bs-gray);
 }
 
-#nav>li>a {
-    text-transform: uppercase;
-    display: flex;
+#nav > li > a {
+  text-transform: uppercase;
+  display: flex;
 }
 
 #nav .subnav {
-    position: absolute;
-    display: none;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    background-color: var(--bs-white);
-    box-shadow: 0 0 10px var(--bs-white-rgba);
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: var(--bs-white);
+  box-shadow: 0 0 10px var(--bs-white-rgba);
 }
 
 #nav .subnav a {
-    line-height: 50px;
-    font-size: 15px;
-    text-align: left;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: left;
 }
 
 /* design nav-right */
-#navbar .nav-right{
-    position: relative;
-    top: 0;
-    right: 0;
-    float: right;
-    width: 150px;
-    height: 40px;
-    margin-top: 19px;
-    margin-right: -15px;
-    padding-right: 15px;
-    z-index: 20;
-    display: flex;
+#navbar .nav-right {
+  position: relative;
+  top: 0;
+  right: 0;
+  float: right;
+  width: 150px;
+  height: 40px;
+  margin-top: 19px;
+  margin-right: -15px;
+  padding-right: 15px;
+  z-index: 20;
+  display: flex;
 }
 
-.nav-right span{
-    float: left ;
-    line-height: 40px;
-    padding-right: 3px;
-    color: var(--bs-gray-61);
-    cursor: pointer;
+.nav-right span {
+  float: left;
+  line-height: 40px;
+  padding-right: 3px;
+  color: var(--bs-gray-61);
+  cursor: pointer;
 }
 
-.nav-right .icon-search{
-    position: absolute;
-    right: 0;
-    font-size: 25px;
-    margin-right: 15px;
+.nav-right .icon-search {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  margin-right: 15px;
 }
-
-
 
 /* End header */
 
 /* Start slider */
-
