@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/home/mainHome.css" type="text/css" />
-    <link rel="stylesheet" href="../../styles/home/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="../../styles/home/css/mainHome.css" type="text/css" />
+    <link rel="stylesheet" href="../../styles/home/css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css">
     <title>HTV Phones</title>
 </head>
@@ -104,7 +104,7 @@
                         <span class="text hidden">Buy</span>
                         <span class="icon-font ti-angle-down hidden"></span>
                         <span class="icon-search ti-search"></span>
-                        <span class="icon-menu ti-menu"></span>
+                        <span id="menu" class="icon-menu ti-menu"></span>
                     </div>
                 </div>
             </div>
@@ -122,6 +122,20 @@
 
         </div>
     </div>
+    <script>
+        function call() {
+            var header = document.getElementById('htv-navbar');
+            var menu = document.getElementById('menu');
+            menu.onclick = function () {
+                var isClosed = header.clientHeight === 83;
+                if (isClosed) {
+                    header.style.height = 'auto';
+                }
+                else {
+                    header.style.height = '83px';
+                }
+            }
+        }
+    </script>
 </body>
-
 </html>

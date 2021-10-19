@@ -17,10 +17,9 @@
         display: block;
     }
     #htv-navbar {
-        top: 0%;
-    }
-    #nav li a {
-        margin-top: 80px;
+    } 
+    #nav{
+        margin-top: 82px;
     }
     .nav-right {
         height: 30px;
