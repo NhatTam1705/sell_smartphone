@@ -7,12 +7,11 @@
 }
 /* Tablet */
 @media (max-width: 1100px) {
-  #nav, #nav > li {
-    display: block;
-  }
-
   #nav {
     margin-top: 82px;
+  }
+  #nav, #nav li {
+    display: block;
   }
 
   #htv-navbar {
@@ -25,7 +24,6 @@
   .nav-right .hidden {
     display: none;
   }
-
   .nav-right .icon-search {
     margin-left: 20px;
     left: 0;
