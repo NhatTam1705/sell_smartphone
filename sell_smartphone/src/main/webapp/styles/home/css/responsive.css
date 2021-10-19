@@ -4,7 +4,7 @@
 
 @media (max-width: 1024px) {}
 
-@media(min-width: 1290px) {
+@media(min-width: 1100px) {
     .nav-right .icon-menu {
         display: none;
     }
@@ -12,7 +12,7 @@
 
 /* Tablet */
 
-@media (max-width:1290px) {
+@media (max-width:1100px) {
     #nav, #nav>li {
         display: block;
     }
@@ -36,6 +36,12 @@
         right: 0;
         margin-right: 15px;
         font-size: 30px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .icon-font {
+        width: 30px;
     }
 }
 

@@ -33,10 +33,10 @@
 }
 
 #navbar .logo > img{
-    animation: circular 10s linear 0s infinite;
-    -webkit-animation: circular 10s linear 0s infinite;
-    -moz-animation: circular 10s linear 0s infinite;
-    -o-animation: circular 10s linear 0s infinite; 
+    animation: circular 30s linear 0s infinite;
+    -webkit-animation: circular 30s linear 0s infinite;
+    -moz-animation: circular 30s linear 0s infinite;
+    -o-animation: circular 30s linear 0s infinite; 
 }
 
 html {
@@ -144,13 +144,13 @@ html, body {
 }
 
 .text{
-    font-size: 15px;
+    font-size: 1vw;
     line-height:var(--bs-height-text);
     padding-left: 3px;
 }
 
 .icon-font{
-    width: 30px;
+    width: 2vw;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -171,12 +171,13 @@ html, body {
 
 #nav li a {
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 1.3vw;
     /* display: inline-block;  */
 }
 
 #nav li:hover .subnav {
     display: block;
+    z-index: 1000;
 }
 
 #nav>li:hover>a {
