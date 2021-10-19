@@ -8,6 +8,9 @@
     .nav-right .icon-menu {
         display: none;
     }
+    .text{
+        font-size: 15px;
+    }
 }
 
 /* Tablet */
@@ -17,7 +20,9 @@
         display: block;
     }
     #htv-navbar {
+        height: 83px;
     } 
+
     #nav{
         margin-top: 82px;
     }
