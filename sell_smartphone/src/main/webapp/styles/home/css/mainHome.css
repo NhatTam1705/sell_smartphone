@@ -141,6 +141,27 @@ body {
   margin-right: 15px;
   position: absolute;
 }
+#navbar .nav-right.hide-nav-right {
+  display: none;
+}
+#navbar .nav-search {
+  height: 55%;
+  width: 430px;
+  position: absolute;
+  line-height: 83px;
+  margin-top: -1px;
+  right: 65px;
+  display: none;
+}
+#navbar .nav-search input {
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  font-size: 18px;
+}
+#navbar .nav-search.show-nav-search {
+  display: block;
+}
 
 #htv-navbar {
   top: 0;
@@ -149,6 +170,9 @@ body {
   height: inherit;
   position: absolute;
   text-align: center;
+}
+#htv-navbar.hide-htv-navbar {
+  display: none;
 }
 
 .text {

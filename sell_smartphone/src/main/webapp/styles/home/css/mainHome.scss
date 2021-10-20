@@ -142,6 +142,27 @@ body {
             margin-right: 15px;
             position: absolute;
         }
+        &.hide-nav-right {
+            display: none;
+        }
+    }
+    .nav-search {
+        height: 55%;
+        width: 430px;
+        position: absolute;
+        line-height: 83px;
+        margin-top: -1px;
+        right: 65px; 
+        display: none;      
+        input {
+            height: 100%;
+            width: 100%;
+            padding-left: 15px;
+            font-size: 18px;
+        }
+        &.show-nav-search {
+            display: block;
+        }
     }
 }
 
@@ -154,6 +175,9 @@ body {
     text-align: center;
     // z-index: 10;
     // overflow: hidden;
+    &.hide-htv-navbar {
+        display: none;
+    }
 }
 
 .text{

@@ -9,3 +9,16 @@ menu.onclick = function () {
         header.style.height = '83px';
     }
 }
+
+//Search
+
+const navSearch = document.querySelector('.js-nav-search')
+const navRight = document.querySelector('.js-nav-right')
+const htvNavBar = document.querySelector('.js-htv-navbar')
+function showSearchBox() {
+    navSearch.classList.add('show-nav-search')
+    navRight.classList.add('hide-nav-right')
+    htvNavBar.classList.add('hide-htv-navbar')
+}
+
+
