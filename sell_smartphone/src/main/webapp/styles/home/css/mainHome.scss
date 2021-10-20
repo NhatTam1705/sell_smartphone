@@ -128,7 +128,6 @@ body {
     margin-top: 19px;
     margin-right: -15px;
     padding-right: 15px;
-
     span {
       float: left;
       cursor: pointer;
@@ -142,9 +141,9 @@ body {
       margin-right: 15px;
       position: absolute;
     }
-    &.hide-nav-right {
-      display: none;
-    }
+  }
+  &.hide-nav-right {
+    display: none;
   }
   .nav-search {
     height: 55%;
@@ -239,4 +238,9 @@ body {
 
 #slider {
   height: 1000px;
+  position: relative;
+  background: url(../../img/backgroundSilder/phone.jpg) top center / cover no-repeat;
+  padding-top: 50%;
+  top: 108px;
+  index: 10;
 }

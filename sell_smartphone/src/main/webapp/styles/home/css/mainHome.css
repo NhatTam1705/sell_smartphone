@@ -142,7 +142,7 @@ body {
   margin-right: 15px;
   position: absolute;
 }
-#navbar .nav-right.hide-nav-right {
+#navbar.hide-nav-right {
   display: none;
 }
 #navbar .nav-search {
@@ -235,6 +235,11 @@ body {
 
 #slider {
   height: 1000px;
+  position: relative;
+  background: url(../../img/backgroundSilder/phone.jpg) top center/cover no-repeat;
+  padding-top: 50%;
+  top: 108px;
+  index: 10;
 }
 
 /*# sourceMappingURL=mainHome.css.map */
