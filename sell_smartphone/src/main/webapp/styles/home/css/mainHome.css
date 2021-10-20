@@ -81,7 +81,11 @@ body {
 }
 
 #header {
+  position: fixed;
   width: 100%;
+  z-index: 20;
+  top: 0;
+  background-color: var(--bs-white);
 }
 #header .navbar-header {
   width: 133px;
@@ -100,7 +104,7 @@ body {
 
 #navbar {
   height: var(--bs-height-navbar);
-  border: 1px solid var(--bs-white-rgba);
+  border-bottom: 1px solid var(--bs-white-rgba);
 }
 #navbar .logo > img {
   width: 53%;
@@ -209,7 +213,11 @@ body {
 }
 
 #slider {
-  height: 1000px;
+  position: relative;
+  background: url(../../img/backgroundSilder/phone.jpg) top center/cover no-repeat;
+  padding-top: 50%;
+  margin-top: 108px;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=mainHome.css.map */
