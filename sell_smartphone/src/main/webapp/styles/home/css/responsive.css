@@ -18,6 +18,13 @@
   #nav, #nav li {
     display: block;
   }
+  #nav .hidden-nav {
+    display: none;
+  }
+
+  #text {
+    display: none;
+  }
 
   .nav-right {
     height: 30px;

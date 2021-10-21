@@ -218,10 +218,10 @@ body {
 }
 
 #nav {
-  height: inherit;
   list-style-type: none;
 }
 #nav li {
+  display: none;
   position: relative;
   z-index: 20;
 }
@@ -267,7 +267,7 @@ body {
   height: 1000px;
   position: relative;
   background: url(../../img/backgroundSilder/phone.jpg) top center/cover no-repeat;
-  padding-top: 50%;
+  top: 0;
   z-index: 10;
 }
 
