@@ -21,4 +21,9 @@ function showSearchBox() {
     htvNavBar.classList.add('hide-htv-navbar')
 }
 
+function hideSearchBox() {
+    navSearch.classList.remove('show-nav-search')
+    navRight.classList.remove('hide-nav-right')
+    htvNavBar.classList.remove('hide-htv-navbar')
+}
 

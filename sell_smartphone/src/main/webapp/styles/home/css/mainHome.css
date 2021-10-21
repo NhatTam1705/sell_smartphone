@@ -184,6 +184,9 @@ body {
   right: 0;
   font-size: 26px;
 }
+#navbar .nav-search a {
+  color: var(--bs-gray-61);
+}
 #navbar .nav-search.show-nav-search {
   display: block;
 }

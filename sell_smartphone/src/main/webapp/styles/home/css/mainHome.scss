@@ -203,6 +203,11 @@ body {
             right: 0;
             font-size: 26px;
         }
+
+        a {
+            color: var(--bs-gray-61);
+        }
+
         &.show-nav-search {
             display: block;
         }
