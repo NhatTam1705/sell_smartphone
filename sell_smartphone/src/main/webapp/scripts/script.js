@@ -16,7 +16,7 @@
 
 
 var navigation = document.getElementsByClassName('hidden-nav')
-var count = 0
+var count = 1
 function menu() {
     var i;
     if (count === 0){
