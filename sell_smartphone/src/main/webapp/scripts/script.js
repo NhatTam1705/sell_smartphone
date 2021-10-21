@@ -1,6 +1,6 @@
 // var header = document.getElementById('htv-navbar');
 // var menu = document.getElementById('menu');
-// // var headerHeight = header.clientHeight;
+// var headerHeight = header.clientHeight;
 // menu.onclick = function () {
 //     var isClosed = header.clientHeight === headerHeight;
 //     if (isClosed) {
