@@ -217,10 +217,10 @@ body {
 }
 
 #nav {
+  height: inherit;
   list-style-type: none;
 }
 #nav li {
-  display: none;
   position: relative;
   z-index: 20;
 }

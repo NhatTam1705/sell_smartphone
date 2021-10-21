@@ -87,6 +87,7 @@ body {
 }
 
 #header {
+    // position: fixed;
     width: 100%;
     z-index: 20;
     background-color: var(--bs-white);
@@ -242,10 +243,12 @@ body {
 }
 
 #nav {
+    // display: inline-block;
+    height: inherit;
     list-style-type: none;
 
+    // background-color: rgba(255,255,255,0.8);
     li {
-        display: none;
         position: relative;
         z-index: 20;
 
