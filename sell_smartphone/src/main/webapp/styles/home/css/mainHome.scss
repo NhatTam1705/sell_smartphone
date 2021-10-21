@@ -251,7 +251,8 @@ body {
     li {
         position: relative;
         z-index: 20;
-
+        // background-color:rgba(255,255,255,0.6);
+        background-color: var(--bs-white);
         &:hover .subnav {
             display: block;
         }
@@ -285,7 +286,7 @@ body {
         list-style-type: none;
         background-color: var(--bs-white);
         box-shadow: 0 0 10px var(--bs-white-rgba);
-
+        
         li:hover a {
             color: var(--bs-black-3);
             background-color: var(--bs-gray);

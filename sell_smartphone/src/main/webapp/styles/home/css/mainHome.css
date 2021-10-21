@@ -223,6 +223,7 @@ body {
 #nav li {
   position: relative;
   z-index: 20;
+  background-color: var(--bs-white);
 }
 #nav li:hover .subnav {
   display: block;
