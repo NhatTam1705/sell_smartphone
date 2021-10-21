@@ -179,28 +179,30 @@ body {
                 font-size: 18px;
                 border-style: none;
             }
-    
+
             .btn-search {
                 text-decoration: none;
                 height: 60%;
                 width: 6%;
                 position: absolute;
                 margin-top: 9px;
-    
-                .icon-btn-search {             
+
+                .icon-btn-search {
                     font-size: 25px;
                     margin-top: 20px;
                     text-align: center;
                 }
             }
-        } 
-        
-        .btn-close {
-            text-decoration: none;
-            width: 10%;
-        
         }
-
+        .btn-close {
+            position: absolute;
+            text-decoration: none;
+            // left: 100%;
+            // line-height: 83px;
+            top: 23%;
+            right: 0;
+            font-size: 26px;
+        }
         &.show-nav-search {
             display: block;
         }
