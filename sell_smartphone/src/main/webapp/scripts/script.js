@@ -24,12 +24,12 @@ function menu() {
         for (i = 0; i < navigation.length; i++) {
             navigation[i].style.display = 'none'
         }
-        count = 1;
+        count = 1
     } else {
         for (i = 0; i < navigation.length; i++) {
             navigation[i].style.display = 'flex'
         }
-        count = 0;
+        count = 0
     }
 
 }
