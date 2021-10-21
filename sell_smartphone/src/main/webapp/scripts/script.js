@@ -1,14 +1,16 @@
-var header = document.getElementById('htv-navbar');
-var menu = document.getElementById('menu');
-menu.onclick = function () {
-    var isClosed = header.clientHeight === 83;
-    if (isClosed) {
-        header.style.height = 'auto';
-    }
-    else {
-        header.style.height = '83px';
-    }
-}
+// var header = document.getElementById('htv-navbar');
+// var menu = document.getElementById('menu');
+// // var headerHeight = header.clientHeight;
+// menu.onclick = function () {
+//     var isClosed = header.clientHeight === headerHeight;
+//     if (isClosed) {
+//         header.style.height = 'auto';
+//         // navigation.style.height = null;
+//     }
+//     else {
+//         header.style.height = null;
+//     }
+// }
 
 //Search
 

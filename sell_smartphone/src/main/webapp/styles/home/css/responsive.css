@@ -1,55 +1,54 @@
 /* Break Point */
 /* PC */
 @media (min-width: 1100px) {
-    .nav-right .icon-menu {
-        display: none;
-    }
+  .nav-right .icon-menu {
+    display: none;
+  }
 }
-
 /* Tablet */
 @media (max-width: 1100px) {
-    #nav {
-        margin-top: 82px;
-    }
+  #nav {
+    position: absolute;
+    display: inline-block;
+    top: 100%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #nav, #nav li {
+    display: block;
+  }
 
-    #nav,
-    #nav li {
-        display: block;
-    }
+  #htv-navbar {
+    overflow: hidden;
+  }
 
-    #htv-navbar {
-        height: 83px;
-    }
+  .nav-right {
+    height: 30px;
+  }
+  .nav-right .hidden {
+    display: none;
+  }
+  .nav-right .icon-search {
+    margin-left: 20px;
+    left: 0;
+  }
+  .nav-right .icon-menu {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    font-size: 30px;
+  }
 
-    .nav-right {
-        height: 30px;
-    }
+  .text {
+    font-size: 15px;
+    line-height: 55px;
+  }
 
-    .nav-right .hidden {
-        display: none;
-    }
-
-    .nav-right .icon-search {
-        margin-left: 20px;
-        left: 0;
-    }
-
-    .nav-right .icon-menu {
-        position: absolute;
-        right: 0;
-        margin-right: 15px;
-        font-size: 30px;
-    }
-
-    .text {
-        font-size: 15px;
-    }
-
-    .icon-font {
-        width: 30px;
-    }
+  .icon-font {
+    width: 30px;
+  }
 }
-
 /* Mobile */
 
 /*# sourceMappingURL=responsive.css.map */

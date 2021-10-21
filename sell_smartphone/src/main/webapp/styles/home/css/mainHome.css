@@ -83,6 +83,8 @@ body {
 #header {
   position: fixed;
   width: 100%;
+  z-index: 20;
+  background-color: var(--bs-white);
 }
 #header .navbar-header {
   width: 133px;
@@ -101,7 +103,7 @@ body {
 
 #navbar {
   height: var(--bs-height-navbar);
-  border: 1px solid var(--bs-white-rgba);
+  border-bottom: 1px solid var(--bs-white-rgba);
 }
 #navbar .logo > img {
   width: 53%;
@@ -149,7 +151,7 @@ body {
   height: 55%;
   width: 480px;
   position: absolute;
-  right: 35px;
+  right: 0;
   display: none;
   margin-top: 18px;
 }
@@ -216,11 +218,12 @@ body {
 }
 
 #nav {
-  display: inline-block;
+  height: inherit;
   list-style-type: none;
 }
 #nav li {
   position: relative;
+  z-index: 20;
 }
 #nav li:hover .subnav {
   display: block;
@@ -265,8 +268,7 @@ body {
   position: relative;
   background: url(../../img/backgroundSilder/phone.jpg) top center/cover no-repeat;
   padding-top: 50%;
-  top: 108px;
-  index: 10;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=mainHome.css.map */

@@ -14,16 +14,19 @@
 
 @media (max-width:1100px) {
     #nav{
-        margin-top: 82px;
+        position:absolute;
+        display: inline-block;
+        top: 100%;
+        width: 100%;
+        height: auto;
+        background-color: rgba(255,255,255,0.7);
         &,li {
         display: block;
         }
     }
-
-    #htv-navbar {
-        height: 83px;
-    } 
-
+    #htv-navbar{
+        overflow: hidden;
+    }
     .nav-right {
         height: 30px;
         .hidden{
@@ -47,6 +50,7 @@
 
     .text {
         font-size: 15px;
+        line-height: 55px;
     }
     .icon-font {
         width: 30px;
