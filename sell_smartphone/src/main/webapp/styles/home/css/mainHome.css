@@ -81,7 +81,6 @@ body {
 }
 
 #header {
-  position: fixed;
   width: 100%;
   z-index: 20;
   background-color: var(--bs-white);
@@ -263,12 +262,93 @@ body {
   line-height: 50px;
 }
 
-#slider {
-  height: 1000px;
+.slider {
   position: relative;
-  background: url(../../img/backgroundSilder/phone.jpg) top center/cover no-repeat;
-  padding-top: 50%;
-  z-index: 10;
+  background: var(--bs-white);
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+.slider .slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .slide .info {
+  position: absolute;
+  color: #222;
+  background: rgba(255, 255, 255, 0.3);
+  width: 75%;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
+}
+.slider .slide .info h2 {
+  font-size: 2em;
+  font-weight: 800;
+}
+.slider .slide .info p {
+  font-size: 1em;
+  font-weight: 400;
+}
+.slider:hover .navigation {
+  opacity: 1;
+}
+.slider .navigation {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slider .navigation .prev-btn,
+.slider .navigation .next-btn {
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+}
+.slider .navigation .prev-btn {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.slider .navigation .next-btn {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.slider .navigation-visibility {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.slider .navigation-visibility .slide-icon {
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.2);
+}
+.slider .navigation-visibility .slide-icon.active {
+  background: #4285F4;
 }
 
 /*# sourceMappingURL=mainHome.css.map */
