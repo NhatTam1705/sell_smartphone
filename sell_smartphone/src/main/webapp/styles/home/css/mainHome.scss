@@ -8,7 +8,7 @@
     --bs-white-rgba: rgba(0, 0, 0, 0.3);
     --bs-font-family: Arial, Helvetica, sans-serif;
     --bs-height-navbar: 83px;
-    --bs-height-text: 80px;
+    // --bs-height-text: 80px;
 }
 
 * {
@@ -34,6 +34,7 @@
 
 html {
     font-family: var(--bs-font-family);
+    height: 0;
 }
 
 html,
@@ -84,10 +85,11 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    z-index: 20;
 }
 
 #header {
-    // position: fixed;
+    position: fixed;
     width: 100%;
     z-index: 20;
     background-color: var(--bs-white);
@@ -107,6 +109,11 @@ body {
         margin-top: 11px;
         line-height: 20px;
     }
+}
+
+.header-hidden {
+    transform: translateY(calc(-1 * 108px));
+    transition: transform 0.5s;
 }
 
 #navbar {
@@ -233,7 +240,7 @@ body {
 .text {
     font-size: 1vw;
     padding-left: 3px;
-    line-height: var(--bs-height-text);
+    line-height: 82px;
 }
 
 .icon-font {
@@ -253,6 +260,7 @@ body {
         z-index: 20;
         // background-color:rgba(255,255,255,0.6);
         background-color: var(--bs-white);
+
         &:hover .subnav {
             display: block;
         }
@@ -286,7 +294,7 @@ body {
         list-style-type: none;
         background-color: var(--bs-white);
         box-shadow: 0 0 10px var(--bs-white-rgba);
-        
+
         li:hover a {
             color: var(--bs-black-3);
             background-color: var(--bs-gray);
@@ -300,12 +308,14 @@ body {
     }
 }
 
-.slider {
-    position: relative;
+#slider {
+    position: absolute;
     background: var(--bs-white);
     width: 100%;
     min-height: 500px;
     overflow: hidden;
+    margin-top: 108px;
+    z-index: 10;
     // border-radius: 10px;
 
     .slide {
@@ -375,7 +385,7 @@ body {
             border-top-right-radius: 3px;
             border-bottom-right-radius: 3px;
         }
-        
+
         .next-btn {
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
@@ -402,4 +412,8 @@ body {
             }
         }
     }
+}
+
+#content {
+    height: 2000px;
 }

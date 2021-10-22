@@ -1,20 +1,4 @@
-// var menu = document.getElementById('menu');
-// var test = document.getElementByClassName('hidden');
-// var count = 1;
-// menu.onclick = function () {
-//     var i;
-//     if (count === 1) {
-//         for (i = 0; i < test.length; i++)
-//             test[i].style.display = 'none';
-//         count = 0;
-//     } else {
-//         for (i = 0; i < test.length; i++)
-//             test[i].style.display = 'block';
-//         count = 1;
-//     }
-// }
-
-
+//Menu bar
 var navigation = document.getElementsByClassName('hidden-nav')
 var count = 1
 
@@ -33,6 +17,27 @@ function menu() {
     }
 
 }
+
+//Hide/Appear header
+{
+    // const nav = document.querySelector("#header");
+    var nav = document.getElementById('header')
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY) {
+            nav.classList.add('header-hidden');
+            // nav.style.display='none'
+        } else {
+            nav.classList.remove('header-hidden');
+            // nav.style.display='block'
+        }
+
+        lastScrollY = window.scrollY;
+    });
+}
+
+
 
 //Search
 
