@@ -86,6 +86,7 @@ body {
   width: 100%;
   z-index: 20;
   background-color: var(--bs-white);
+  transition: transform 0.5s;
 }
 #header .navbar-header {
   width: 133px;
