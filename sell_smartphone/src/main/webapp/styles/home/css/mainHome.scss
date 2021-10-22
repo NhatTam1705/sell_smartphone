@@ -35,7 +35,6 @@
 
 html {
     font-family: var(--bs-font-family);
-    height: 0;
 }
 
 html,
@@ -93,6 +92,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 20;
+    top: 0;
     background-color: var(--bs-white);
     transition: transform 0.4s;
 
@@ -103,7 +103,7 @@ body {
     }
 
     .logo {
-        padding: 0;
+        padding-top: 9px;
         float: left;
         width: 133px;
         margin-left: 0;
@@ -122,10 +122,11 @@ body {
     border-bottom: 1px solid var(--bs-white-rgba);
 
     .logo>img {
-        width: 53%;
+        width: 59%;
         z-index: 20;
         height: auto;
         position: absolute;
+        filter: grayscale(50%);
         animation: circular 30s linear 0s infinite;
         -webkit-animation: circular 30s linear 0s infinite;
         -moz-animation: circular 30s linear 0s infinite;
@@ -316,7 +317,7 @@ body {
 }
 
 .slider {
-    position: absolute;
+    position: relative;
     background: var(--bs-white);
     width: 100%;
     min-height: 500px;
@@ -423,4 +424,51 @@ body {
 
 #content {
     height: 2000px;
+    width: 85.652%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    .new-product{
+        height: inherit;
+        width: 100%;
+        text-align: center;
+        .product-top {
+            height: 150px;
+            line-height: 150px;
+    
+            .title {
+                text-align: center;
+                position: relative;
+                line-height: 150px;
+    
+                &::after {
+                    content: "";
+                    background: var(--bs-red);
+                    width: 50px;
+                    height: 3px;
+                    border-radius: 5px;
+                    position: absolute;
+                    bottom: 45px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .product-center{
+            float: left;
+            width: 50%;
+        }
+        .product-bottom{
+            float: left;
+        }
+    }
+    .product-img-mall img{
+       width: 390px;
+    }
+    .product-img-big img{
+        width: 810px;
+    }
+    .product-img-equal img{
+        
+    }
 }
