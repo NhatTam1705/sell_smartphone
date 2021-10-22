@@ -8,6 +8,7 @@
     --bs-white-rgba: rgba(0, 0, 0, 0.3);
     --bs-font-family: Arial, Helvetica, sans-serif;
     --bs-height-navbar: 83px;
+    --bs-height-header: 108px;
     // --bs-height-text: 80px;
 }
 
@@ -93,7 +94,8 @@ body {
     width: 100%;
     z-index: 20;
     background-color: var(--bs-white);
-    transition: transform 0.5s;
+    transition: transform 0.4s;
+
     .navbar-header {
         width: 133px;
         height: 66px;
@@ -112,8 +114,7 @@ body {
 }
 
 .header-hidden {
-    transform: translateY(calc(-1 * 108px));
-    transition: transform 0.5s;
+    transform: translateY(calc(-1 * var(--bs-height-header)));
 }
 
 #navbar {
@@ -175,6 +176,12 @@ body {
         right: 0;
         display: none;
         margin-top: 18px;
+
+        .js-nav-search {
+            input {
+                transition: transform 3s;
+            }
+        }
 
         .search-box {
             border: 1px solid;
@@ -308,7 +315,7 @@ body {
     }
 }
 
-#slider {
+.slider {
     position: absolute;
     background: var(--bs-white);
     width: 100%;
