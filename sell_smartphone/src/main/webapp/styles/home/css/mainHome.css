@@ -367,24 +367,24 @@ body {
 }
 
 #content {
-  height: 2000px;
+  height: 3000px;
 }
-#content .new-product {
+#content .new-content {
   margin: 0 auto;
   padding: 0 15px;
   width: 85.652%;
   height: auto;
 }
-#content .new-product .product-top {
+#content .new-content .new-top {
   height: 150px;
   line-height: 150px;
 }
-#content .new-product .product-top .title {
+#content .new-content .new-top .title {
   text-align: center;
   position: relative;
   line-height: 150px;
 }
-#content .new-product .product-top .title::after {
+#content .new-content .new-top .title::after {
   content: "";
   background: var(--bs-red);
   width: 50px;
@@ -395,12 +395,50 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#content .new-product .product-center {
+#content .new-content .product-center {
   height: 404px;
   margin-bottom: 30px;
 }
-#content .new-product .product-bottom {
+#content .new-content .product-bottom {
   height: 285px;
+}
+#content .new-content .event-main {
+  height: 469px;
+  position: relative;
+}
+#content .new-content .event-main .event-text-box {
+  height: 229px;
+  width: 100%;
+  background-color: var(--bs-gray);
+}
+#content .new-content .event-main .new-text-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bs-gray);
+}
+#content .new-content .btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#content .new-content .btn-group .btn-more {
+  width: 170px;
+  height: 40px;
+  border: 1px solid var(--bs-black-1);
+  background-color: var(--bs-white);
+  color: var(--bs-gray-61);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#content .new-content .btn-group .btn-more:hover {
+  background-color: var(--bs-red);
+  color: var(--bs-white);
 }
 #content .col-center {
   float: left;
@@ -409,6 +447,10 @@ body {
 #content .col-bottom {
   float: left;
   height: 285px;
+}
+#content .col-event {
+  float: left;
+  height: 469px;
 }
 #content .col-half {
   width: 66.6666666667%;
@@ -425,6 +467,17 @@ body {
   width: 100%;
   display: block;
   height: 285px;
+}
+#content .place-img-event {
+  width: 100%;
+  display: block;
+  height: 240px;
+}
+#content .ml-15 {
+  margin-left: 15px;
+}
+#content .mr-15 {
+  margin-right: 15px;
 }
 #content .pl-15 {
   padding-left: 15px;

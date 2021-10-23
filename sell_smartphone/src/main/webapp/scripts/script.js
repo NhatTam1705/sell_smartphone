@@ -15,8 +15,8 @@ function menu() {
         }
         count = 0
     }
-
 }
+
 
 //Hide/Appear header
 {
@@ -136,3 +136,4 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
     repeater();
 });
+
