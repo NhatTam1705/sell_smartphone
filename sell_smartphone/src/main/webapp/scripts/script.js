@@ -21,7 +21,7 @@
 
 
 var count = 0 
-{ 
+{
     function menu() {
         var i = 0
         const navigation = document.querySelectorAll('.hide-nav')
@@ -51,6 +51,7 @@ var count = 0
             for (i = 0; i < hideNavbar.length; i++) {
                 hideNavbar[i].classList.remove('height-navbar')
             }
+            count = 0;
         } else {
             nav.classList.remove('header-hidden');
         }
