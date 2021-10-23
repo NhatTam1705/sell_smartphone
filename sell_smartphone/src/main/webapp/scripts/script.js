@@ -1,52 +1,59 @@
 //Menu bar
-// var navigation = document.getElementsByClassName('hidden-nav')
-// var count = 1
+// var navigation = document.getElementById('htv-navbar')
+
+// var navigation = document.getElementById('nav')
+// var count = 0
+// var heightNav = navigation.clientHeight;
 
 // function menu() {
-//     var i;
-//     if (count === 0) {
-//         for (i = 0; i < navigation.length; i++) {
-//             navigation[i].style.display = 'none'
-//         }
-//         count = 1
+//     if (count === 1) {
+//             // navigation.style.visibility = "hidden"
+//             // navigation.style.height= -200;
+//             navigation.style.height = "0px"
+//             navigation.style.transition = "height 1s"
+//         count = 0;
 //     } else {
-//         for (i = 0; i < navigation.length; i++) {
-//             navigation[i].style.display = 'flex'
-//         }
-//         count = 0
+//         // navigation.style.visibility = "visible"
+//         navigation.style.height = "80px"
+//         count = 1;
 //     }
-
 // }
 
-var navigation = document.getElementById('htv-navbar')
-var count = 0
-var minWidth = 1099
 
-function menu() {
-    if (count === 1) {
-            navigation.style.visibility = "hidden"
-        count = 0;
-    } else {
-        navigation.style.visibility = "visible"
-        count = 1;
+var count = 0 
+{ 
+    function menu() {
+        var i = 0
+        const navigation = document.querySelectorAll('.hide-nav')
+        if (count === 0) {
+            for (; i < navigation.length; i++)
+                navigation[i].classList.add('height-navbar')
+            count = 1;
+        } else {
+            for (; i < navigation.length; i++)
+                navigation[i].classList.remove('height-navbar')
+            count = 0;
+        }
     }
 }
+
 
 //Hide/Appear header
 {
     // const nav = document.querySelector("#header");
     var nav = document.getElementById('header')
     let lastScrollY = window.scrollY;
-
+    var hideNavbar = document.querySelectorAll('.hide-nav')
     window.addEventListener("scroll", () => {
+        var i;
         if (lastScrollY < window.scrollY) {
             nav.classList.add('header-hidden');
-            // nav.style.display='none'
+            for (i = 0; i < hideNavbar.length; i++) {
+                hideNavbar[i].classList.remove('height-navbar')
+            }
         } else {
             nav.classList.remove('header-hidden');
-            // nav.style.display='block'
         }
-
         lastScrollY = window.scrollY;
     });
 }
