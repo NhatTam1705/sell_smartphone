@@ -424,15 +424,12 @@ body {
 
 #content {
     height: 2000px;
-    width: 85.652%;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
 
     .new-product {
-        height: inherit;
-        width: 100%;
-        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 85.652%;
+        height: auto;
 
         .product-top {
             height: 150px;
@@ -460,6 +457,9 @@ body {
         .product-center {
             height: 404px;
             margin-bottom: 30px;
+        }
+        .product-bottom {
+            height: 285px;
         }
     }
     .col-center {
@@ -497,5 +497,15 @@ body {
     .pr-15 {
         padding-right: 15px;
     }
+    .story {
+        margin-top: 100px;
+        width: 100%;
+        height: 512px;
 
+        img {
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
 }
