@@ -139,3 +139,4 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
     repeater();
 });
+
