@@ -1,23 +1,4 @@
 //Menu bar
-// var navigation = document.getElementById('htv-navbar')
-
-// var navigation = document.getElementById('nav')
-// var count = 0
-// var heightNav = navigation.clientHeight;
-
-// function menu() {
-//     if (count === 1) {
-//             // navigation.style.visibility = "hidden"
-//             // navigation.style.height= -200;
-//             navigation.style.height = "0px"
-//             navigation.style.transition = "height 1s"
-//         count = 0;
-//     } else {
-//         // navigation.style.visibility = "visible"
-//         navigation.style.height = "80px"
-//         count = 1;
-//     }
-// }
 
 
 var count = 0 
