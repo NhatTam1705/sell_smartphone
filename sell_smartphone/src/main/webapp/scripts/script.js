@@ -1,21 +1,35 @@
 //Menu bar
-var navigation = document.getElementsByClassName('hidden-nav')
-var count = 1
+// var navigation = document.getElementsByClassName('hidden-nav')
+// var count = 1
+
+// function menu() {
+//     var i;
+//     if (count === 0) {
+//         for (i = 0; i < navigation.length; i++) {
+//             navigation[i].style.display = 'none'
+//         }
+//         count = 1
+//     } else {
+//         for (i = 0; i < navigation.length; i++) {
+//             navigation[i].style.display = 'flex'
+//         }
+//         count = 0
+//     }
+
+// }
+
+var navigation = document.getElementById('htv-navbar')
+var count = 0
+var minWidth = 1099
 
 function menu() {
-    var i;
-    if (count === 0) {
-        for (i = 0; i < navigation.length; i++) {
-            navigation[i].style.display = 'none'
-        }
-        count = 1
+    if (count === 1) {
+            navigation.style.visibility = "hidden"
+        count = 0;
     } else {
-        for (i = 0; i < navigation.length; i++) {
-            navigation[i].style.display = 'flex'
-        }
-        count = 0
+        navigation.style.visibility = "visible"
+        count = 1;
     }
-
 }
 
 //Hide/Appear header
