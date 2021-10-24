@@ -1,8 +1,6 @@
 //Menu bar
-
-
-var count = 0 
 {
+    var count = 0 
     function menu() {
         var i = 0
         const navigation = document.querySelectorAll('.hide-nav')
@@ -18,6 +16,23 @@ var count = 0
     }
 }
 
+
+// {
+//     var countY = 1
+//     function subnavSlideY() {
+//         var i = 0
+//         const navigation = document.querySelectorAll('.hide-nav')
+//         if (countY === 0) {
+//             for (; i < navigation.length - 1; i++)
+//                 navigation[i].classList.add('slide-navbar')
+//             countY = 1;
+//         } else {
+//             for (; i < navigation.length - 1; i++)
+//                 navigation[i].classList.remove('slider-navbar')
+//             countY = 0;
+//         }
+//     }
+// }
 
 //Hide/Appear header
 {
@@ -139,4 +154,3 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
     repeater();
 });
-

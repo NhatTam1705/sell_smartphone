@@ -40,44 +40,50 @@
 							<li class="hide-nav">
 								<a href="">
 									<!--hidden will be deleted in future-->
-									<span class="icon-font" style="background-image: url(../../styles/font/SVG/mobile.svg);">
+									<span class="icon-font"
+										style="background-image: url(../../styles/font/SVG/mobile.svg);">
 									</span>
 									<span class="text">Phones</span>
 								</a>
 							</li>
 							<li class="hide-nav">
 								<a href="">
-									<span class="icon-font" style="background-image: url(../../styles/font/SVG/laptop.svg);">
+									<span class="icon-font"
+										style="background-image: url(../../styles/font/SVG/laptop.svg);">
 									</span>
 									<span class="text">Laptops</span>
 								</a>
 							</li>
 							<li class="hide-nav">
 								<a href="">
-									<span class="icon-font" style="background-image: url(../../styles/font/SVG/tables.svg)">
+									<span class="icon-font"
+										style="background-image: url(../../styles/font/SVG/tables.svg)">
 									</span>
 									<span class="text">Tables</span>
 								</a>
 							</li>
 							<li class="hide-nav">
 								<a href="">
-									<span class="icon-font" style="background-image: url(../../styles/font/SVG/wearables.svg)">
+									<span class="icon-font"
+										style="background-image: url(../../styles/font/SVG/wearables.svg)">
 									</span>
 									<span class="text">Wearables</span>
 								</a>
 							</li>
 							<li class="hide-nav">
 								<a href="">
-									<span class="icon-font" style="background-image: url(../../styles/font/SVG/audio.svg)">
+									<span class="icon-font"
+										style="background-image: url(../../styles/font/SVG/audio.svg)">
 									</span>
 									<span class="text">Audio</span>
 								</a>
 							</li>
 							<li class="hide-nav">
-								<a href="#">
-									<span class="icon-font" style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
-									<span class="text">Accessories</span>
+								<a onclick="subnavSlideY()" href="#">
 									<span class="icon-font"
+										style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
+									<span class="text">Accessories</span>
+									<span class="icon-font angle-down"
 										style="background-image: url(../../styles/font/themify-icons/SVG/angle-down.svg)">
 									</span>
 								</a>
@@ -95,7 +101,8 @@
 						</ul>
 					</nav>
 					<div class="nav-right js-nav-right">
-						<span class="icon-font hidden" style="background-image: url(../../styles/font/SVG/shopping.svg)">
+						<span class="icon-font hidden"
+							style="background-image: url(../../styles/font/SVG/shopping.svg)">
 						</span>
 						<span class="text hidden">Buy</span>
 						<span class="icon-font ti-angle-down hidden"></span>
@@ -171,83 +178,133 @@
 			</div>
 		</div>
 
-        <div id="content">
-            <div class="new-content">
-                <div class="new-top">
-                    <h2 class="title">What's New</h2>
-                </div>
-                <div class="product-center">
-                    <div class="col-center col-half">
-                        <img class="place-img-center pr-15"
-                            src="../../styles/img/pictureContent/thang-ngoi-cam-viet.jpg" alt="">
-                    </div>
-                    <div class="col-center col-third">
-                        <img class="place-img-center pl-15" src="../../styles/img/pictureContent/boy-and-airport.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="product-center">
-                    <div class="col-center col-third">
-                        <img class="place-img-center pr-15" src="../../styles/img/pictureContent/boy-and-airport.jpg"
-                            alt="">
-                    </div>
-                    <div class="col-center col-half">
-                        <img class="place-img-center pl-15"
-                            src="../../styles/img/pictureContent/thang-ngoi-cam-viet.jpg" alt="">
-                    </div>
-                </div>
-                <div class="product-bottom">
-                    <div class="col-bottom col-third">
-                        <img class="place-img-bottom pr-15" src="../../styles/img/pictureContent/ball-color-seven.jpg"
-                            alt="">
-                    </div>
-                    <div class="col-bottom col-third">
-                        <img class="place-img-bottom pr-15 pl-15"
-                            src="../../styles/img/pictureContent/ball-color-seven.jpg" alt="">
-                    </div>
-                    <div class="col-bottom col-third">
-                        <img class="place-img-bottom pl-15" src="../../styles/img/pictureContent/ball-color-seven.jpg"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="story">
-                <img src="../../styles/img/pictureContent/thang-ngoi-cam-viet.jpg" alt="">
-            </div>
-            <div class="new-content">
-                <div class="new-top">
-                    <h2 class="title">News & Events</h2>
-                </div>
-                <div class="event-main">
-                    <div class="col-event col-third pr-15">
-                        <img class="place-img-event" src="../../styles/img/pictureContent/boy-and-airport.jpg" alt="">
-                        <div class="topic">Event</div>
-                        <div class="event-text-box">
+		<div id="content">
+			<div class="new-content">
+				<div class="new-top">
+					<h2 class="title">What's New</h2>
+				</div>
+				<div class="product-center" style="cursor: pointer">
+					<div class="col-center col-half">
+						<img class="place-img-center pr-15"
+							src="../../styles/img/pictureContent/thang-ngoi-cam-viet.jpg" alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-center col-third">
+						<img class="place-img-center pl-15" src="../../styles/img/pictureContent/boy-and-airport.jpg"
+							alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-center" style="cursor: pointer">
+					<div class="col-center col-third">
+						<img class="place-img-center pr-15" src="../../styles/img/pictureContent/boy-and-airport.jpg"
+							alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-center col-half">
+						<img class="place-img-center pl-15"
+							src="../../styles/img/pictureContent/thang-ngoi-cam-viet.jpg" alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-bottom" style="cursor: pointer">
+					<div class="col-bottom col-third">
+						<img class="place-img-bottom pr-15" src="../../styles/img/pictureContent/ball-color-seven.jpg"
+							alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-bottom col-third">
+						<img class="place-img-bottom pr-15 pl-15"
+							src="../../styles/img/pictureContent/ball-color-seven.jpg" alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-bottom col-third">
+						<img class="place-img-bottom pl-15" src="../../styles/img/pictureContent/ball-color-seven.jpg"
+							alt="">
+						<div class="mask">
+							<div class="text-box">
+								<div class="category">PRODUCT</div>
+								<div class="name js-text-dot-en">HUAWEI MatePad Pro</div>
+								<div class="text-in-img">I'm Tam. Eat and Sleep</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="story">
+				<img src="../../styles/img/pictureContent/thang-ngoi-cam-viet.jpg" alt="">
+			</div>
+			<div class="new-content" style="cursor: pointer">
+				<div class="new-top">
+					<h2 class="title">News & Events</h2>
+				</div>
+				<div class="event-main">
+					<div class="col-event col-third pr-15">
+						<img class="place-img-event" src="../../styles/img/pictureContent/freebuds4-en-pc.webp" alt="">
+						
+						<div class="topic">Event</div>
+						<div class="event-text-box">
+							
+						</div>
+					</div>
+					<div class="col-event col-third pr-15 pl-15">
+						<img class="place-img-event" src="../../styles/img/pictureContent/freebuds4-en-pc.webp" alt="">
+						<div class="topic">Event</div>
+						<div class="event-text-box">
 
-                        </div>
-                    </div>
-                    <div class="col-event col-third pr-15 pl-15">
-                        <img class="place-img-event" src="../../styles/img/pictureContent/boy-and-airport.jpg" alt="">
-                        <div class="topic">Event</div>
-                        <div class="event-text-box">
+						</div>
+					</div>
+					<div class="col-event col-third pl-15">
+						<div class="topic">News</div>
+						<div class="new-text-box">
 
-                        </div>
-                    </div>
-                    <div class="col-event col-third pl-15">
-                        <div class="topic">News</div>
-                        <div class="new-text-box">
+						</div>
+					</div>
+				</div>
+				<div class="btn-group">
+					<a href="#" class="btn-more mr-15">More Events</a>
+					<a href="#" class="btn-more ml-15">More News</a>
+				</div>
+			</div>
+		</div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <a href="#" class="btn-more mr-15">More Events</a>
-                    <a href="#" class="btn-more ml-15">More News</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
+		<div class="footer">
 
 		</div>
 	</div>

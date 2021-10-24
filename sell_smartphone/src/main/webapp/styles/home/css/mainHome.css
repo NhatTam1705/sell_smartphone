@@ -454,8 +454,10 @@ body {
 #content .col-center {
   float: left;
   height: 404px;
+  position: relative;
 }
 #content .col-bottom {
+  position: relative;
   float: left;
   height: 285px;
 }
@@ -504,6 +506,36 @@ body {
 #content .story img {
   width: 100%;
   height: 100%;
+}
+#content .mask {
+  position: absolute;
+  height: 50%;
+  width: 98%;
+  bottom: 0;
+}
+#content .mask:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 70%);
+}
+#content .mask .text-box {
+  position: absolute;
+  width: 100%;
+  height: 165px;
+  padding: 25px 30px;
+  bottom: -50px;
+  color: var(--bs-white);
+  line-height: 26px;
+}
+#content .mask .text-box .category {
+  font-size: 14.5px;
+}
+#content .mask .text-box .name {
+  font-size: 19px;
+  font-weight: bold;
+}
+#content .mask .text-box .text-in-img {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 12px;
 }
 
 /*# sourceMappingURL=mainHome.css.map */
