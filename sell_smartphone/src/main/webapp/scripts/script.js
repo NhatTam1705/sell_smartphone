@@ -1,27 +1,6 @@
 //Menu bar
-// var navigation = document.getElementById('htv-navbar')
-
-// var navigation = document.getElementById('nav')
-// var count = 0
-// var heightNav = navigation.clientHeight;
-
-// function menu() {
-//     if (count === 1) {
-//             // navigation.style.visibility = "hidden"
-//             // navigation.style.height= -200;
-//             navigation.style.height = "0px"
-//             navigation.style.transition = "height 1s"
-//         count = 0;
-//     } else {
-//         // navigation.style.visibility = "visible"
-//         navigation.style.height = "80px"
-//         count = 1;
-//     }
-// }
-
-
-var count = 0 
 {
+    var count = 0 
     function menu() {
         var i = 0
         const navigation = document.querySelectorAll('.hide-nav')
@@ -37,6 +16,23 @@ var count = 0
     }
 }
 
+
+// {
+//     var countY = 1
+//     function subnavSlideY() {
+//         var i = 0
+//         const navigation = document.querySelectorAll('.hide-nav')
+//         if (countY === 0) {
+//             for (; i < navigation.length - 1; i++)
+//                 navigation[i].classList.add('slide-navbar')
+//             countY = 1;
+//         } else {
+//             for (; i < navigation.length - 1; i++)
+//                 navigation[i].classList.remove('slider-navbar')
+//             countY = 0;
+//         }
+//     }
+// }
 
 //Hide/Appear header
 {
@@ -158,4 +154,3 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
     repeater();
 });
-

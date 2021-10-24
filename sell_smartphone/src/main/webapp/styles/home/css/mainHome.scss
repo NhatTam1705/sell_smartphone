@@ -525,9 +525,11 @@ body {
     .col-center {
         float: left;
         height: 404px;
+        position: relative;
     }
 
     .col-bottom {
+        position: relative;
         float: left;
         height: 285px;
     }
@@ -610,20 +612,25 @@ body {
         -webkit-animation: animborder 2s linear infinite;
         animation: animborder 2s linear infinite;
     }
+
     &.border-white:after {
         border-color: #fff;
     }
+
     &.border-yellow:after {
         border-color: #F5B02E;
     }
+
     &.border-orange:after {
         border-right-color: #007bff;
         border-left-color: #007bff;
     }
+
     &.border-ash:after {
         border-right-color: #EEF0EF;
         border-left-color: #EEF0EF;
     }
+
     &.border-offwhite:after {
         border-right-color: #F7F9F8;
         border-left-color: #F7F9F8;
@@ -688,17 +695,21 @@ body {
     z-index: 2;
     border-top: 1px solid var(--bs-gray-61);
     background-color: var(--bs-gray);
+
     .contact-us {
         margin-top: 0;
         margin-bottom: 30px;
         padding-left: 80px;
+
         .contact-info {
             margin-left: 50px;
         }
+
         .contact-us-last {
             margin-left: -80px;
         }
     }
+
     .contact-icon i {
         font-size: 24px;
         top: -15px;
@@ -712,21 +723,25 @@ body {
     border: 1px solid var(--bs-gray-61);
     padding: 40px;
     z-index: 2;
+
     .footer-logo {
         .img-fluid {
             width: 60%;
             height: auto;
         }
     }
+
     .footer-social-link {
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
+
         li {
             display: inline-block;
         }
+
         a i {
             display: block;
             width: 40px;
@@ -736,19 +751,24 @@ body {
             line-height: 40px;
             background: #000;
             margin-right: 5px;
-            color:var(--bs-black-1);
+            color: var(--bs-black-1);
+
             &.fa-facebook {
                 background-color: #3B5998;
             }
+
             &.fa-twitter {
                 background-color: #55ACEE;
             }
+
             &.fa-google-plus {
                 background-color: #DD4B39;
             }
+
             &.fa-linkedin {
                 background-color: #0976B4;
             }
+
             &.fa-instagram {
                 background-color: #B7242A;
             }
@@ -758,7 +778,7 @@ body {
 
 .footer-info-text {
     margin: 26px 0 32px 70px;
-    font-size:30px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -770,6 +790,7 @@ body {
     .section-heading {
         margin-bottom: 35px;
     }
+
     h3 {
         font-size: 24px;
         color: var(--bs-black-1);
@@ -779,6 +800,7 @@ body {
         max-width: -moz-fit-content;
         max-width: fit-content;
     }
+
     ul {
         width: 50%;
         float: left;
@@ -786,21 +808,26 @@ body {
         margin: 0;
         padding: 0;
     }
+
     li {
         margin-bottom: 18px;
     }
+
     p {
         margin-bottom: 27px;
     }
+
     a {
         color: #878787;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
+
         &:hover {
             color: #007bff;
         }
     }
+
     &:after {
         content: "";
         display: block;
@@ -810,12 +837,14 @@ body {
 
 .dk-footer-form {
     position: relative;
+
     input[type=email] {
         padding: 14px 28px;
         border-radius: 50px;
         background: var(--bs-gray);
         border: 1px solid #2E2E2E;
     }
+
     button[type=submit] {
         position: absolute;
         top: 0;
@@ -828,6 +857,7 @@ body {
         color: var(--bs-black-1);
         height: 100%;
     }
+
     button:hover {
         cursor: pointer;
     }
@@ -854,7 +884,7 @@ body {
 .contact-us {
     position: relative;
     z-index: 2;
-    margin:20px 0 30px 0px;
+    margin: 20px 0 30px 0px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -866,8 +896,10 @@ body {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .contact-icon {
     position: absolute;
+
     i {
         font-size: 36px;
         top: -5px;
@@ -879,6 +911,7 @@ body {
 .contact-info {
     margin-left: 75px;
     color: var(--bs-black-1);
+
     h3 {
         font-size: 20px;
         color: var(--bs-black-1);
@@ -890,12 +923,15 @@ body {
     padding: 28px 0;
     margin-top: 55px;
     border-top: 1px solid var(--bs-white-rgba);
-    span, a {
+
+    span,
+    a {
         color: #878787;
         -webkit-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
     }
+
     a:hover {
         color: #007bff;
     }
@@ -906,6 +942,7 @@ body {
         text-align: right;
         margin: 0;
     }
+
     li {
         display: inline-block;
         padding-left: 20px;
@@ -915,6 +952,7 @@ body {
 .back-to-top {
     position: relative;
     z-index: 2;
+
     .btn-dark {
         width: 35px;
         height: 35px;
@@ -930,6 +968,7 @@ body {
         -webkit-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
+
         &:hover {
             cursor: pointer;
             background: #FA6742;
@@ -941,4 +980,42 @@ body {
 .row {
     margin-right: -30px !important;
     margin-left: -30px !important;
+}
+
+.mask {
+    position: absolute;
+    height: 50%;
+    width: 98%;
+    bottom: 0;
+
+    &:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 70%);
+    }
+
+    .text-box {
+        position: absolute;
+        width: 100%;
+        height: 165px;
+        padding: 25px 30px;
+        bottom: -50px;
+        color: var(--bs-white);
+        line-height: 26px;
+
+        .category {
+            font-size: 14.5px;
+        }
+
+        .name {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .text-in-img {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 12px;
+        }
+    }
+
+    // height: calc(inherit/2);
 }
