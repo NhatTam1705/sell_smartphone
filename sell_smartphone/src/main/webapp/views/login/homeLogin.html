@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to our website</title>
+    <link rel="stylesheet" href="../../styles/logins/homeLogin.css">
 </head>
+
 <body>
-    
+    <div id="main">
+        <script src="../../scripts/login.js"></script>
+        <div id="header">
+            <div id="header-box">
+                <a href="">
+                    <img src="../../styles/img/logo.png" alt="logo" border="0">
+                </a>
+                <div class="head-contact">
+                    <span id="help-l" style="direction: 1tr">
+                        &nbsp;
+                        <a href="" style="padding: 0px 5px 0px 5px">Help</a>
+                    </span>
+                    <span style="direction: 1tr">
+                        &nbsp;
+                        <a href="" style="padding: 0px 24px 0px 25px"> Contact Us</a>
+                    </span>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <form name="loginForm" action="">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+            </form>
+            <div id="login-bg-v2">
+                <div id="content-title-v2">
+                    <p>Sign In with Uniportal ID</p>
+                </div>
+                <div id="content_v2">
+                    <div id="dialog" style="display: none">
+                        <div class="ant-modal-mask"></div>
+                        <div class="ant-modal-wrap">
+                            <div class="ant-modal group-modal-warp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="login-main-content" class="reset-pw-v2">
+                    <div class="reset-tab-box-v2">
+                        <div class="set-show">
+                            <span class="set-ontab-v2" id="js-tabon">User ID/Email</span>
+                        </div>
+                        <div class="set-hidden">
+                            <span id="tab-phone" class="set-offtab-v2">Phone Number</span>
+                        </div>
+                        <div class="set-hidden">
+                            <span id="tab-smsode" class="set-offtab-v2">SMS Verification</span>
+                        </div>
+                    </div>
+                    <div class="login-main-v2">
+                        <div class="login-box-v2">
+                            <p></p>
+                            <div id="errormessage" class="errormessage"></div>
+                            <div class="modify-online1"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
 </body>
-</html>   
+
+</html>
