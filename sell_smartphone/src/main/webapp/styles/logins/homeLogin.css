@@ -140,12 +140,20 @@ body {
   line-height: 20px;
   padding-left: 12px;
   padding-right: 30px;
-  border-radius: 4px color #ccc;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+#content .login-main-v2 .login-box-v2 .modify-online1 .number-phone {
+  position: absolute;
+  width: 289px;
+  margin-top: -62px;
+  visibility: hidden;
 }
 #content .login-main-v2 .login-box-v2 .pwd-input img {
   position: absolute;
   width: 30px;
   padding-top: 5px;
+  cursor: pointer;
 }
 #content .login-main-v2 .login-box-v2 .login-submit-pwd-v2 {
   width: 100%;
