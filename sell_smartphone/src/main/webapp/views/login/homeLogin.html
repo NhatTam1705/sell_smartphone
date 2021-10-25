@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to our website</title>
     <link rel="stylesheet" href="../../styles/logins/homeLogin.css">
+    <link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css">
 </head>
 
 <body>
@@ -56,18 +57,33 @@
                         <div class="set-show " id="text-user">
                             <span  onclick="textPhone()"class="set-ontab-v2" id="js-tabon">User ID/Email</span>
                         </div>
-                        <div class="set-hidden js-blur" id ="text-phone">
+                        <div class="set-hidden" id ="text-phone">
                             <span onclick ="textUser()" id="tab-phone" class="set-offtab-v2">Phone Number</span>
-                        </div>
-                        <div class="set-hidden" id="text-sms">
-                            <span id="tab-smsode" class="set-offtab-v2">SMS Verification</span>
                         </div>
                     </div>
                     <div class="login-main-v2">
                         <div class="login-box-v2">
                             <p></p>
                             <div id="errormessage" class="errormessage"></div>
-                            <div class="modify-online1"> </div>
+                            <div class="modify-online1">
+                                <input id="textbox-user" type="text" name="uid" size="20" tabindex="1" class="user textbox-input " placeholder="User ID/Email">   
+                            </div>
+                            <div class="modify-online1" style="padding-bottom: 0">
+                                <input id = "textbox-number" type="text" name="uid" size="20" tabindex="1" class="number-phone textbox-input " placeholder="+84">
+                            </div>
+                            <div class="modify-online1 pwd-input">
+                                <input type="text" name="uid" size="20" tabindex="1" class="pass textbox-input" placeholder="Password">
+                                <img onclick="showPass()" class="psw-hide" src="../../styles/img/pictureContent/icon-hide-pass.png">
+                                <img onclick="hidePass()" class="psw-show" src="../../styles/img/pictureContent/icon-show-pass.png" style="visibility: hidden">
+                            </div>
+                            <div>
+                                <input class="login-submit-pwd-v2" type="button" tabindex="4" value="Log In">
+                            </div>
+                            <div class="modify-url">
+                                <a href="" class="registr">Register</a>
+                                <a href="" class="underline">Change Password</a>
+                                <a href="" class="underline">Forgot Password</a>
+                            </div>
                         </div>
                     </div>
                 </div>
