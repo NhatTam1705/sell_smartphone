@@ -10,8 +10,8 @@
 </head>
 
 <body>
+    <script src="../../scripts/login.js"></script>
     <div id="main">
-        <script src="../../scripts/login.js"></script>
         <div id="header">
             <div id="header-box">
                 <a href="">
@@ -53,13 +53,13 @@
                 </div>
                 <div id="login-main-content" class="reset-pw-v2">
                     <div class="reset-tab-box-v2">
-                        <div class="set-show">
-                            <span class="set-ontab-v2" id="js-tabon">User ID/Email</span>
+                        <div class="set-show " id="text-user">
+                            <span  onclick="textPhone()"class="set-ontab-v2" id="js-tabon">User ID/Email</span>
                         </div>
-                        <div class="set-hidden">
-                            <span id="tab-phone" class="set-offtab-v2">Phone Number</span>
+                        <div class="set-hidden js-blur" id ="text-phone">
+                            <span onclick ="textUser()" id="tab-phone" class="set-offtab-v2">Phone Number</span>
                         </div>
-                        <div class="set-hidden">
+                        <div class="set-hidden" id="text-sms">
                             <span id="tab-smsode" class="set-offtab-v2">SMS Verification</span>
                         </div>
                     </div>
@@ -74,7 +74,6 @@
             </div>
         </div>
         <div id="footer">
-
         </div>
     </div>
 </body>

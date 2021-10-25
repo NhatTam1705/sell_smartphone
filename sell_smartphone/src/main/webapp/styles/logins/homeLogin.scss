@@ -150,17 +150,18 @@ body {
         }
 
     }
+
     .login-main-v2 {
         background-color: #fff;
         width: 432px;
         margin: 0 auto;
         font-size: 12px;
         color: #fa2a2d;
-    
+
         .login-box-v2 {
             float: left;
             width: 432px;
-    
+
             .errormessage {
                 font-size: 12px;
                 color: #FF0000;
@@ -172,5 +173,22 @@ body {
                 word-wrap: break-word;
             }
         }
+    }
+}
+
+.blur-text {
+    border-bottom: #ccc 2px solid !important;
+
+    span {
+        font-weight: normal !important;
+        opacity: 0.6;
+    }
+}
+
+.unblur-text{
+    border-bottom: #f66f6a 2px solid !important;
+    span{
+        font-weight: bold;
+        opacity: 1 !important;
     }
 }

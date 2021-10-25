@@ -131,4 +131,20 @@ body {
   word-wrap: break-word;
 }
 
+.blur-text {
+  border-bottom: #ccc 2px solid !important;
+}
+.blur-text span {
+  font-weight: normal !important;
+  opacity: 0.6;
+}
+
+.unblur-text {
+  border-bottom: #f66f6a 2px solid !important;
+}
+.unblur-text span {
+  font-weight: bold;
+  opacity: 1 !important;
+}
+
 /*# sourceMappingURL=homeLogin.css.map */
