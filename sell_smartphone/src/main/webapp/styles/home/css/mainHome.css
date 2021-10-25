@@ -1,6 +1,9 @@
 :root {
   --bs-white: #fff;
-  --bs-gray: #ccc;
+  --bs-gray: #ced6e0;
+  --bs-gray-1: #57606f;
+  --bs-gray-2: #a4b0be;
+  --bs-gray-3: #2f3542;
   --bs-gray-61: #616161;
   --bs-black-3: #333333;
   --bs-black-1: #111111;
@@ -91,6 +94,9 @@ body {
   background-color: var(--bs-white);
   transition: transform 0.4s;
 }
+.js-header.dark {
+  background-color: var(--bs-gray-2);
+}
 .js-header .navbar-header {
   width: 133px;
   height: 66px;
@@ -172,6 +178,7 @@ body {
   border: 1px solid;
   height: 100%;
   width: 90%;
+  background-color: var(--bs-white);
 }
 #navbar .nav-search .search-box input {
   height: 100%;
@@ -237,7 +244,6 @@ body {
 #nav li {
   position: relative;
   z-index: 20;
-  background-color: var(--bs-white);
 }
 #nav li:hover .subnav {
   display: block;
@@ -285,6 +291,7 @@ body {
   overflow: hidden;
   margin-top: 108px;
   z-index: 10;
+  border-bottom: 1px solid var(--bs-white-rgba);
 }
 .slider .slide {
   position: absolute;
@@ -597,6 +604,9 @@ body {
   border-top: 1px solid var(--bs-gray-61);
   background-color: var(--bs-gray);
 }
+.dk-footer.dark {
+  background-color: var(--bs-gray-3);
+}
 .dk-footer .contact-us {
   margin-top: 0;
   margin-bottom: 30px;
@@ -618,10 +628,9 @@ body {
 .dk-footer-box-info {
   position: absolute;
   border: 1px solid var(--bs-gray-61);
-  background-color: var(--bs-gray-61);
+  background-color: var(--bs-gray-2);
   padding: 40px;
   z-index: 2;
-  color: var(--bs-white);
 }
 .dk-footer-box-info .footer-logo .img-fluid {
   width: 60%;
@@ -795,16 +804,20 @@ body {
   padding: 28px 0;
   margin-top: 55px;
   border-top: 1px solid var(--bs-white-rgba);
+  background-color: var(--bs-white);
+}
+.copyright.dark {
+  background-color: var(--bs-gray-2);
 }
 .copyright span,
 .copyright a {
-  color: #878787;
+  color: var(--bs-black);
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .copyright a:hover {
-  color: #007bff;
+  color: var(--bs-blue);
 }
 
 .copyright-menu ul {
@@ -980,7 +993,7 @@ body {
 body {
   --accent-color: var(--bs-white);
   --background-color: var(--bs-white);
-  --text-color: black;
+  --text-color: var(--bs-black-1);
   --btn-background-color: var(--bs-black-3);
   --transition-delay: 1s;
   transition: var(--transition-delay);
@@ -990,8 +1003,8 @@ body {
 
 body.dark {
   --accent-color: var(--bs-yellow);
-  --background-color: #333;
-  --text-color: white;
+  --background-color: var(--bs-gray-1);
+  --text-color: var(--bs-white);
   --btn-background-color: var(--bs-blue);
 }
 

@@ -1,6 +1,9 @@
 :root {
     --bs-white: #fff;
-    --bs-gray: #ccc;
+    --bs-gray: #ced6e0;
+    --bs-gray-1: #57606f;
+    --bs-gray-2: #a4b0be;
+    --bs-gray-3: #2f3542;
     --bs-gray-61: #616161;
     --bs-black-3: #333333;
     --bs-black-1: #111111;
@@ -100,7 +103,7 @@ body {
     transition: transform 0.4s;
 
     &.dark {
-        // background-color: var(--bs-gray-61);
+        background-color: var(--bs-gray-2);
     }
 
     .navbar-header {
@@ -195,6 +198,7 @@ body {
             border: 1px solid;
             height: 100%;
             width: 90%;
+            background-color: var(--bs-white);
 
             input {
                 height: 100%;
@@ -270,12 +274,9 @@ body {
     height: inherit;
     list-style-type: none;
 
-    // background-color: rgba(255,255,255,0.8);
     li {
         position: relative;
         z-index: 20;
-        // background-color:rgba(255,255,255,0.6);
-        background-color: var(--bs-white);
 
         &:hover .subnav {
             display: block;
@@ -332,7 +333,7 @@ body {
     overflow: hidden;
     margin-top: 108px;
     z-index: 10;
-    // border-radius: 10px;
+    border-bottom: 1px solid var(--bs-white-rgba);
 
     .slide {
         position: absolute;
@@ -703,6 +704,10 @@ body {
     border-top: 1px solid var(--bs-gray-61);
     background-color: var(--bs-gray);
 
+    &.dark {
+        background-color: var(--bs-gray-3);
+    }
+
     .contact-us {
         margin-top: 0;
         margin-bottom: 30px;
@@ -728,10 +733,10 @@ body {
 .dk-footer-box-info {
     position: absolute;
     border: 1px solid var(--bs-gray-61);
-    background-color: var(--bs-gray-61);
+    background-color: var(--bs-gray-2);
     padding: 40px;
     z-index: 2;
-    color: var(--bs-white);
+
 
     .footer-logo {
         .img-fluid {
@@ -932,17 +937,22 @@ body {
     padding: 28px 0;
     margin-top: 55px;
     border-top: 1px solid var(--bs-white-rgba);
+    background-color: var(--bs-white);
+
+    &.dark {
+        background-color: var(--bs-gray-2);   
+    }
 
     span,
     a {
-        color: #878787;
+        color: var(--bs-black);
         -webkit-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
     }
 
     a:hover {
-        color: #007bff;
+        color: var(--bs-blue);
     }
 }
 
@@ -1135,7 +1145,7 @@ body {
 body {
     --accent-color: var(--bs-white);
     --background-color: var(--bs-white);
-    --text-color: black;
+    --text-color: var(--bs-black-1);
     --btn-background-color: var(--bs-black-3);
     --transition-delay: 1s;
 
@@ -1146,8 +1156,8 @@ body {
 
 body.dark {
     --accent-color: var(--bs-yellow);
-    --background-color: #333;
-    --text-color: white;
+    --background-color: var(--bs-gray-1);
+    --text-color: var(--bs-white);
     --btn-background-color: var(--bs-blue);
 }
 
