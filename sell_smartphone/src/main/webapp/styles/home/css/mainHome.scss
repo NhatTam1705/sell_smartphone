@@ -5,6 +5,8 @@
     --bs-black-3: #333333;
     --bs-black-1: #111111;
     --bs-red: #d81414;
+    --bs-yellow: #ff9f1a;
+    --bs-blue: #7efff5;
     --bs-white-rgba: rgba(0, 0, 0, 0.3);
     --bs-font-family: Arial, Helvetica, sans-serif;
     --bs-height-navbar: 83px;
@@ -39,8 +41,9 @@ html {
 
 html,
 body {
-    font-size: 17px;
+    font-size: 17px !important;
 }
+
 
 #top-nav {
     position: relative;
@@ -724,6 +727,7 @@ body {
     background-color: var(--bs-gray-61);
     padding: 40px;
     z-index: 2;
+    color: var(--bs-white);
 
     .footer-logo {
         .img-fluid {
@@ -1017,6 +1021,145 @@ body {
             margin-bottom: 12px;
         }
     }
+}
 
-    // height: calc(inherit/2);
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+@media(max-width: 992px) {
+    .container {
+        padding: 20px 100px;
+    }
+
+    #back-to-top-btn {
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px 50px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+
+    #back-to-top-btn {
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        bottom: 6px;
+        right: 6px;
+    }
+}
+
+/* Animations */
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+body {
+    --accent-color: var(--bs-white);
+    --background-color: var(--bs-white);
+    --text-color: black;
+    --btn-background-color: var(--bs-black-3);
+    --transition-delay: 1s;
+
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --accent-color: var(--bs-yellow);
+    --background-color: #333;
+    --text-color: white;
+    --btn-background-color: var(--bs-blue);
+}
+
+.change-theme-button {
+    background-color: var(--btn-background-color);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 999;
+    .js-icon {
+        font-size: 40px;
+        color: var(--accent-color);
+        padding: 15px 10px 15px 10px;
+    }
 }
