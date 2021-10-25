@@ -83,7 +83,7 @@ body {
   z-index: 20;
 }
 
-#header {
+.js-header {
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -91,12 +91,12 @@ body {
   background-color: var(--bs-white);
   transition: transform 0.4s;
 }
-#header .navbar-header {
+.js-header .navbar-header {
   width: 133px;
   height: 66px;
   position: absolute;
 }
-#header .logo {
+.js-header .logo {
   padding-top: 9px;
   float: left;
   width: 133px;

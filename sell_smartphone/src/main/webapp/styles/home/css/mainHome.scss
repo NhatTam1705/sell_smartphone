@@ -91,13 +91,17 @@ body {
     z-index: 20;
 }
 
-#header {
+.js-header {
     position: fixed;
     width: 100%;
     z-index: 20;
     top: 0;
-    background-color: var(--bs-white);
+    background-color: var(--bs-white);   
     transition: transform 0.4s;
+
+    &.dark {
+        // background-color: var(--bs-gray-61);
+    }
 
     .navbar-header {
         width: 133px;
