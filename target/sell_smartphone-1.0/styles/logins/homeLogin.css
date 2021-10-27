@@ -70,7 +70,7 @@ body {
   margin: 0 auto;
   width: 289px;
   display: flex;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 #content .reset-tab-box-v2 .set-show {
   border-bottom: #f66f6a 2px solid;
@@ -142,6 +142,11 @@ body {
   padding-right: 30px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  background-color: #b6b3b3bb;
+}
+#content .login-main-v2 .login-box-v2 .modify-online1 .textbox-input:focus {
+  border: 1px solid #f66f6a;
+  background-color: #fff;
 }
 #content .login-main-v2 .login-box-v2 .modify-online1 .number-phone {
   position: absolute;
@@ -179,6 +184,12 @@ body {
 #content .login-main-v2 .login-box-v2 .modify-url .underline {
   float: right;
   margin-right: 8px;
+}
+#content .login-main-v2 .login-box-v2 .modify-url .underline:hover {
+  text-decoration: underline;
+}
+#content .login-main-v2 .login-box-v2 .modify-url .registr:hover {
+  text-decoration: underline;
 }
 
 .blur-text {

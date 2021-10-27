@@ -105,7 +105,7 @@ body {
         margin: 0 auto;
         width: 289px;
         display: flex;
-        padding-top: 40px;
+        padding-top: 30px;
 
         .set-show {
             border-bottom: #f66f6a 2px solid;
@@ -182,6 +182,11 @@ body {
                     padding-right: 30px;
                     border-radius: 4px;
                     border: 1px solid #ccc;
+                    background-color: #b6b3b3bb;
+                    &:focus{
+                        border: 1px solid #f66f6a;
+                        background-color: #fff;
+                    }
                 }
                 .number-phone {
                     position: absolute;
@@ -189,6 +194,7 @@ body {
                     margin-top: -62px;
                     visibility: hidden;
                 }
+
             }
             .pwd-input img {
                 position: absolute;
@@ -218,7 +224,15 @@ body {
                 }
                 .underline{
                     float: right;
-                    margin-right: 8px;             
+                    margin-right: 8px;    
+                    &:hover{
+                        text-decoration: underline;
+                    }         
+                }
+                .registr{
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
