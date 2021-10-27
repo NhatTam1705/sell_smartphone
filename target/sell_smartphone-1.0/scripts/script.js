@@ -1,7 +1,6 @@
 //Menu bar
 {
     var count = 0
-
     function menu() {
         var i = 0
         const navigation = document.querySelectorAll('.hide-nav')

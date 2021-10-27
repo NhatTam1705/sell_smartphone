@@ -281,6 +281,16 @@ body {
   background-position: center;
 }
 
+.icon-font-white {
+  width: 2vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.change-icon-font {
+  display: none;
+}
+
 #nav {
   height: inherit;
   list-style-type: none;
@@ -296,6 +306,7 @@ body {
   display: block;
   padding: 0 1.3vw;
   text-decoration: none;
+  background-color: var(--bs-color-header-footer);
 }
 #nav > li {
   display: inline-block;
