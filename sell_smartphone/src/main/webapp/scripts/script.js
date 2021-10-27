@@ -204,14 +204,4 @@ function easeInOutCubic(t, b, c, d) {
     return c / 2 * (t * t * t + 2) + b;
 };
 
-const iconMode = document.querySelector(".js-icon");
-const header = document.querySelector(".js-header");
-const footer = document.querySelector(".dk-footer");
-const copyRight = document.querySelector(".copyright");
-document.querySelector('.change-theme-button').addEventListener('click', () => {
-    document.body.classList.toggle('dark')
-    iconMode.classList.toggle('fa-sun-cloud')
-    header.classList.toggle('dark')
-    footer.classList.toggle('dark')
-    copyRight.classList.toggle('dark')
-})
+const setTheme = (theme) => (document.documentElement.className = theme);
