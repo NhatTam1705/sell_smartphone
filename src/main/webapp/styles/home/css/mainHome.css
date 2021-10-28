@@ -134,6 +134,7 @@ body {
 }
 
 .js-header {
+  position: fixed;
   width: 100%;
   z-index: 20;
   top: 0;
@@ -434,10 +435,19 @@ body {
   height: inherit;
 }
 #content .mb {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+#content .mr-15 {
+  margin-right: 15px;
+}
+#content .ml-15 {
+  margin-left: 15px;
 }
 #content .mr {
-  margin-right: 30px;
+  margin-right: 25px;
+}
+#content .panel-list-img {
+  clear: both;
 }
 #content .panel-list-img .img-box {
   position: relative;
@@ -445,6 +455,9 @@ body {
 #content .panel-list-img .panel-img-box {
   display: inline-block;
   overflow: hidden;
+}
+#content .panel-list-img .panel-img-box img {
+  width: 100%;
 }
 #content .panel-list-img .panel-img-box a {
   color: #fff;
@@ -553,12 +566,6 @@ body {
   width: 100%;
   display: block;
   height: 240px;
-}
-#content .ml-15 {
-  margin-left: 15px;
-}
-#content .mr-15 {
-  margin-right: 15px;
 }
 #content .pl-15 {
   padding-left: 15px;

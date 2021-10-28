@@ -140,7 +140,7 @@ body {
 }
 
 .js-header {
-    // position: fixed;
+    position: fixed;
     width: 100%;
     z-index: 20;
     top: 0;
@@ -484,15 +484,21 @@ body {
     height: inherit;
 
     .mb {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
-
+    .mr-15{
+        margin-right: 15px;
+    }
+    .ml-15{
+        margin-left:15px;
+    }
     .mr {
-        margin-right: 30px;
+        margin-right: 25px;
     }
 
     .panel-list-img {
         // padding-left: 42px;
+        clear:both;
         .img-box {
             position: relative;
         }
@@ -500,6 +506,9 @@ body {
         .panel-img-box {
             display: inline-block;
             overflow: hidden;
+            img{
+                width: 100%;
+            }
             a {
                 color: #fff;
                 text-decoration: none;
@@ -628,14 +637,6 @@ body {
         width: 100%;
         display: block;
         height: 240px;
-    }
-
-    .ml-15 {
-        margin-left: 15px;
-    }
-
-    .mr-15 {
-        margin-right: 15px;
     }
 
     .pl-15 {
