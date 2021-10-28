@@ -241,8 +241,7 @@ body {
             border: 1px solid var(--bs-color-border);
             height: 100%;
             width: 90%;
-            background-color: var(--bs-color-body);
-
+            background-color: #ffffff;
             input {
                 height: 100%;
                 width: 90%;
@@ -257,7 +256,7 @@ body {
                 width: 6%;
                 position: absolute;
                 margin-top: 9px;
-
+                color: #616161;
                 .icon-btn-search {
                     font-size: 25px;
                     margin-top: 20px;
@@ -269,7 +268,7 @@ body {
         .btn-close {
             position: absolute;
             text-decoration: none;
-            top: 23%;
+            line-height: 46px;
             right: 0;
             font-size: 26px;
         }
@@ -279,7 +278,7 @@ body {
         }
 
         &.show-nav-search {
-            display: block;
+            display: flex;
         }
     }
 }
