@@ -1,24 +1,25 @@
 //Menu bar
-{
-    var count = 0
-    function menu() {
-        var i = 0
-        const navigation = document.querySelectorAll('.hide-nav')
-        if (count === 0) {
-            for (; i < navigation.length; i++)
-                navigation[i].classList.add('height-navbar')
-            count = 1;
-        } else {
-            for (; i < navigation.length; i++)
-                navigation[i].classList.remove('height-navbar')
-            count = 0;
-        }
+const menu = document.querySelector('.btn-menu')
+var click = 0
+menu.addEventListener('click', () => {
+    const navigation = document.querySelectorAll('.hide-nav')
+    if (click === 0) {
+        navigation.forEach((nav) => {
+            nav.classList.add('height-navbar')
+        });
+        click = 1
+    } else {
+        navigation.forEach((nav) => {
+            nav.classList.remove('height-navbar')
+        });
+        click = 0
     }
-}
+});
+
 
 
 // {
-//     var countY = 1
+//     var clickY = 1
 //     function subnavSlideY() {
 //         var i = 0
 //         const navigation = document.querySelectorAll('.hide-nav')
@@ -35,25 +36,23 @@
 // }
 
 //Hide/Appear header
-{
-    // const nav = document.querySelector("#header");
-    var nav = document.getElementById('header')
-    let lastScrollY = window.scrollY;
-    var hideNavbar = document.querySelectorAll('.hide-nav')
-    window.addEventListener("scroll", () => {
-        var i;
-        if (lastScrollY < window.scrollY) {
-            nav.classList.add('header-hidden');
-            for (i = 0; i < hideNavbar.length; i++) {
-                hideNavbar[i].classList.remove('height-navbar')
-            }
-            count = 0;
-        } else {
-            nav.classList.remove('header-hidden');
-        }
-        lastScrollY = window.scrollY;
-    });
-}
+
+// const nav = document.querySelector("#header");
+var nav = document.getElementById('header')
+let lastScrollY = window.scrollY;
+var hideNavbar = document.querySelectorAll('.hide-nav')
+window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        nav.classList.add('header-hidden');
+        hideNavbar.forEach((hide) => {
+            hide.classList.remove('height-navbar')
+        });
+        click = 0;
+    } else {
+        nav.classList.remove('header-hidden');
+    }
+    lastScrollY = window.scrollY;
+});
 
 
 
@@ -204,3 +203,27 @@ function easeInOutCubic(t, b, c, d) {
 };
 
 const setTheme = (theme) => (document.documentElement.className = theme);
+
+const themeLight = document.querySelector('.theme-light')
+const themeDark = document.querySelector('.theme-dark')
+const iconDark = document.querySelectorAll('.icon-font')
+const iconLight = document.querySelectorAll('.icon-font-white')
+
+themeLight.addEventListener('click', () => {
+    iconDark.forEach((iconDarks) => {
+        iconDarks.classList.remove('change-icon-font')
+        console.log(iconDarks)
+    });
+    iconLight.forEach((iconLights) => {
+        iconLights.classList.add('change-icon-font')
+    });
+});
+
+themeDark.addEventListener('click', () => {
+    iconDark.forEach((iconDarks) => {
+        iconDarks.classList.add('change-icon-font')
+    });
+    iconLight.forEach((iconLights) => {
+        iconLights.classList.remove('change-icon-font')
+    });
+});

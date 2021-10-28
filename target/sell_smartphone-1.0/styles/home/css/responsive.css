@@ -56,6 +56,10 @@
   .icon-font {
     width: 30px;
   }
+
+  .icon-font-white {
+    width: 30px;
+  }
 }
 /* Mobile */
 @media (max-width: 900px) {
