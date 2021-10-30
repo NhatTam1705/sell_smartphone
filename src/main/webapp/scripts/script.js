@@ -217,7 +217,7 @@ themeLight.addEventListener('click', () => {
     iconLight.forEach((iconLights) => {
         iconLights.classList.add('change-icon-font')
     });
-});
+}); 
 
 themeDark.addEventListener('click', () => {
     iconDark.forEach((iconDarks) => {

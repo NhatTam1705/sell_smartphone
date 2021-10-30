@@ -447,10 +447,16 @@ body {
   margin-right: 25px;
 }
 #content .panel-list-img {
-  clear: both;
+  overflow: hidden;
+  vertical-align: top;
+  width: auto;
+  text-align: center;
+  font-size: 0;
+  display: inline-block;
 }
 #content .panel-list-img .img-box {
   position: relative;
+  background-size: cover;
 }
 #content .panel-list-img .panel-img-box {
   display: inline-block;
@@ -458,6 +464,7 @@ body {
 }
 #content .panel-list-img .panel-img-box img {
   width: 100%;
+  height: 100%;
 }
 #content .panel-list-img .panel-img-box a {
   color: #fff;
@@ -579,7 +586,8 @@ body {
 }
 #content .story img {
   width: 100%;
-  height: 100%;
+  height: 655px;
+  object-fit: cover;
 }
 
 .back-to-top {
@@ -602,6 +610,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 70%);
 }
 .mask .text-box {
+  text-align: left;
   position: absolute;
   width: 100%;
   height: 165px;
