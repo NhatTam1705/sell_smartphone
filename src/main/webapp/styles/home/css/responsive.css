@@ -1,87 +1,72 @@
-/* Break Point */
-/* PC */
-@media (min-width: 1100px) {
-  .nav-right .icon-menu {
-    display: none;
+@media (min-width: 992px) {
+  .container {
+    width: 93.705%;
+    max-width: 1756.02px;
   }
-}
-/* Tablet */
-@media (max-width: 1100px) {
-  #nav {
-    position: absolute;
-    display: inline-block;
-    top: 100%;
-    width: 100%;
-    height: auto;
-    transform: translateX(120%);
-  }
-  #nav .height-navbar {
-    visibility: visible;
-    transform: translateX(-120%);
-  }
-  #nav,
-#nav li {
+
+  #header .navbar-toggle {
     display: block;
   }
-  #nav li {
-    transition: all 1s;
-  }
-
-  #text {
-    display: none;
-  }
-
-  .nav-right {
-    height: 30px;
-  }
-  .nav-right .hidden {
-    display: none;
-  }
-  .nav-right .icon-search {
-    margin-left: 20px;
-    left: 0;
-  }
-  .nav-right .icon-menu {
-    position: absolute;
-    right: 0;
-    margin-right: 15px;
-    font-size: 30px;
-  }
-
-  .text {
-    font-size: 15px;
-    line-height: 55px;
-  }
-
-  .icon-font {
-    width: 30px;
-  }
-
-  .icon-font-white {
-    width: 30px;
+}
+@media (max-width: 992px) {
+  #header .navbar-brand {
+    margin-top: -4px;
   }
 }
-/* Mobile */
-@media (max-width: 900px) {
-  .slider {
-    width: 100%;
+@media (min-width: 1025px) {
+  .top-nav {
+    z-index: 110;
   }
-
-  .slider .slide .info {
+  .top-nav .top-nav-height {
+    position: static;
+    height: 25px;
+    text-align: right;
+    background-color: var(--background-top-nav);
+  }
+  .top-nav .top-nav-height a {
+    height: 25px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 0;
+    font-size: 14px;
+    float: left;
+    color: var(--color-text);
+    width: auto;
+    padding: 0 10px;
+  }
+  .top-nav .top-nav-height a .iconfont {
+    margin-right: 5px;
+    border: none;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    float: left;
+  }
+}
+@media (min-width: 1025px) {
+  #header .navbar {
+    height: 78px;
+    border: 1px solid var(--color-solid-header);
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  #header .navbar .nav-container {
     position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  #header .navbar .navbar-header {
+    box-shadow: none;
+    float: left;
+  }
+  #header .container {
+    width: 93.705%;
+  }
+  #header .navbar-toggle {
+    display: none;
   }
 }
-@media (max-width: 500px) {
-  .slider .slide .info h2 {
-    font-size: 1.8em;
-    line-height: 40px;
-  }
-
-  .slider .slide .info p {
-    font-size: 0.9em;
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
   }
 }
 
