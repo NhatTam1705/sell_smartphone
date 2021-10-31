@@ -103,6 +103,8 @@ body {
         height: 25px;
         position: static;
         text-align: right;
+        transition: all 0.5s;
+        transform: translate3d(0,0,0);
         background-color: var(--bs-color-top-nav);
     }
 

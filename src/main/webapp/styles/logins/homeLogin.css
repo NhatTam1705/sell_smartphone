@@ -142,7 +142,6 @@ body {
   padding-right: 30px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  background-color: #b6b3b3bb;
 }
 #content .login-main-v2 .login-box-v2 .modify-online1 .textbox-input:focus {
   border: 1px solid #f66f6a;
@@ -172,6 +171,41 @@ body {
 #content .login-main-v2 .login-box-v2 .login-submit-pwd-v2:hover {
   background-color: #FF0000;
 }
+#content .login-main-v2 .login-box-v2 .login-pwd-v2 {
+  height: 36px;
+  width: 40%;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f66f6a;
+  border-radius: 4px;
+  border: 0 none;
+}
+#content .login-main-v2 .login-box-v2 .login-pwd-v2:hover {
+  background-color: #FF0000;
+}
+#content .login-main-v2 .login-box-v2 .btn {
+  display: inline;
+  position: relative;
+}
+#content .login-main-v2 .login-box-v2 .btn .cancel {
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 120px;
+  margin-right: 50px;
+}
+#content .login-main-v2 .login-box-v2 .btn .cancel:hover {
+  background-color: #ccc;
+}
+#content .login-main-v2 .login-box-v2 .btn .login {
+  width: 120px;
+  position: absolute;
+}
+#content .login-main-v2 .login-box-v2 .btn a {
+  float: left;
+  font-weight: bold;
+}
 #content .login-main-v2 .login-box-v2 .modify-url {
   height: 19px;
   line-height: 19px;
@@ -193,7 +227,7 @@ body {
 }
 
 .blur-text {
-  border-bottom: #ccc 2px solid !important;
+  border-bottom: #e6e6e6 2px solid !important;
   transition: all 0.4s;
 }
 .blur-text span {

@@ -2,7 +2,38 @@
 
 /* PC */
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .top-nav{
+        z-index: 110;
+        .top-nav-height{
+            position: static;
+            height: 25px;
+            text-align: right;
+            background-color: var(--background-top-nav);
+        }
+        .top-nav-height{
+            a{
+                height: 25px;
+                line-height: 25px;
+                margin-left: 10px;
+                margin-right: 0;
+                font-size: 14px;
+                float: left;
+                color: var(--color-text);
+                width: auto;
+                padding: 0 10px;
+                .iconfont{
+                    margin-right: 5px;
+                    border:none;
+                    font-size: 14px;
+                    width: auto;
+                    height: auto;
+                    float: left;
+                }
+            }
+        }
+    }
+}
 
 @media(min-width: 1100px) {
     .nav-right .icon-menu {

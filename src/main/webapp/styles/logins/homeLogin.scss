@@ -182,7 +182,6 @@ body {
                     padding-right: 30px;
                     border-radius: 4px;
                     border: 1px solid #ccc;
-                    background-color: #b6b3b3bb;
                     &:focus{
                         border: 1px solid #f66f6a;
                         background-color: #fff;
@@ -214,6 +213,42 @@ body {
                     background-color: #FF0000;
                 }
             }
+            .login-pwd-v2{
+                height: 36px;
+                width: 40%;
+                cursor: pointer;
+                color: #fff;
+                background-color: #f66f6a;
+                border-radius: 4px;
+                border: 0 none;
+                &:hover{
+                    background-color: #FF0000;
+                }
+            }
+            .btn{
+                display: inline;
+                position: relative;
+                .cancel{
+                    display: inline-block;
+                    color: #000;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    width: 120px;
+                    margin-right: 50px;
+                    &:hover{
+                        background-color: #ccc;
+                    }
+                }
+                .login{
+                    width: 120px;
+                    position: absolute;
+                }
+                a{
+                    float: left;
+                    font-weight: bold;
+                }
+            }
+
             .modify-url{
                 height: 19px;
                 line-height: 19px;
@@ -240,7 +275,7 @@ body {
 }
 
 .blur-text {
-    border-bottom: #ccc 2px solid !important;
+    border-bottom: #e6e6e6 2px solid !important;
     transition: all 0.4s;
     span {
         font-weight: normal !important;
