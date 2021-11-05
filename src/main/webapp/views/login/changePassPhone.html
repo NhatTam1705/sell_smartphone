@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our website</title>
+    <link rel="stylesheet" href="../../styles/logins/homeLogin.css">
+    <link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css">
+    <script src="../../scripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+        </div>
+        <div id="content">
+            <form name="loginForm" action="">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+                <input type="hidden">
+            </form>
+            <div id="login-form">
+                <div id="content-title">
+                    <h1>Change Password Phone</h1>
+                </div>
+                <div id="content_v2">
+                    <div id="dialog" style="display: none">
+                        <div class="ant-modal-mask"></div>
+                        <div class="ant-modal-wrap">
+                            <div class="ant-modal group-modal-warp"></div>
+                        </div>
+                    </div>
+                </div>
+                <form name="loginForm" id="form-id-email" action="">
+                    <div id="login-main-content" class="reset-pw ">
+                        <div class="login-main">
+                            <div class="login-box">
+                                <p></p>
+                                <div id="errormessage" class="errormessage"></div>
+                                <div class="pt-24">
+                                    <input id="textbox-user" type="email" required name="uid" size="20" tabindex="1"
+                                        class="user textbox-input " placeholder="+84">
+                                </div>
+                                <div class="pt-24 pwd-input">
+                                    <input type="text" name="uid" size="20" tabindex="1" class="pass textbox-input"
+                                        placeholder="Old Password">
+                                </div>
+                                <div class="pt-24 pwd-input">
+                                    <input type="password" name="uid" size="20" tabindex="1" class="pass textbox-input"
+                                        placeholder="New Password">
+                                    <img class="new-psw-show" src="../../styles/img/pictureContent/icon-show-pass.png"
+                                        style="visibility: hidden;">
+                                    <img class="new-psw-hide" src="../../styles/img/pictureContent/icon-hide-pass.png">
+                                </div>
+                                <div class="pt-24 pwd-input">
+                                    <input type="password" name="uid" size="20" tabindex="1" class="pass textbox-input"
+                                        placeholder="Confirm Password">
+                                    <img class="confirm-psw-show"
+                                        src="../../styles/img/pictureContent/icon-show-pass.png"
+                                        style="visibility: hidden;">
+                                    <img class="confirm-psw-hide"
+                                        src="../../styles/img/pictureContent/icon-hide-pass.png">
+                                </div>
+                                <div class="pt-24 row">
+                                    <a href="#" onclick="createCaptcha()">
+                                        <div id="create-captcha" class="captcha textbox-input">
+                                            <script>createCaptcha();</script>
+                                        </div>
+                                    </a>
+                                    <div class="input-catpcha">
+                                        <input type="text" name="uid" tabindex="1" class="captcha textbox-input"
+                                            placeholder="Captcha">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="">
+                                        <a href=".../../homeLogin.html">
+                                            <input class="btn-controll btn-cancel" type="button" value="Cancel">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="../../views/login/homeLogin.html">
+                                            <input class="btn-controll btn-submit" type="submit" value="Submit">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+    <script src="../../scripts/changePass.js"></script>
+
+</body>
+
+</html>
