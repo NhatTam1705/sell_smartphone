@@ -1,37 +1,5 @@
-var ImgShowPass = document.querySelector('.psw-show')
-var ImgHidePass = document.querySelector('.psw-hide')
-var passWord = document.getElementById('registerVO.password')
 var passIMG = '<img id="correctips" src="../../styles/img/register/icons_right.png" border="0" align="absmiddle"/>'
-//Show Pass
-ImgShowPass.addEventListener('click', () => {
-    ImgHidePass.style.visibility = 'visible'
-    ImgShowPass.style.visibility = 'hidden'
-    passWord.type = "password"
-});
 
-//Hide Pass
-ImgHidePass.addEventListener('click', () => {
-    ImgShowPass.style.visibility = 'visible'
-    ImgHidePass.style.visibility = 'hidden'
-    passWord.type = "text"
-});
-
-function trim(s) {
-    var tempStr;
-    tempStr = s.replace(/\s+$/g, '');
-    tempStr = tempStr.replace(/^\s+/g, '');
-    return tempStr;
-}
-
-function isEmpty(s) {
-    return ((s == null) || (trim(s).length == 0))
-}
-
-function isContainChinese(str) {
-    if (str.match(/[^\x00-\xff]/ig))
-        return true
-    return false
-}
 //Check User
 function isValidUid(uid) {
     $('#spanuinfo').removeAttr('title')
@@ -75,7 +43,7 @@ function checkEmail() {
     else document.getElementById('spanmailinfo').innerHTML = passIMG
 }
 
-//Check Password
+//Check Password 
 function isValidPassword(uid, pwd) {
     var email = document.getElementById('registerVO.email').value
     if (isEmpty(pwd))
@@ -127,42 +95,6 @@ function checkName() {
         document.getElementById('spannameinfo').innerHTML = passIMG
 }
 
-//Phone Number
-function isValidPhone(phone) {
-    if (isEmpty(phone))
-        return 'Phone cannot be empty.'
-    var str = /^[+]{0}[0-9]{10}$/
-    if (!str.test(phone))
-        return 'Invalid phone number format.'
-    return ''
-}
-
-function checkPhone() {
-    document.getElementById('spanphoneinfo').innerHTML = ''
-    var phone = document.getElementById('registerVO.phone').value
-    var errorMessage = isValidPhone(phone)
-    if (errorMessage != '')
-        document.getElementById('spanphoneinfo').innerHTML = errorMessage
-    else document.getElementById('spanphoneinfo').innerHTML = passIMG
-}
-
-//Check SMS
-function isValidSMS(sms) {
-    if (isEmpty(sms))
-        return 'SMS cannot be empty'
-    return ''
-}
-
-function checkSMS() {
-    document.getElementById('spansmsinfo').innerHTML = ''
-    var sms = document.getElementById('registerVO.sms').value
-    var errorMessage = isValidSMS(sms)
-    if (errorMessage != '')
-        document.getElementById('spansmsinfo').innerHTML = errorMessage
-    else document.getElementById('spansmsinfo').innerHTML = passIMG
-}
-
-//Check Agreement
 function toAgree(obj) {
     if (obj.checked)
         document.getElementById("regbtn").disabled = false;
@@ -206,14 +138,9 @@ function checkRegisterForm() {
     }
 
     //SMS
-    if((errorMessage = isValidSMS(form['registerVO.sms'].value)) != ''){
-        document.getElementById('spansmsinfo').innerHTML=errorMessage
+    if ((errorMessage = isValidSMS(form['registerVO.sms'].value)) != '') {
+        document.getElementById('spansmsinfo').innerHTML = errorMessage
         staticCheckPass = false;
     }
     return staticCheckPass
-}
-
-function userRegister(){
-    if(!checkRegisterForm())
-        return
 }
