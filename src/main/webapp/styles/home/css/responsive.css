@@ -56,6 +56,9 @@
   #nav li {
     transition: all 1s;
   }
+  #nav a {
+    background-color: var(--bs-color-header-footer);
+  }
 
   #text {
     display: none;

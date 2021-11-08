@@ -65,6 +65,10 @@
         li {
             transition: all 1s;
         }
+        
+        a{
+            background-color: var(--bs-color-header-footer);
+        }
 
         // .angle-down {
         //     // transform: rotate(-90deg);
