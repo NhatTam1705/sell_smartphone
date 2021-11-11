@@ -173,6 +173,9 @@ html, a {
   border: 1px solid var(--color-gray);
   padding: 0 2px;
 }
+.register-input:focus{
+    border: 1px solid #f30;
+}
 #mainbox #content .register-red-star {
   font-size: 16px;
   color: var(--color-red-star);

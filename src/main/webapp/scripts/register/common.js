@@ -69,4 +69,3 @@ function userRegister() {
 		document.registerInfoForm.submit();
     }
 }
-

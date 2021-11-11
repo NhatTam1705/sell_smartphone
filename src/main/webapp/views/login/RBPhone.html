@@ -17,7 +17,7 @@
         <div id="main">
             <div id="header-box">
                 <div id="header" class="about">
-                    <a href="../../views/home/index.html" title="htv-phone">
+                    <a href="../../views/login/home.html" title="htv-phone">
                         <img src="../../styles/img/logo.png" alt="">
                     </a>
                 </div>
@@ -33,7 +33,7 @@
                     <div id="content-top"></div>
                     <div class="register">
                         <div class="reset-tab-box">
-                            <a href="../../views/login/RegisterByEmail.html">
+                            <a href="../../views/login/RBEmail.html">
                                 <span class="set-offtab set-tab">Register by Email</span>
                             </a>
                             <span class="set-ontab set-tab">Register by Mobile</span>
@@ -50,7 +50,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="text" name="registerVO.phone" class="register-input" tabindex="1"
-                                    id="registerVO.phone" onblur="checkPhone()" onfocus="clearSysMsg()">
+                                    id="registerVO.phone" onblur="checkPhone()">
                                 <span class="redtips" id="spanphoneinfo"></span>
                             </div>
                             <div class="register-online">
@@ -59,8 +59,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="password" name="registerVO.password" class="register-input" tabindex="6"
-                                    id="registerVO.password" onblur="checkPassword()" onfocus="clearSysMsg()"
-                                    style="padding-right: 30px">
+                                    id="registerVO.password" onblur="checkPassword()" style="padding-right: 30px">
                                 <img class="psw-show" src="../../styles/img/pictureContent/icon-show-pass.png"
                                     style="visibility: hidden;">
                                 <img class="psw-hide" src="../../styles/img/pictureContent/icon-hide-pass.png">
@@ -73,7 +72,7 @@
                                 </div>
                                 <div>
                                     <input type="text" name="registerVO.sms" class="phone-vercode-input" tabindex="7"
-                                        id="registerVO.sms" onblur="checkSMS()" onfocus="cleanSysMsg()">
+                                        id="registerVO.sms" onblur="checkSMS()">
                                     <input id="sendButton" type="button" class="phone-button" value="Get code"
                                         tabindex="8">
                                 </div>
@@ -83,14 +82,14 @@
                                 <span class="redtip1"></span>
                             </div>
                             <input type="button" class="sub-bottom register-submit" name="regbtn" value="Register"
-                            onclick="userRegister()" tabindex="9" id="regbtn" onclick="userRegister()">
-                        <div class="bottom"></div>
+                                onclick="userRegister()" tabindex="9" id="regbtn" onclick="userRegister()">
+                            <div class="bottom"></div>
                         </div>
                     </div>
                     <div id="content-bottom"></div>
                 </div>
             </div>
-            <script src="../../scripts/register/scriptphone.js"></script>
+            <script src="../../scripts/register/SPhone.js"></script>
             <script src="../../scripts/register/showpass.js"></script>
         </div>
     </form>

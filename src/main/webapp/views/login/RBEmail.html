@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css">
     <script src="../../scripts/register/jQuery.js"></script>
     <script src="../../scripts/register/common.js"></script>
-    
+
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div id="main">
             <div id="header-box">
                 <div id="header" class="about">
-                    <a href="../../views/home/index.html" title="htv-phone">
+                    <a href="../../views/login/home.html" title="htv-phone">
                         <img src="../../styles/img/logo.png" alt="">
                     </a>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="register">
                         <div class="reset-tab-box">
                             <span class="set-ontab set-tab">Register by Email</span>
-                            <a href="../../views/login/RegisterByPhone.html">
+                            <a href="../../views/login/RBPhone.html">
                                 <span class="set-offtab set-tab">Register by Mobile</span>
                             </a>
                         </div>
@@ -51,7 +51,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="text" name="registerVO.userId" tabindex="1" value="" class="register-input"
-                                    id="registerVO.userId" onblur="checkAccount()" onfocus="clearSysMsg()">
+                                    id="registerVO.userId" onblur="checkAccount()">
                                 <span class="redtips white-space-text" id="spanuinfo"></span>
                             </div>
                             <div class="register-online">
@@ -60,7 +60,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="text" name="registerVO.email" class="register-input" tabindex="2"
-                                    id="registerVO.email" onblur="checkEmail()" onfocus="clearSysMsg()">
+                                    id="registerVO.email" onblur="checkEmail()">
                                 <span class="redtips" id="spanmailinfo"></span>
                             </div>
                             <div class="register-online">
@@ -69,8 +69,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="password" name="registerVO.password" class="register-input" tabindex="3"
-                                    id="registerVO.password" onblur="checkPassword()" onfocus="clearSysMsg()"
-                                    style="padding-right: 30px">
+                                    id="registerVO.password" onblur="checkPassword()" style="padding-right: 30px">
                                 <img class="psw-show" src="../../styles/img/pictureContent/icon-show-pass.png"
                                     style="visibility: hidden;">
                                 <img class="psw-hide" src="../../styles/img/pictureContent/icon-hide-pass.png">
@@ -90,7 +89,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="text" name="registerVO.name" class="register-input" tabindex="4"
-                                    id="registerVO.name" onblur="checkName()" onfocus="clearSysMsg()">
+                                    id="registerVO.name" onblur="checkName()">
                                 <span class="redtips" id="spannameinfo"></span>
                             </div>
                             <div class="register-online">
@@ -99,7 +98,7 @@
                                     <span class="register-red-star">*</span>
                                 </div>
                                 <input type="text" name="registerVO.phone" class="register-input" tabindex="5"
-                                    id="registerVO.phone" onblur="checkPhone()" onfocus="clearSysMsg()">
+                                    id="registerVO.phone" onblur="checkPhone()">
                                 <span class="redtips" id="spanphoneinfo"></span>
                             </div>
                             <!-- <div class="register-online">
@@ -126,7 +125,7 @@
                                 </div>
                                 <div>
                                     <input type="text" name="registerVO.sms" class="phone-vercode-input" tabindex="6"
-                                        id="registerVO.sms" onblur="checkSMS()" onfocus="cleanSysMsg()">
+                                        id="registerVO.sms" onblur="checkSMS()">
                                     <input id="sendButton" type="button" class="phone-button" value="Get code"
                                         tabindex="7">
                                 </div>
@@ -152,7 +151,7 @@
                     <div id="content-bottom"></div>
                 </div>
             </div>
-            <script src="../../scripts/register.js"></script>
+            <script src="../../scripts/register/SEmail.js"></script>
             <script src="../../scripts/register/showpass.js"></script>
         </div>
     </form>
