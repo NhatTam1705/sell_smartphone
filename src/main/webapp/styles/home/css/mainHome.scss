@@ -386,7 +386,7 @@ body {
         position: absolute;
         list-style-type: none;
         background-color: var(--bs-color-header-footer);
-        box-shadow: 0 0 10px var(--bs-color-border);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
         li:hover a {
             color: var(--bs-font-color-dark);
