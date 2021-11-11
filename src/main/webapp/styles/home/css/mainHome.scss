@@ -83,6 +83,30 @@
     }
 }
 
+//common
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.col-img{
+    // display: grid;
+    // grid-template-columns: repeat(2,1fr);
+    display: flex;
+}
+
+//end common
 html {
     font-family: var(--bs-font-family);
 }
@@ -486,29 +510,13 @@ body {
 #content {
     height: inherit;
 
-    .mb {
-        margin-bottom: 25px;
-    }
-
-    .mr-15 {
-        margin-right: 15px;
-    }
-
-    .ml-15 {
-        margin-left: 15px;
-    }
-
-    .mr {
-        margin-right: 25px;
-    }
-
     .panel-list-img {
         overflow: hidden;
         vertical-align: top;
         width: auto;
         text-align: center;
         font-size: 0;
-        display: inline-block;
+        // display: inline-block;
 
         .img-box {
             position: relative;

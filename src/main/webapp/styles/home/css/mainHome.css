@@ -80,6 +80,26 @@
     -o-transform: rotate(360deg);
   }
 }
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.col-img {
+  display: flex;
+}
+
 html {
   font-family: var(--bs-font-family);
 }
@@ -434,25 +454,12 @@ body {
 #content {
   height: inherit;
 }
-#content .mb {
-  margin-bottom: 25px;
-}
-#content .mr-15 {
-  margin-right: 15px;
-}
-#content .ml-15 {
-  margin-left: 15px;
-}
-#content .mr {
-  margin-right: 25px;
-}
 #content .panel-list-img {
   overflow: hidden;
   vertical-align: top;
   width: auto;
   text-align: center;
   font-size: 0;
-  display: inline-block;
 }
 #content .panel-list-img .img-box {
   position: relative;
