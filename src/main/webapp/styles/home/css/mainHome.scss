@@ -14,7 +14,7 @@
     --bs-color-btn-more: #ff5252;
     --bs-color-change-mode: #d1d8e0;
     --bs-background-btn-change-mode: #2f3640;
-    --bs-font-family: Arial, Helvetica, sans-serif;
+    // --bs-font-family: Arial, Helvetica, sans-serif;
     --bs-height-navbar: 84px;
     --bs-height-header: 108px;
 }
@@ -324,9 +324,11 @@ body {
 }
 
 .text {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding-left: 3px;
     line-height: 82px;
+    opacity: 0.8;
+    font-weight: 600;
 }
 
 .icon-font {
@@ -348,11 +350,13 @@ body {
 #nav {
     height: inherit;
     list-style-type: none;
-
+    display: inline-block;
+    ul{
+        margin-bottom:  0 !important;
+    }
     li {
         position: relative;
         z-index: 20;
-
 
         &:hover .subnav {
             display: block;

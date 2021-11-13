@@ -50,14 +50,15 @@
 }
 #brand #lst-brand .brand-item {
   display: flex;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   cursor: pointer;
   margin-right: 8px;
   margin-bottom: 10px;
   padding: 6px 13px;
 }
 #brand #lst-brand .brand-item:hover {
-  border: 1px solid #0000FF;
+  border: 2px solid #f30;
+  transition: 1s;
 }
 #brand #lst-brand img.no-text {
   margin-right: 0;
@@ -109,6 +110,7 @@
 .cards .card-sale p {
   display: inline-block;
   background-color: #e6e6e6;
+  margin-bottom: 0;
 }
 .cards .card-image {
   padding: 10px 0;
@@ -119,7 +121,7 @@
   margin-top: 3px;
 }
 .cards .card-image:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   transition: 0.5s;
 }
 .cards .card-content {
@@ -129,8 +131,8 @@
   padding: 10px;
 }
 .cards .card-content .card-name {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .cards .card-content .card-price {
@@ -140,11 +142,6 @@
 }
 .cards .card-content .card-discount {
   font-size: 14px;
-}
-.cards .card-user,
-.cards .card-bottom {
-  margin-top: auto;
-  flex-shrink: 0;
 }
 .cards .card {
   display: flex;
