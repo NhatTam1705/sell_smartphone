@@ -13,14 +13,17 @@
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<link rel="stylesheet" href="../../styles/home/product/phone.css">
+	<link rel="stylesheet" href="../../styles/home/css/footer.css">
 	<title>HTV Phones</title>
 </head>
 
 
 <body>
-	<div id="main" style="height: 2000px">
+	<div id="main">
 		<header>
 			<div id="header" class="js-header">
 				<div id="top-nav">
@@ -68,7 +71,8 @@
 								</li>
 								<li class="hide-nav">
 									<a href="../../views/product/tablets.html">
-										<span class="icon-font" style="background-image: url(../../styles/font/SVG/tables.svg)">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/tables.svg)">
 										</span>
 										<span class="icon-font-white change-icon-font"
 											style="background-image: url(../../styles/font/SVG/tables-white.svg)">
@@ -89,7 +93,8 @@
 								</li>
 								<li class="hide-nav">
 									<a href="../../views/product/audio.html">
-										<span class="icon-font" style="background-image: url(../../styles/font/SVG/audio.svg)">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/audio.svg)">
 										</span>
 										<span class="icon-font-white change-icon-font"
 											style="background-image: url(../../styles/font/SVG/audio-white.svg)">
@@ -98,7 +103,7 @@
 									</a>
 								</li>
 								<li class="hide-nav">
-									<a onclick="subnavSlideY()" href="#" >
+									<a onclick="subnavSlideY()" href="#">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
 										<span class="icon-font-white change-icon-font"
@@ -125,7 +130,8 @@
 							</ul>
 						</nav>
 						<div class="nav-right js-nav-right">
-							<span class="icon-font hidden" style="background-image: url(../../styles/font/SVG/shopping.svg)">
+							<span class="icon-font hidden"
+								style="background-image: url(../../styles/font/SVG/shopping.svg)">
 							</span>
 							<span class="icon-font-white change-icon-font hidden"
 								style="background-image: url(../../styles/font/SVG/shopping-white.svg)">
@@ -139,7 +145,8 @@
 						</div>
 						<div class="nav-search js-nav-search">
 							<div class="search-box">
-								<input type="text" placeholder="Search htv.com" class="search-header js-search-header" />
+								<input type="text" placeholder="Search htv.com"
+									class="search-header js-search-header" />
 								<a href="#" class="btn-search">
 									<span class="icon-btn-search ti-search"></span>
 								</a>
@@ -158,33 +165,277 @@
 		<div class="top-box">
 			<section>
 				<div class="filter-beetle margin">
-
+					<div class="filter-title">
+						<div class="dropdown__select">
+							<i class="fa fa-filter" aria-hidden="true"></i>
+							<span class="filter-text">Fill</span>
+						</div>
+					</div>
+					<div class="filter-title filter-price">
+						<div class="dropdown__select">
+							<span class="filter-text">Price</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Less than 2 million</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 2 - 4 million</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 4 - 7 million</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 7 - 13 million</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 13 - 20 million</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Over 20 million</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-type">
+						<div class="dropdown__select">
+							<span class="filter-text">Type of phone</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Android</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">iOS</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-pin">
+						<div class="dropdown__select">
+							<span class="filter-text">Pin</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Over 5000mAh</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Fast battery charger</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-ram">
+						<div class="dropdown__select">
+							<span class="filter-text">RAM</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">1GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">2GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">3GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">4GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">6GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">8GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">12GB</span></li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-rom">
+						<div class="dropdown__select">
+							<span class="filter-text">ROM</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">32GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">64GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">128GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">256GB</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">512GB</span></li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-camera">
+						<div class="dropdown__select">
+							<span class="filter-text">Camera</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Macro</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Wide original camera</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Font removal camera</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Long zoom shooting</span></li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-future">
+						<div class="dropdown__select">
+							<span class="filter-text">Special futures</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Support 5G</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Face Security</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Fingerprint security</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Wireless charging</span></li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Water and dust resistant
+									</span></li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-design">
+						<div class="dropdown__select">
+							<span class="filter-text">Design</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Border overflow</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Thin and light</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Glass back</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="filter-title filter-screen">
+						<div class="dropdown__select">
+							<span class="filter-text">Screen</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list">
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Compact and easy to hold</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 6 inches and up
+									</span>
+								</li>
+							</a>
+							<a href="">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Folding screen</span>
+								</li>
+							</a>
+						</ul>
+					</div>
 				</div>
 			</section>
-		</div>
-		<div id="brand" class="margin">
-			<div id="lst-brand" class="mb-10">
-				<a href="" class="brand-item rd-52 pr-10">
-					<img src="../../styles/img/brand/iphone.png" alt="" class="no-text">
-				</a>
-				<a href="" class="brand-item rd-52">
-					<img src="../../styles/img/brand/oppo.jpg" alt="" class="no-text">
-				</a>
-				<a href="" class="brand-item rd-52">
-					<img src="../../styles/img/brand/realme.png" alt="" class="no-text">
-				</a>
-				<a href="" class="brand-item rd-52">
-					<img src="../../styles/img/brand/samsung.png" alt="" class="no-text">
-				</a>
-				<a href="" class="brand-item rd-52">
-					<img src="../../styles/img/brand/vivo.jpg" alt="" class="no-text">
-				</a>
-				<a href="" class="brand-item rd-52">
-					<img src="../../styles/img/brand/xiaomi.png" alt="" class="no-text">
-				</a>
+			<div id="brand" class="margin">
+				<div id="lst-brand" class="mb-10">
+
+					<a href="" class="brand-item rd-52 pr-10">
+						<img src="../../styles/img/brand/iphone.png" alt="" class="no-text">
+					</a>
+					<a href="" class="brand-item rd-52">
+						<img src="../../styles/img/brand/oppo.jpg" alt="" class="no-text">
+					</a>
+					<a href="" class="brand-item rd-52">
+						<img src="../../styles/img/brand/realme.png" alt="" class="no-text">
+					</a>
+					<a href="" class="brand-item rd-52">
+						<img src="../../styles/img/brand/samsung.png" alt="" class="no-text">
+					</a>
+					<a href="" class="brand-item rd-52">
+						<img src="../../styles/img/brand/vivo.jpg" alt="" class="no-text">
+					</a>
+					<a href="" class="brand-item rd-52">
+						<img src="../../styles/img/brand/xiaomi.png" alt="" class="no-text">
+					</a>
+				</div>
 			</div>
 		</div>
-		
+
 		<section id="category-page pt-20" data-name="phone">
 			<div class="container-productbox margin">
 				<div class="cards">
@@ -278,8 +529,8 @@
 							</div>
 						</a>
 					</div>
-					
-			</div>
+
+				</div>
 		</section>
 		<div id="back-to-top" class="back-to-top">
 			<button id="back-to-top-btn" title="Back to top">
@@ -297,117 +548,16 @@
 	</div>
 </body>
 
-<!-- <footer class="text-center text-lg-start bg-light text-muted">
-	<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-		<div class="me-5 d-none d-lg-block">
-			<span>Get connected with us on social networks:</span>
-		</div>
-		<div>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-facebook-f"></i>
-			</a>
 
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-twitter"></i>
-			</a>
+<footer>
+</footer>
 
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-google"></i>
-			</a>
+<script>
+	$(function () {
+		$("footer").load("../../views/common/footer.html");
+	});
+</script>
 
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-instagram"></i>
-			</a>
-
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-linkedin"></i>
-			</a>
-
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-github"></i>
-			</a>
-
-		</div>
-	</section>
-	<section class="">
-		<div class="container text-center text-md-start mt-5">
-			<div class="row mt-3">
-				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-					<h6 class="text-uppercase fw-bold mb-4">
-						<i class="fas fa-gem me-3"></i> Company HTV
-					</h6>
-					<p>
-						Ho Chi Minh City University of Technology and Education
-					</p>
-				</div>
-
-				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-					<h6 class="text-uppercase fw-bold mb-4">
-						Products
-					</h6>
-					<p>
-						<a href="#!" class="text-reset">Phones</a>
-
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Laptops</a>
-
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Tablets</a>
-
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Wearables</a>
-
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Audios</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Accessories</a>
-					</p>
-				</div>
-				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-					<h6 class="text-uppercase fw-bold mb-4">
-						Useful links
-					</h6>
-					<p>
-						<a href="#!" class="text-reset">Pricing</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Settings</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Orders</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Help</a>
-					</p>
-				</div>
-
-				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-					<h6 class="text-uppercase fw-bold mb-4">
-						Contact
-					</h6>
-					<p><i class="fas fa-home me-3"></i> HCMUTE</p>
-					<p>
-						<i class="fas fa-envelope me-3"></i>
-						19110283@student.hcmute.edu.vn
-					</p>
-					<p><i class="fas fa-phone me-3"></i> 033 4193816</p>
-					<p><i class="fas fa-print me-3"></i> 078 2883817</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="text-center p-4 top-footer">
-		© 2021 Copyright:
-		<a class="text-reset fw-bold">HTV Company</a>
-	</div>
-
-</footer> -->
 <script src="../../scripts/product/SCommon.js"></script>
 
 </html>

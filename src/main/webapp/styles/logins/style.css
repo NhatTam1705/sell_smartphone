@@ -128,6 +128,7 @@ a {
 #content {
   display: block;
   padding-bottom: 40px;
+  position: relative;
 }
 #content #content-title {
   padding: 64px 0 12px;
@@ -248,6 +249,20 @@ a {
 }
 #content .login-main .btn-cancel:hover {
   background-color: #e6e6e6;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  bottom: 0;
+}
+footer .title {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
