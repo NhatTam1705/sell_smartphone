@@ -1,72 +1,71 @@
 //common]
-.pd-10{
+.pd-10 {
     padding: 10px;
 }
 
-.rd-52{
+.rd-52 {
     border-radius: 52px;
 }
 
-.pr-10{
+.pr-10 {
     margin-right: 10px;
 }
 
-
-a{
-    &:before{
-        content: '';
-        display: table;
-    }
+.pt-20 {
+    padding-top: 20px;
 }
 
-a{
-    &:after{
-        content: '';
-        display: table;
-    }
-}
-
-.margin{
+.margin {
     margin-left: auto;
     margin-right: auto;
 }
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+
+//end coomon
 .top-banner {
     position: relative;
     margin-top: 108px;
     width: 1200px;
-    img{
+
+    img {
         height: 285px;
         width: 1200px;
         object-fit: cover;
     }
 }
 
-.filter-beetle{
+.filter-beetle {
     width: 1200px;
     height: 45px;
 }
 
-#brand{
+#brand {
     width: 1200px;
     display: flex;
     justify-content: center;
-    #lst-brand{
+
+    #lst-brand {
         display: flex;
         flex-wrap: wrap;
 
-        .brand-item{
+        .brand-item {
             display: flex;
             border: 1px solid #ccc;
             cursor: pointer;
             margin-right: 8px;
             margin-bottom: 10px;
             padding: 6px 13px;
-            &:hover{
+
+            &:hover {
                 border: 1px solid #0000FF;
             }
         }
 
-        img.no-text{
+        img.no-text {
             margin-right: 0;
             width: auto;
             height: 30px;
@@ -74,33 +73,120 @@ a{
     }
 }
 
-.container-productbox{
+.container-productbox {
     display: block;
     overflow: hidden;
     width: 1200px;
     padding-top: 20px;
-    .lst-product{
-        display: grid;
-        grid-auto-rows: minmax(min-content,max-content);
-        grid-template-columns: repeat(5,minmax(0,1fr));
-        border-left: 1px solid #f1f1f1;
-        border-top: 1px solid #f1f1f1;
-        list-style-type: none;
-        .item{
-            padding: 10px 15px 20px 15px;
+}
+
+.cards {
+    --spacing: 5px;
+    --columns: 5;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+
+    a {
+        width: 100%;
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-shrink: 0;
+    }
+
+    .card {
+        border-radius: 4px;
+        overflow: hidden;
+        background-color: white;
+        border: 1px solid #ccc;
+        width: calc(calc(100% / var(--columns)) - var(--spacing));
+        margin-left: var(--spacing);
+        margin-bottom: var(--spacing);
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
         }
-        a{
-            text-decoration: none;
-            color: #333;
+    }
+
+    .card-sale {
+        padding: 10px 15px 15px 15px;
+        font-size: 12px;
+        color: #000;
+        display: flex;
+
+        p {
+            display: inline-block;
+            background-color: #e6e6e6;
+        }
+    }
+
+    .card-image {
+        padding: 10px 0;
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin-top: 3px;
+        &:hover {
+            transform: translateY(-5px);
+            transition: 0.5s;
+        }
+    }
+
+    .card-content {
+        flex-direction: column;
+        flex: 1;
+        display: flex;
+        padding: 10px;
+
+        .card-name {
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .card-price {
+            padding-bottom: 5px;
+            font-weight: bold;
+            margin-toP: auto;
+        }
+
+        .card-discount{
             font-size: 14px;
         }
-        .item-label{
-            span{
-                background-color: rgba(241,241,241);
-            }
-            h3{
-                font-size: 14px;
-            }
-        }
+    }
+
+
+    .card-user,
+    .card-bottom {
+        margin-top: auto;
+        flex-shrink: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .cards {
+        --columns: 2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cards {
+        --spacing: 15px;
+        --columns: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html{
+        width: 1200px;
     }
 }
