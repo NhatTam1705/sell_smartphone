@@ -14,7 +14,7 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<link rel="stylesheet" href="../../styles/home/product/phone.css">
 	<link rel="stylesheet" href="../../styles/home/css/footer.css">
@@ -166,9 +166,9 @@
 			<section>
 				<div class="filter-beetle margin">
 					<div class="filter-title">
-						<div class="dropdown__select">
+						<div class="dropdown__select" aria-valuetext="1">
 							<i class="fa fa-filter" aria-hidden="true"></i>
-							<span class="filter-text">Fill</span>
+							<span class="filter-text">Filter</span>
 						</div>
 					</div>
 					<div class="filter-title filter-price">
@@ -177,36 +177,42 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Less than 2 million</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">From 2 - 4 million</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">From 4 - 7 million</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">From 7 - 13 million</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">From 13 - 20 million</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Over 20 million</span>
 								</li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-type">
@@ -215,16 +221,22 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Android</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">iOS</span>
 								</li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-pin">
@@ -233,16 +245,22 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Over 5000mAh</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Fast battery charger</span>
 								</li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-ram">
@@ -251,34 +269,40 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">1GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">2GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">3GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">4GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">6GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">8GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">12GB</span></li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-rom">
@@ -287,26 +311,32 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">32GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">64GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">128GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">256GB</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">512GB</span></li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-camera">
@@ -315,22 +345,28 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown_text">Macro</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown_text">Wide original camera</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown_text">Font removal camera</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown_text">Long zoom shooting</span></li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-future">
@@ -339,27 +375,33 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Support 5G</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Face Security</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Fingerprint security</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Wireless charging</span></li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Water and dust resistant
 									</span></li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-design">
@@ -368,21 +410,27 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Border overflow</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Thin and light</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Glass back</span>
 								</li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 					<div class="filter-title filter-screen">
@@ -391,22 +439,28 @@
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
 						<ul class="dropdown__list">
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Compact and easy to hold</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">From 6 inches and up
 									</span>
 								</li>
 							</a>
-							<a href="">
+							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Folding screen</span>
 								</li>
 							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
 						</ul>
 					</div>
 				</div>
@@ -440,7 +494,7 @@
 			<div class="container-productbox margin">
 				<div class="cards">
 					<div class="card">
-						<a href="">
+						<a href="" class="c-btnbox">
 							<div class="card-sale">
 								<p class=text-sale>Sale 0%</p>
 							</div>
@@ -559,5 +613,6 @@
 </script>
 
 <script src="../../scripts/product/SCommon.js"></script>
+<script src="../../scripts/product/phone.js"></script>
 
 </html>
