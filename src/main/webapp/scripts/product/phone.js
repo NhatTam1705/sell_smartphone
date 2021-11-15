@@ -1,45 +1,33 @@
-// var button = '<div class="button-find__item"> <input type="button" class="button__cancel" value="Cancel"><a href="" class="c-btnbox"><input type="button" class="button__submit" value="Submit"></a></div>'
-var item = document.querySelectorAll('.dropdown__item')
-var select = document.querySelectorAll('.dropdown__select')
-var btnCancel = document.querySelectorAll('.button__cancel')
-var dropdownList = document.querySelectorAll('.dropdown__list')
-
-// btnCancel.forEach((btnCancels) => {
-//     btnCancels.addEventListener('click', () => {
-//         dropdownList.forEach((dropdownLists) => {
-//             dropdownLists.style.display = 'none'
-//         })
-//     })
-// })
-
-
-
-//     btnCancels.addEventListener('mouseover', () => {
-//         dropdownList.forEach((dropdownLists) => {
-//             dropdownLists.style.display = 'none'
-//         })
-//     })
-// })
+let dropDownPrice = document.querySelector('.dropdown__price')
+let dropDownListPrice = document.querySelector('.dropdown-list__price')
+let buttonCancelPrice = document.querySelector('.button__cancel-price')
+let dropDownList = document.querySelectorAll('.dropdownList')
+let item = document.querySelectorAll('.dropdown__item')
 
 item.forEach((items) => {
     items.addEventListener('click', (e) => {
-        items.classList.add('check')
+        items.classList.toggle('check')
         e.preventDefault()
     })
 })
 
+dropDownPrice.addEventListener('click', () => {
+    dropDownListPrice.classList.toggle('block-dropdown__list')
+    dropDownPrice.classList.add('border-dropdown__select')
+});
 
-// $(document).ready(function () {
-//     dropdownList.forEach((dropdownLists) => {
-//         $(dropdownLists).append(button)
-//     })
-// })
-
-
-btnCancel.forEach((btnCancels) => {
-    btnCancels.addEventListener('click', () => {
-        item.forEach((items) => {
-            items.classList.remove('check')
-        })
+buttonCancelPrice.addEventListener('click', () => {
+    dropDownListPrice.classList.remove('block-dropdown__list')
+    dropDownPrice.classList.remove('border-dropdown__select')
+    item.forEach((items) => {
+        items.classList.remove('check')
     })
 })
+
+window.onclick = function (e) {
+    if (!e.target.matches('.dropdown__price')) {
+        if (dropDownListPrice.classList.contains('block-dropdown__list')) {
+            dropDownListPrice.classList.remove('block-dropdown__list');
+        }
+    }
+}

@@ -1,3 +1,8 @@
+@import "../../home/Sass/header";
+@import "../../home/Sass/utilities";
+@import "../../home/Sass/footer";
+@import "../../home/Sass/responsive";
+
 //common]
 .pd-10 {
     padding: 10px;
@@ -31,6 +36,13 @@
 .check {
     border: 1px solid #f30 !important;
     color: #f30;
+}
+.border-dropdown__select{
+    border: 1px solid #f30 !important;
+}
+
+.block-dropdown__list{
+    display: block !important;
 }
 
 .border-select{
@@ -70,9 +82,9 @@
             margin-left: -10px;
         }
 
-        &:hover .dropdown__list {
-            display: block;
-        }
+        // &:hover .dropdown__list {
+        //     display: block;
+        // }
     }
 
     .dropdown__select {
@@ -148,14 +160,6 @@
             color: #000;
         }
 
-        // a:hover {
-        //     color: #f30;
-        // }
-
-        // a:hover .dropdown__item {
-        //     border: 1px solid #f30;
-        // }
-
         .button-find__item {
             text-align: center;
             padding: 20px 0;
@@ -197,7 +201,9 @@
             }
         }
     }
-
+    .filter-all-items .dropdown__item:first-child:before{
+        --left: 50px;
+    }
     .filter-price .dropdown__item:first-child:before {
         --left: 50px;
     }
@@ -234,6 +240,9 @@
         --left: 63px;
     }
 
+    .filter-all-items .dropdown__list {
+        --width: 600px;
+    }
     .filter-price .dropdown__list {
         --width: 600px;
     }
@@ -278,6 +287,7 @@
     .filter-text {
         font-size: 14px;
         line-height: 24px;
+        pointer-events: none;
     }
 }
 

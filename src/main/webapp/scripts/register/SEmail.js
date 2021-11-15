@@ -120,10 +120,10 @@ function checkRegisterForm() {
     }
 
     //Password
-    if ((errorMessage = isValidPassword(form['registerVO.userId'].value, form['registerVO.password'].value)) != '') {
-        document.getElementById('spanpwdinfo').innerHTML = errorMessage;
-        staticCheckPass = false;
-    }
+    // if ((errorMessage = isValidPassword(form['registerVO.userId'].value, form['registerVO.password'].value)) != '') {
+    //     document.getElementById('spanpwdinfo').innerHTML = errorMessage;
+    //     staticCheckPass = false;
+    // }
 
     //Name
     if ((errorMessage = isValidName(form['registerVO.name'].value)) != '') {
