@@ -4,6 +4,7 @@
 @import "responsive";
 
 //common
+
 .mb-25 {
     margin-bottom: 25px;
 }
@@ -20,11 +21,13 @@
     margin-right: 25px;
 }
 
-.col-img{
-    // display: grid;
-    // grid-template-columns: repeat(2,1fr);
-    display: flex;
-}
+// .col-img{
+//     // display: grid;
+//     // grid-template-columns: repeat(2,1fr);
+//     display: flex;
+// }
+
+
 
 //end common
 html {
@@ -148,36 +151,79 @@ body {
     height: inherit;
 
     .panel-list-img {
-        overflow: hidden;
-        vertical-align: top;
+        $space-column: 25px;
+        $space-row: 25px;
+        $max-height-img-box: 446px;
+        display: flex;
+        flex-direction: column;
         width: auto;
-        text-align: center;
-        font-size: 0;
-        // display: inline-block;
+        gap: $space-row;
 
-        .img-box {
-            position: relative;
-            background-size: cover;
+        .list-top-img {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-column-gap: $space-column;
         }
 
-        .panel-img-box {
-            display: inline-block;
-            overflow: hidden;
+        .list-center-img {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-column-gap: $space-column;
+        }
 
-            img {
+        .list-bottom-img {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: $space-column;
+        }
+
+        .img {
+            &-box {
                 width: 100%;
-                height: 100%;
+                position: relative;
+                max-height: $max-height-img-box;
+                object-fit: cover;
             }
 
-            a {
-                color: #fff;
-                text-decoration: none;
-                display: block;
-                overflow: hidden;
-                position: relative;
+            &-click {
+                width: 100%;
+                max-height: $max-height-img-box;
+                object-fit: cover;
                 height: 100%;
             }
         }
+
+        // overflow: hidden;
+        // vertical-align: top;
+        // width: auto;
+        // text-align: center;
+        // font-size: 0;
+        // display: inline-block;
+        // display: flex;
+
+        // .img-box {
+        //     position: relative;
+        //     background-size: cover;
+        // }
+
+        // .panel-img-box {
+        //     display: inline-block;
+        //     overflow: hidden;
+
+        //     img {
+        //         width: 100%;
+        //         height: 100%;
+        //     }
+
+        //     a {
+        //         color: #fff;
+        //         text-decoration: none;
+        //         display: block;
+        //         overflow: hidden;
+        //         position: relative;
+        //         height: 100%;
+        //     }
+        // }
     }
 
     .new-content {
@@ -360,5 +406,3 @@ body {
         }
     }
 }
-
-

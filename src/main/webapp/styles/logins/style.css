@@ -12,6 +12,10 @@ body {
   line-height: 1.2;
 }
 
+html, body {
+  min-height: 100%;
+}
+
 .btn-controll {
   width: 140px;
   height: 32px;
@@ -128,7 +132,8 @@ a {
 #content {
   display: block;
   padding-bottom: 40px;
-  position: relative;
+  position: absolute;
+  width: 100%;
   min-height: 100%;
 }
 #content #content-title {
