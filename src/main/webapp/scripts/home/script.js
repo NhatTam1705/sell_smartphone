@@ -3,41 +3,12 @@ const menu = document.querySelector('.btn-menu')
 var click = 0
 menu.addEventListener('click', () => {
     const navigation = document.querySelectorAll('.hide-nav')
-    if (click === 0) {
         navigation.forEach((nav) => {
-            nav.classList.add('height-navbar')
-        });
-        click = 1
-    } else {
-        navigation.forEach((nav) => {
-            nav.classList.remove('height-navbar')
-        });
-        click = 0
-    }
+            nav.classList.toggle('height-navbar')
+    })
 });
 
 
-
-// {
-//     var clickY = 1
-//     function subnavSlideY() {
-//         var i = 0
-//         const navigation = document.querySelectorAll('.hide-nav')
-//         if (countY === 0) {
-//             for (; i < navigation.length - 1; i++)
-//                 navigation[i].classList.add('slide-navbar')
-//             countY = 1;
-//         } else {
-//             for (; i < navigation.length - 1; i++)
-//                 navigation[i].classList.remove('slider-navbar')
-//             countY = 0;
-//         }
-//     }
-// }
-
-//Hide/Appear header
-
-// const nav = document.querySelector("#header");
 var nav = document.getElementById('header')
 let lastScrollY = window.scrollY;
 var hideNavbar = document.querySelectorAll('.hide-nav')
@@ -154,10 +125,8 @@ slider.addEventListener("mouseout", () => {
     repeater();
 });
 
-const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
-
 function scrollFunction() {
     if (window.pageYOffset > 300) { // Show backToTopButton
         if (!backToTopButton.classList.contains("btnEntrance")) {
@@ -176,9 +145,8 @@ function scrollFunction() {
     }
 }
 
-backToTopButton.addEventListener("click", smoothScrollBackToTop);
-
-function smoothScrollBackToTop() {
+const backToTopButton = document.querySelector("#back-to-top-btn");
+backToTopButton.addEventListener("click", () => {
     const targetPosition = 0;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
@@ -193,7 +161,7 @@ function smoothScrollBackToTop() {
         window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
         if (progress < duration) window.requestAnimationFrame(step);
     }
-}
+});
 
 function easeInOutCubic(t, b, c, d) {
     t /= d / 2;

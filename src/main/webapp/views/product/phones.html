@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" href="../../styles/home/Sass/css/product/phone.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-	<link rel="stylesheet" href="../../styles/home/Sass/css/product/phone.css">
 	<title>HTV Phones</title>
 </head>
 
@@ -156,11 +156,11 @@
 				</div>
 			</div>
 		</header>
-		<div class="top-banner margin">
+		<section class="slider margin">
 			<img src="../../styles/img/bannner/iphone-13.jpg" alt="">
-		</div>
-		<div class="top-box">
-			<section>
+		</section>
+		<section class="filter">
+			<div class="filter-box">
 				<div class="filter-beetle margin">
 					<div class="filter-title filter-all-items">
 						<div class="dropdown__select" aria-valuetext="1">
@@ -213,11 +213,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-type">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__type">
 							<span class="filter-text">Type of phone</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__type">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Android</span>
@@ -237,11 +237,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-pin">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__pin">
 							<span class="filter-text">Pin</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__pin">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Over 5000mAh</span>
@@ -261,11 +261,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-ram">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__ram">
 							<span class="filter-text">RAM</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__ram">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">1GB</span></li>
@@ -303,11 +303,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-rom">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__rom">
 							<span class="filter-text">ROM</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__rom">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">32GB</span></li>
@@ -337,11 +337,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-camera">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__camera">
 							<span class="filter-text">Camera</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__camera">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown_text">Macro</span></li>
@@ -367,11 +367,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-future">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__future">
 							<span class="filter-text">Special futures</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__future">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Support 5G</span></li>
@@ -402,11 +402,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-design">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__design">
 							<span class="filter-text">Design</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__design">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Border overflow</span>
@@ -431,11 +431,11 @@
 						</ul>
 					</div>
 					<div class="filter-title filter-screen">
-						<div class="dropdown__select">
+						<div class="dropdown__select dropdown__screen">
 							<span class="filter-text">Screen</span>
 							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<ul class="dropdown__list">
+						<ul class="dropdown__list dropdown-list__screen">
 							<a href="" class="c-btnbox">
 								<li class="dropdown__item">
 									<span class="dropdown__text">Compact and easy to hold</span>
@@ -461,10 +461,9 @@
 						</ul>
 					</div>
 				</div>
-			</section>
+			</div>
 			<div id="brand" class="margin">
 				<div id="lst-brand" class="mb-10">
-
 					<a href="" class="brand-item rd-52 pr-10">
 						<img src="../../styles/img/brand/iphone.png" alt="" class="no-text">
 					</a>
@@ -485,8 +484,8 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		<section id="category-page pt-20" data-name="phone">
+		</section>
+		<section id="category-page" data-name="phone">
 			<div class="container-productbox margin">
 				<div class="cards">
 					<div class="card">
@@ -599,8 +598,6 @@
 		</footer>
 	</div>
 </body>
-
-
 
 <script>
 	$(function () {
