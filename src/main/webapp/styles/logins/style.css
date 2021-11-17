@@ -252,6 +252,11 @@ a {
   background-color: #e6e6e6;
 }
 
+#main {
+  height: 100%;
+  position: relative;
+}
+
 footer {
   position: absolute;
   text-align: center;
@@ -260,7 +265,6 @@ footer {
   padding: 20px 0;
   bottom: 0;
   background-color: #f1f1f1;
-  bottom: 0;
 }
 footer .title {
   font-size: 15px;
