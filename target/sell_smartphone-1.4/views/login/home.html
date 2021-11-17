@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our website</title>
+    <link rel="stylesheet" href="../../styles/logins/style.css">
+    <link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("../../views/login/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="content">
+            <div id="header">
+            </div>
+            <div id="content-title">
+                <h1>Sign In with Uniportal ID</h1>
+            </div>
+            <div id="content_v2">
+                <div id="dialog" style="display: none">
+                    <div class="ant-modal-mask"></div>
+                    <div class="ant-modal-wrap">
+                        <div class="ant-modal group-modal-warp"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="login-main-content" class="reset-pw">
+                <div class="reset-tab-box">
+                    <div class="set-show " id="text-user">
+                        <span class="set-tab font-user">User ID/Email</span>
+                    </div>
+                    <div class="set-hidden" id="text-phone">
+                        <span class="set-tab">User Mobile</span>
+                    </div>
+                </div>
+                <form name="loginForm" id="form-id-email" action="">
+                    <div class="login-main">
+                        <div class="login-box">
+                            <p></p>
+                            <div id="errormessage" class="errormessage"></div>
+                            <div class="pt-24">
+                                <input id="textbox-user" type="email" required name="uid" size="20" tabindex="1"
+                                    class="user textbox-input " placeholder="Email">
+                            </div>
+                            <div class="pt-24 pwd-input">
+                                <input type="password" required name="uid" size="20" tabindex="2"
+                                    class="pass textbox-input" placeholder="Password">
+                                <img class="psw-show-f1" src="../../styles/img/pictureContent/icon-show-pass.png"
+                                    style="visibility: hidden;">
+                                <img class="psw-hide-f1" src="../../styles/img/pictureContent/icon-hide-pass.png">
+                            </div>
+                            <div>
+                                <input class="login-submit-pwd" type="submit" tabindex="3" value="Log In">
+                            </div>
+                            <div class="modify-url">
+                                <a href="../../views/login/RBEmail.html" class="registr">Register</a>
+                                <a href="../../views/login/CPEmail.html" class="underline">Change Password</a>
+                                <a href="../../views/login/forgot.html" class="underline">Forgot Password</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form name="loginForm" id="form-mobile" class="hide-form" action="">
+                    <div class="login-main">
+                        <div class="login-box">
+                            <p></p>
+                            <div id="errormessage" class="errormessage"></div>
+                            <div class="pt-24">
+                                <input id="textbox-phone" type="tel" pattern="[+]{0}[0-9]{10}" required name="uid"
+                                    size="20" tabindex="1" class="phone textbox-input " placeholder="+84">
+                            </div>
+                            <div class="pt-24 pwd-input">
+                                <input type="password" required name="uid" size="20" tabindex="2"
+                                    class="pass textbox-input" placeholder="Password">
+                                <img class="psw-show-f2" src="../../styles/img/pictureContent/icon-show-pass.png"
+                                    style="visibility: hidden;">
+                                <img class="psw-hide-f2" src="../../styles/img/pictureContent/icon-hide-pass.png">
+                            </div>
+                            <div>
+                                <input class="login-submit-pwd" type="submit" tabindex="3" value="Log In">
+                            </div>
+                            <div class="modify-url">
+                                <a href="../../views/login/RBPhone.html" class="registr">Register</a>
+                                <a href="../../views/login/CPPhone.html" class="underline">Change Password</a>
+                                <a href="../../views/login/forgot.html" class="underline">Forgot Password</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <div class="title">
+                    © 2021 Copyright:
+                    <a class="">HTV Company</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="../../scripts/register/login.js"></script>
+
+</html>

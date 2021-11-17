@@ -6,8 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
-	<link rel="stylesheet" href="../../styles/home/css/mainHome.css" type="text/css" />
-	<link rel="stylesheet" href="../../styles/home/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="../../styles/home/Sass/css/home/home.css" type="text/css" />
 	<link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
@@ -15,146 +14,153 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<title>HTV Phones</title>
+	<script>
+		$(function () {
+			$("footer").load("../../views/common/footer.html");
+		});
+	</script>
 </head>
+
 
 <body>
 	<div id="main">
-		<div id="header" class="js-header">
-			<div id="top-nav">
-				<div class="top-nav-height">
-					<div class="container-header">
-						<div class="pull-right">
-							<a href="../../views/login/homeLogin.html">
-								<span class="icon-login ti-user"></span>
-								<span class="text-login">Log in</span>
+		<header>
+			<div id="header" class="js-header">
+				<div id="top-nav">
+					<div class="top-nav-height">
+						<div class="container-header">
+							<div class="pull-right">
+								<a href="../../views/login/homeLogin.html">
+									<span class="icon-login ti-user"></span>
+									<span class="text-login">Log in</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="navbar">
+					<div class="container-header nav-container">
+						<div class="navbar-header">
+							<a href="../../views/home/index.html" class="logo navbar-brand">
+								<img src="../../styles/img/logo.png" alt="" />
+							</a>
+						</div>
+						<nav id="htv-navbar" class="js-htv-navbar">
+							<ul id="nav">
+								<li class="hide-nav">
+									<a href="../../views/product/phones.html">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/mobile.svg);">
+										</span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/mobile-white.svg);">
+										</span>
+										<span class="text">Phones</span>
+									</a>
+								</li>
+								<li class="hide-nav">
+									<a href="../../views/product/laptops.html">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/laptop.svg);">
+										</span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/laptop-white.svg);">
+										</span>
+										<span class="text">Laptops</span>
+									</a>
+								</li>
+								<li class="hide-nav">
+									<a href="../../views/product/tablets.html">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/tables.svg)">
+										</span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/tables-white.svg)">
+										</span>
+										<span class="text">Tablets</span>
+									</a>
+								</li>
+								<li class="hide-nav">
+									<a href="../../views/product/wearables.html">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/wearables.svg)">
+										</span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/wearables-white.svg)">
+										</span>
+										<span class="text">Wearables</span>
+									</a>
+								</li>
+								<li class="hide-nav">
+									<a href="../../views/product/audio.html">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/audio.svg)">
+										</span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/audio-white.svg)">
+										</span>
+										<span class="text">Audios</span>
+									</a>
+								</li>
+								<li class="hide-nav">
+									<a onclick="subnavSlideY()" href="#">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/accessories-white.svg)"></span>
+										<span class="text">Accessories</span>
+										<span class="icon-font angle-down"
+											style="background-image: url(../../styles/font/themify-icons/SVG/angle-down.svg)">
+										</span>
+										<span class="icon-font-white change-icon-font angle-down"
+											style="background-image: url(../../styles/font/SVG/angle-down-white.svg)">
+										</span>
+									</a>
+									<ul class="subnav">
+										<li><a href="">Backup Charger</a></li>
+										<li><a href="">Adapter, Cap</a></li>
+										<li><a href="">Screen Protector</a></li>
+										<li><a href="">Case</a></li>
+										<li><a href="">Memory Cart</a></li>
+										<li><a href="">Selfie Stick</a></li>
+										<li><a href="">Waterproof Bag</a></li>
+										<li><a href="">Keychains</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="nav-right js-nav-right">
+							<span class="icon-font hidden"
+								style="background-image: url(../../styles/font/SVG/shopping.svg)">
+							</span>
+							<span class="icon-font-white change-icon-font hidden"
+								style="background-image: url(../../styles/font/SVG/shopping-white.svg)">
+							</span>
+							<span class="text hidden">Buy</span>
+							<span class="icon-font ti-angle-down hidden" style="margin-top:2px"></span>
+							<span class="icon-font-white change-icon-font ti-angle-down hidden"
+								style="margin-top: 2px; margin-left: 2px"></span>
+							<span class="icon-search ti-search" onclick="showSearchBox()"></span>
+							<span class="btn-menu icon-menu ti-menu"></span>
+						</div>
+						<div class="nav-search js-nav-search">
+							<div class="search-box">
+								<input type="text" placeholder="Search htv.com" class="search-header js-search-header" />
+								<a href="#" class="btn-search">
+									<span class="icon-btn-search ti-search"></span>
+								</a>
+							</div>
+							<a href="#" class="btn-close">
+								<span class="icon-btn-close ti-close" onclick="hideSearchBox()"></span>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="navbar">
-				<div class="container-header nav-container">
-					<div class="navbar-header">
-						<a href="../../views/home/index.html" class="logo navbar-brand">
-							<img src="../../styles/img/logo.png" alt="" />
-						</a>
-					</div>
-					<nav id="htv-navbar" class="js-htv-navbar">
-						<ul id="nav">
-							<li class="hide-nav">
-								<a href="../../views/product/phones.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/mobile.svg);">
-									</span>
-									<span class="icon-font-white change-icon-font"
-										style="background-image: url(../../styles/font/SVG/mobile-white.svg);">
-									</span>
-									<span class="text">Phones</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/laptops.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/laptop.svg);">
-									</span>
-									<span class="icon-font-white change-icon-font"
-										style="background-image: url(../../styles/font/SVG/laptop-white.svg);">
-									</span>
-									<span class="text">Laptops</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/tablets.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/tables.svg)">
-									</span>
-									<span class="icon-font-white change-icon-font"
-										style="background-image: url(../../styles/font/SVG/tables-white.svg)">
-									</span>
-									<span class="text">Tablets</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/wearables.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/wearables.svg)">
-									</span>
-									<span class="icon-font-white change-icon-font"
-										style="background-image: url(../../styles/font/SVG/wearables-white.svg)">
-									</span>
-									<span class="text">Wearables</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/audio.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/audio.svg)">
-									</span>
-									<span class="icon-font-white change-icon-font"
-										style="background-image: url(../../styles/font/SVG/audio-white.svg)">
-									</span>
-									<span class="text">Audios</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a onclick="subnavSlideY()" href="#">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
-									<span class="icon-font-white change-icon-font"
-										style="background-image: url(../../styles/font/SVG/accessories-white.svg)"></span>
-									<span class="text">Accessories</span>
-									<span class="icon-font angle-down"
-										style="background-image: url(../../styles/font/themify-icons/SVG/angle-down.svg)">
-									</span>
-									<span class="icon-font-white change-icon-font angle-down"
-										style="background-image: url(../../styles/font/SVG/angle-down-white.svg)">
-									</span>
-								</a>
-								<ul class="subnav">
-									<li><a href="">Backup Charger</a></li>
-									<li><a href="">Adapter, Cap</a></li>
-									<li><a href="">Screen Protector</a></li>
-									<li><a href="">Case</a></li>
-									<li><a href="">Memory Cart</a></li>
-									<li><a href="">Selfie Stick</a></li>
-									<li><a href="">Waterproof Bag</a></li>
-									<li><a href="">Keychains</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<div class="nav-right js-nav-right">
-						<span class="icon-font hidden"
-							style="background-image: url(../../styles/font/SVG/shopping.svg)">
-						</span>
-						<span class="icon-font-white change-icon-font hidden"
-							style="background-image: url(../../styles/font/SVG/shopping-white.svg)">
-						</span>
-						<span class="text hidden">Buy</span>
-						<span class="icon-font ti-angle-down hidden" style="margin-top:2px"></span>
-						<span class="icon-font-white change-icon-font ti-angle-down hidden"
-							style="margin-top: 2px; margin-left: 2px"></span>
-						<span class="icon-search ti-search" onclick="showSearchBox()"></span>
-						<span class="btn-menu icon-menu ti-menu"></span>
-					</div>
-					<div class="nav-search js-nav-search">
-						<div class="search-box">
-							<input type="text" placeholder="Search htv.com" class="search-header js-search-header" />
-							<a href="#" class="btn-search">
-								<span class="icon-btn-search ti-search"></span>
-							</a>
-						</div>
-						<a href="#" class="btn-close">
-							<span class="icon-btn-close ti-close" onclick="hideSearchBox()"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
+		</header>
 		<div id="slider" class="slider">
 			<div class="slide active">
-				<img src="../../styles/img/backgroundSilder/poster-1.jpg" alt="" />
+				<img src="../../styles/img/backgroundSilder/poster-4.webp" alt="" />
 				<!-- <div class="info">
 					<h2>Winter Mountains</h2>
 					<p>
@@ -171,7 +177,8 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
-				</div> -->
+				</div>    -->
+				
 			</div>
 			<div class="slide">
 				<img src="../../styles/img/backgroundSilder/poster-3.jpg" alt="" />
@@ -193,130 +200,136 @@
 				<div class="slide-icon"></div>
 			</div>
 		</div>
-
 		<div id="content">
 			<div class="new-content">
 				<div class="new-top">
 					<h2 class="title">What's New</h2>
 				</div>
 				<div class="panel-list-img">
-					<div class="panel-img-box mb mr" style="width: 778.847px;height: auto;">
-						<a href="">
-							<div class="img-box ">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
+					<div class="col-img">
+						<div class="panel-img-box mb-25 mr-25" style="width: 1050px;height: auto;">
+							<a href="">
+								<div class="img-box ">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
 									</div>
+									<picture>
+										<img class="place-img-center"
+											src="../../styles/img/pictureContent/slider-1.jpg">
+									</picture>
 								</div>
-								<picture>
-									<img class="place-img-center" src="../../styles/img/pictureContent/slider-1.jpg">
-								</picture>
-							</div>
-						</a>
+							</a>
+						</div>
+						<div class="panel-img-box mb-25" style="width: 590px;height: auto;">
+							<a href="">
+								<div class="img-box">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
+									</div>
+									<picture>
+										<img class="place-img-center" src="../../styles/img/pictureContent/slider-2.jpg"
+											alt="">
+									</picture>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="panel-img-box mb" style="width: 439.173px;height: auto;">
-						<a href="">
-							<div class="img-box">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
+					<div class="col-img">
+						<div class="panel-img-box mb-25 mr-25" style="width: 786px;height: auto;">
+							<a href="">
+								<div class="img-box">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
 									</div>
+									<picture>
+										<img class="place-img-center" src="../../styles/img/pictureContent/slider-3.jpg"
+											alt="">
+									</picture>
 								</div>
-								<picture>
-									<img class="place-img-center" src="../../styles/img/pictureContent/slider-2.jpg"
-										alt="">
-								</picture>
-							</div>
-						</a>
+							</a>
+						</div>
+						<div class="panel-img-box mb-25" style="width: 1050px;height: auto;">
+							<a href="">
+								<div class="img-box">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
+									</div>
+									<picture>
+										<img class="place-img-center" src="../../styles/img/pictureContent/slider-7.jpg"
+											alt="">
+									</picture>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="panel-img-box mb mr" style="width: 453.173px;height: auto;">
-						<a href="">
-							<div class="img-box">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
+					<div class="col-img">
+						<div class="panel-img-box mb-25 mr-25" style="width: 583.173px;height: auto;">
+							<a href="">
+								<div class="img-box">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
 									</div>
+									<picture>
+										<img class="place-img-bottom" src="../../styles/img/pictureContent/slider-4.jpg"
+											alt="">
+									</picture>
 								</div>
-								<picture>
-									<img class="place-img-center" src="../../styles/img/pictureContent/slider-7.jpg"
-										alt="">
-								</picture>
-							</div>
-						</a>
-					</div>
-					<div class="panel-img-box mb" style="width: 764.847px;height: auto;">
-						<a href="">
-							<div class="img-box">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
+							</a>
+						</div>
+						<div class="panel-img-box mb-25 mr-25" style="width: 476.173px;height: auto;">
+							<a href="">
+								<div class="img-box">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
 									</div>
+									<picture>
+										<img class="place-img-bottom" src="../../styles/img/pictureContent/slider-5.jpg"
+											alt="">
+									</picture>
 								</div>
-								<picture>
-									<img class="place-img-center" src="../../styles/img/pictureContent/slider-3.jpg"
-										alt="">
-								</picture>
-							</div>
-						</a>
-					</div>
-					<div class="panel-img-box mb mr" style="width: 453.173px;height: auto;">
-						<a href="">
-							<div class="img-box">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
+							</a>
+						</div>
+						<div class="panel-img-box mb-25" style="width: 487.173px;height: auto;">
+							<a href="">
+								<div class="img-box">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Brand Name</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+										</div>
 									</div>
+									<picture>
+										<img class="place-img-bottom" src="../../styles/img/pictureContent/slider-6.jpg"
+											alt="">
+									</picture>
 								</div>
-								<picture>
-									<img class="place-img-bottom" src="../../styles/img/pictureContent/slider-4.jpg"
-										alt="">
-								</picture>
-							</div>
-						</a>
-					</div>
-					<div class="panel-img-box mb mr" style="width: 366.173px;height: auto;">
-						<a href="">
-							<div class="img-box">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
-									</div>
-								</div>
-								<picture>
-									<img class="place-img-bottom" src="../../styles/img/pictureContent/slider-5.jpg"
-										alt="">
-								</picture>
-							</div>
-						</a>
-					</div>
-					<div class="panel-img-box mb" style="width: 374.173px;height: auto;">
-						<a href="">
-							<div class="img-box">
-								<div class="mask">
-									<div class="text-box">
-										<div class="category">PRODUCT</div>
-										<div class="name js-text-dot-en">Brand Name</div>
-										<div class="text-in-img">Undeveloped Feature</div>
-									</div>
-								</div>
-								<picture>
-									<img class="place-img-bottom" src="../../styles/img/pictureContent/slider-6.jpg"
-										alt="">
-								</picture>
-							</div>
-						</a>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -351,112 +364,11 @@
 					</div>
 				</div>
 				<div class="btn-group">
-					<a href="#" class="btn-more mr-15">More Events</a>
+					<a href="#" class="btn-more mr-25-15">More Events</a>
 					<a href="#" class="btn-more ml-15">More News</a>
 				</div>
 			</div>
-
-			<footer class="text-center text-lg-start bg-light text-muted">
-				<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-					<div class="me-5 d-none d-lg-block">
-						<span>Get connected with us on social networks:</span>
-					</div>
-					<div>
-						<a href="" class="me-4 text-reset">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fab fa-google"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</section>
-				<section class="">
-					<div class="container text-center text-md-start mt-5">
-						<div class="row mt-3">
-							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-								<h6 class="text-uppercase fw-bold mb-4">
-									<i class="fas fa-gem me-3"></i> Company HTV
-								</h6>
-								<p>
-									Ho Chi Minh City University of Technology and Education
-								</p>
-							</div>
-
-							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-								<h6 class="text-uppercase fw-bold mb-4">
-									Products
-								</h6>
-								<p>
-									<a href="#!" class="text-reset">Phones</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Laptops</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Tablets</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Wearables</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Audios</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Accessories</a>
-								</p>
-							</div>
-							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-								<h6 class="text-uppercase fw-bold mb-4">
-									Useful links
-								</h6>
-								<p>
-									<a href="#!" class="text-reset">Pricing</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Settings</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Orders</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Help</a>
-								</p>
-							</div>
-
-							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-								<h6 class="text-uppercase fw-bold mb-4">
-									Contact
-								</h6>
-								<p><i class="fas fa-home me-3"></i> HCMUTE</p>
-								<p>
-									<i class="fas fa-envelope me-3"></i>
-									19110283@student.hcmute.edu.vn
-								</p>
-								<p><i class="fas fa-phone me-3"></i> 033 4193816</p>
-								<p><i class="fas fa-print me-3"></i> 078 2883817</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<div class="text-center p-4 top-footer">
-					© 2021 Copyright:
-					<a class="text-reset fw-bold">HTV Company</a>
-				</div>
-
-			</footer>
+			
 			<div id="back-to-top" class="back-to-top">
 				<button id="back-to-top-btn" title="Back to top">
 					<i class="fas fa-angle-double-up"></i>
@@ -470,7 +382,10 @@
 					<i class="fas fa-moon-cloud"></i>
 				</button>
 			</div>
-			<script src="../../scripts/script.js"></script>
+		</div>
+		<footer>
+		</footer>
+	</div>
 </body>
-
+<script src="../../scripts/home/script.js"></script>
 </html>
