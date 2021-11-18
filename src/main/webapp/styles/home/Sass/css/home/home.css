@@ -706,6 +706,24 @@ h6 {
 }
 /* Break Point */
 /* PC */
+@media screen and (max-width: 1680px) {
+  .panel-list-img {
+    gap: 30px !important;
+    transition: 0.3s ease !important;
+  }
+  .panel-list-img .list-top-img {
+    grid-column-gap: 30px !important;
+  }
+  .panel-list-img .list-center-img {
+    grid-column-gap: 30px !important;
+  }
+  .panel-list-img .list-bottom-img {
+    grid-column-gap: 30px !important;
+  }
+  .panel-list-img .img-box {
+    max-height: 300px !important;
+  }
+}
 @media screen and (max-width: 1400px) {
   .panel-list-img {
     gap: 15px !important;
