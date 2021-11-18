@@ -2,7 +2,31 @@
 
 /* PC */
 @media screen and (max-width: 1400px){
-    
+    .panel-list-img{
+        $space-column: 15px !important;
+        $space-row: 15px !important;
+        $max-height-img-box: 300px !important;
+        gap: $space-row;
+        transition: 0.3s ease !important;
+
+        .list-top-img{
+            grid-column-gap: $space-column;
+        }
+
+        .list-center-img{
+            grid-column-gap: $space-column;
+        }
+
+        .list-bottom-img{
+            grid-column-gap: $space-column;
+        }
+
+        .img{
+            &-box{
+                max-height: $max-height-img-box;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
