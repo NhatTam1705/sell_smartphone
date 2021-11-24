@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-family: var(--bs-font-family);
+    width: 100%;
+}
+
+html,
+body {
+    background-color: var(--bs-color-body);
+    font-size: 17px !important;
+    color: var(--bs-font-color-light);
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+

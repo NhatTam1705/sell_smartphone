@@ -1,32 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-
-:root {
-    --bs-color-top-nav: #5c5858;
-    --bs-font-color-dark: #ced6e0;
-    --bs-font-color-light: #1e272e;
-    --bs-color-header-footer: #fff;
-    --bs-color-body: #ffffff;
-    --bs-color-border: #000000;
-    --bs-color-change-nav: #d81414;
-    --bs-background-btn-back-top: #6e3c3c;
-    --bs-color-btn-back-top: #333333;
-    --bs-color-event-box: #f1f1f1;
-    --bs-color-topic: #535c68;
-    --bs-colo-footer: #f8f9fa;
-    --bs-color-btn-more: #a71547;
-    --bs-color-change-mode: #d1d8e0;
-    --bs-background-btn-change-mode: #2f3640;
-    --bs-color-red: #d81414;
-    // --bs-font-family: Arial, Helvetica, sans-serif;
-    --bs-height-navbar: 84px;
-    --bs-height-header: 108px;
-}
-
 @keyframes circular {
     from {
         -webkit-transform: rotate(0deg);
@@ -60,18 +31,18 @@
         float: right;
         width: 312px;
         height: 25px;
-    }
 
-    a {
-        height: 25px;
-        float: right;
-        line-height: 25px;
-        margin-left: 10px;
-        margin-right: 10px;
-        text-decoration: none;
-        color: var(--bs-font-color-dark);
-
-        .icon-login {
+        &-login {
+            height: 25px;
+            float: right;
+            line-height: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: var(--bs-font-color-dark);
+    
+        }
+        &-icon-login {
             font-size: 15px;
             margin-right: 5px;
         }
@@ -157,6 +128,7 @@
             line-height: 40px;
             padding-right: 3px;
             color: var(--bs-font-color-light);
+            width: 30px;
         }
 
         .icon-search {
@@ -176,46 +148,45 @@
         width: 480px;
         position: absolute;
         right: 0;
-        display: none;
+        visibility: hidden;
         margin-top: 18px;
+        display: flex;
 
-        .js-nav-search {
-            input {
-                transition: transform 3s;
-            }
-        }
-
-        .search-box {
-            border: 1px solid var(--bs-color-border);
+        &-box {
+            // border: 1px solid var(--bs-color-border);
             height: 100%;
             width: 90%;
             background-color: #ffffff;
+            display: flex;
+            position: relative;
 
-            input {
+            &-header {
+                border: 1px solid #000;
+                outline: none;
                 height: 100%;
-                width: 90%;
-                padding-left: 15px;
+                width: 100%;
+                padding:0 30px 0 15px;
                 font-size: 18px;
-                border-style: none;
+                outline: none;
+                border-radius: 6px;
             }
 
-            .btn-search {
+            &-btn {
                 text-decoration: none;
-                height: 60%;
-                width: 6%;
                 position: absolute;
-                margin-top: 9px;
+                margin-top: 11px;
                 color: #616161;
-
-                .icon-btn-search {
-                    font-size: 25px;
-                    margin-top: 20px;
-                    text-align: center;
-                }
+                right: 0;
+                margin-right:5px;
+            }
+            &-icon-search{
+                font-size: 25px;
+                margin-top: 20px;
+                text-align: center;
             }
         }
 
-        .btn-close {
+        &-btn-close {
             position: absolute;
             text-decoration: none;
             line-height: 46px;
@@ -274,6 +245,7 @@
     height: inherit;
     list-style-type: none;
     display: inline-block;
+    margin-bottom: 0;
     ul{
         margin-bottom:  0 !important;
     }
@@ -281,7 +253,7 @@
         position: relative;
         z-index: 20;
 
-        &:hover .subnav {
+        &:hover:last-child .subnav{
             display: block;
         }
 
@@ -325,5 +297,130 @@
             text-align: left;
             line-height: 50px;
         }
+    }
+}
+
+@include maxw(1024px){
+    .top-nav {
+        z-index: 110;
+
+        .top-nav-height {
+            position: static;
+            height: 25px;
+            text-align: right;
+            background-color: var(--background-top-nav);
+        }
+
+        .top-nav-height {
+            a {
+                height: 25px;
+                line-height: 25px;
+                margin-left: 10px;
+                margin-right: 0;
+                font-size: 14px;
+                float: left;
+                color: var(--color-text);
+                width: auto;
+                padding: 0 10px;
+
+                .iconfont {
+                    margin-right: 5px;
+                    border: none;
+                    font-size: 14px;
+                    width: auto;
+                    height: auto;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@include minw(1100px){
+    .nav-right .icon-menu {
+        display: none;
+    }
+}
+
+@include maxw(1100px){
+    #nav {
+        position: absolute;
+        display: inline-block;
+        top: 101%;
+        width: 100%;
+        height: auto;
+        transform: translateX(120%);
+
+        .nav-item-show {
+            visibility: visible;
+            transform: translateX(-120%);
+        }
+
+        &,
+        li {
+            display: block;
+        }
+
+        li {
+            transition: all 1s;
+        }
+
+        a {
+            background-color: var(--bs-color-header-footer);
+        }
+        
+        .nav-product-hide{
+            display: none;
+            transition: 0.3s linear;
+        }
+    
+        .subnav{
+            display: none !important;
+        }
+
+        .show-subnav{
+            display: block !important;
+        }
+        
+        .rotate-angle-down{
+            transform: rotate(180deg);
+        }
+    }
+
+    #text {
+        display: none;
+    }
+
+    .nav-right {
+        height: 30px;
+
+        .hidden {
+            display: none;
+        }
+
+        .icon-search {
+            margin-left: 20px;
+            left: 0;
+        }
+
+        .icon-menu {
+            position: absolute;
+            right: 0;
+            margin-right: 15px;
+            font-size: 30px;
+        }
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 55px;
+    }
+
+    .icon-font {
+        width: 30px;
+    }
+
+    .icon-font-white {
+        width: 30px;
     }
 }

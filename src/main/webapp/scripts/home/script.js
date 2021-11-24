@@ -2,21 +2,21 @@
 const menu = document.querySelector('.btn-menu')
 var click = 0
 menu.addEventListener('click', () => {
-    const navigation = document.querySelectorAll('.hide-nav')
-        navigation.forEach((nav) => {
-            nav.classList.toggle('height-navbar')
+    const navigation = document.querySelectorAll('.nav-item')
+    navigation.forEach((nav) => {
+        nav.classList.toggle('nav-item-show')
     })
 });
 
 
 var nav = document.getElementById('header')
 let lastScrollY = window.scrollY;
-var hideNavbar = document.querySelectorAll('.hide-nav')
+var hideNavbar = document.querySelectorAll('.nav-item')
 window.addEventListener("scroll", () => {
     if (lastScrollY < window.scrollY) {
         nav.classList.add('header-hidden');
         hideNavbar.forEach((hide) => {
-            hide.classList.remove('height-navbar')
+            hide.classList.remove('nav-item-show')
         });
         click = 0;
     } else {
@@ -25,25 +25,35 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY;
 });
 
+//nav-product-hide
+let slideUp = document.querySelector('.nav-item-slide-up')
+let showSubnav = document.querySelector('.subnav')
+let rotateAngleDown = document.querySelector('.angle-down')
+slideUp.addEventListener('click', (e) => {
+    e.preventDefault()
+    for (var i = 0; i < 5; i++)
+        hideNavbar[i].classList.toggle('nav-product-hide')
+    showSubnav.classList.toggle('show-subnav')
+    rotateAngleDown.classList.toggle('rotate-angle-down')
+})
 
 
-//Search
+const htvNavBar = document.getElementById('nav')
+const navRight = document.querySelector('.nav-right')
+const showSearchBox = document.querySelector('.icon-search')
+const navSearch = document.querySelector('.nav-search')
+const hideSearchBox = document.querySelector('.nav-search-btn-close')
+showSearchBox.addEventListener('click',() =>{
+    navRight.style.visibility = 'hidden'
+    navSearch.style.visibility = 'visible';
+    htvNavBar.style.visibility = 'hidden'
+})
 
-const navSearch = document.querySelector('.js-nav-search')
-const navRight = document.querySelector('.js-nav-right')
-const htvNavBar = document.querySelector('.js-htv-navbar')
-
-function showSearchBox() {
-    navSearch.classList.add('show-nav-search')
-    navRight.classList.add('hide-nav-right')
-    htvNavBar.classList.add('hide-htv-navbar')
-}
-
-function hideSearchBox() {
-    navSearch.classList.remove('show-nav-search')
-    navRight.classList.remove('hide-nav-right')
-    htvNavBar.classList.remove('hide-htv-navbar')
-}
+hideSearchBox.addEventListener('click',() =>{
+    navRight.style.visibility = 'visible'
+    navSearch.style.visibility = 'hidden';
+    htvNavBar.style.visibility = 'visible'
+})
 
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
@@ -127,6 +137,7 @@ slider.addEventListener("mouseout", () => {
 
 
 window.addEventListener("scroll", scrollFunction);
+
 function scrollFunction() {
     if (window.pageYOffset > 300) { // Show backToTopButton
         if (!backToTopButton.classList.contains("btnEntrance")) {

@@ -6,8 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
-	<link rel="stylesheet" href="../../styles/home/Sass/css/home/responsive.css">
-	<link rel="stylesheet" href="../../styles/home/Sass/css/home/home.css" type="text/css" />
+	<link rel="stylesheet" href="../../styles/Sass/css/home/home.css" type="text/css" />
 	<link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
@@ -31,9 +30,9 @@
 					<div class="top-nav-height">
 						<div class="container-header">
 							<div class="pull-right">
-								<a href="../../views/login/home.html">
-									<span class="icon-login ti-user"></span>
-									<span class="text-login">Log in</span>
+								<a href="../../views/login/home.html" class="pull-right-login">
+									<span class="pull-right-icon-login ti-user"></span>
+									<span class="pull-right-text-login">Log in</span>
 								</a>
 							</div>
 						</div>
@@ -46,9 +45,9 @@
 								<img src="../../styles/img/logo.png" alt="" />
 							</a>
 						</div>
-						<nav id="htv-navbar" class="js-htv-navbar">
+						<nav id="htv-navbar">
 							<ul id="nav">
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/phones.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/mobile.svg);">
@@ -59,7 +58,7 @@
 										<span class="text">Phones</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/laptops.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/laptop.svg);">
@@ -70,7 +69,7 @@
 										<span class="text">Laptops</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/tablets.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/tables.svg)">
@@ -81,7 +80,7 @@
 										<span class="text">Tablets</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/wearables.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/wearables.svg)">
@@ -92,7 +91,7 @@
 										<span class="text">Wearables</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/audio.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/audio.svg)">
@@ -103,7 +102,7 @@
 										<span class="text">Audios</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item nav-item-slide-up">
 									<a onclick="subnavSlideY()" href="#">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
@@ -130,7 +129,7 @@
 								</li>
 							</ul>
 						</nav>
-						<div class="nav-right js-nav-right">
+						<div class="nav-right">
 							<span class="icon-font hidden"
 								style="background-image: url(../../styles/font/SVG/shopping.svg)">
 							</span>
@@ -141,19 +140,19 @@
 							<span class="icon-font ti-angle-down hidden" style="margin-top:2px"></span>
 							<span class="icon-font-white change-icon-font ti-angle-down hidden"
 								style="margin-top: 2px; margin-left: 2px"></span>
-							<span class="icon-search ti-search" onclick="showSearchBox()"></span>
+							<span class="icon-search ti-search"></span>
 							<span class="btn-menu icon-menu ti-menu"></span>
 						</div>
-						<div class="nav-search js-nav-search">
-							<div class="search-box">
+						<div class="nav-search">
+							<div class="nav-search-box">
 								<input type="text" placeholder="Search htv.com"
-									class="search-header js-search-header" />
-								<a href="#" class="btn-search">
-									<span class="icon-btn-search ti-search"></span>
+									class="nav-search-box-header">
+								<a href="#" class="nav-search-box-btn">
+									<span class="nav-search-box-icon-search ti-search"></span>
 								</a>
 							</div>
-							<a href="#" class="btn-close">
-								<span class="icon-btn-close ti-close" onclick="hideSearchBox()"></span>
+							<a href="#" class="nav-search-btn-close">
+								<span class="nav-search-icon-close ti-close" onclick="hideSearchBox()"></span>
 							</a>
 						</div>
 					</div>
@@ -227,6 +226,22 @@
 								</a>
 							</div>
 							<div class="img-box">
+								<a href="">
+									<img src="../../styles/img/pictureContent/slider-2.jpg" alt="" class="img-click">
+									<div class="mask">
+										<div class="text-box">
+											<div class="category">PRODUCT</div>
+											<div class="name js-text-dot-en">Phone</div>
+											<div class="text-in-img">Undeveloped Feature</div>
+											<div class="more">
+												<span>Learn More</span>
+												<i class="iconfont ti-angle-right"></i>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="img-box" style="display: none">
 								<a href="">
 									<img src="../../styles/img/pictureContent/slider-2.jpg" alt="" class="img-click">
 									<div class="mask">
@@ -355,7 +370,8 @@
 											<span class="name-location">Viet Nam</span>
 										</div>
 										<div class="info-text">
-											Huawei and Informa Tech will jointly host the Better World Summit and discuss green development...
+											Huawei and Informa Tech will jointly host the Better World Summit and
+											discuss green development...
 										</div>
 									</div>
 								</div>
@@ -375,7 +391,8 @@
 											<span class="name-location">Viet Nam</span>
 										</div>
 										<div class="info-text">
-											Connect with experts and leaders, explore opportunities and new innovations and solutions.
+											Connect with experts and leaders, explore opportunities and new innovations
+											and solutions.
 										</div>
 									</div>
 								</div>
@@ -439,20 +456,21 @@
 					</div>
 				</div>
 			</section>
-
-			<div id="back-to-top" class="back-to-top">
-				<button id="back-to-top-btn" title="Back to top">
-					<i class="fas fa-angle-double-up"></i>
-				</button>
-			</div>
-			<div class="toggle-container">
-				<button class="theme-light theme-btn light" onclick="setTheme('light')" title="Light mode">
-					<i class="fas fa-sun-cloud"></i>
-				</button>
-				<button class="theme-dark theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
-					<i class="fas fa-moon-cloud"></i>
-				</button>
-			</div>
+			<button>
+				<div id="back-to-top" class="back-to-top">
+					<button id="back-to-top-btn" title="Back to top">
+						<i class="fas fa-angle-double-up"></i>
+					</button>
+				</div>
+				<div class="toggle-container">
+					<button class="theme-light theme-btn light" onclick="setTheme('light')" title="Light mode">
+						<i class="fas fa-sun-cloud"></i>
+					</button>
+					<button class="theme-dark theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+						<i class="fas fa-moon-cloud"></i>
+					</button>
+				</div>
+			</button>
 		</div>
 		<footer>
 		</footer>
