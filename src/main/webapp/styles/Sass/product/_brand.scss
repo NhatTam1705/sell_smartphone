@@ -1,0 +1,35 @@
+.brands {
+    // max-width: 100vw;
+    // justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    .brand{
+        width: 100vw;
+        &-lst{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 10px;
+            gap: 8px 8px;
+            
+            &-item {
+                display: flex;
+                border: 2px solid $gray-color;
+                cursor: pointer;
+                padding: 6px 13px;
+                background-color: $white-color;
+    
+                &:hover {
+                    border: 2px solid $primary-color;
+                    transition: 1s;
+                }
+    
+            }
+            &-img {
+                margin-right: 0;
+                width: auto;
+                height: 22px;
+            }
+        }
+    }
+}

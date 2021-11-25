@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-	<link rel="stylesheet" href="../../styles/home/Sass/css/product/phone.css">
+	<link rel="stylesheet" href="../../styles/Sass/css/product/phone.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -27,9 +27,9 @@
 					<div class="top-nav-height">
 						<div class="container-header">
 							<div class="pull-right">
-								<a href="../../views/login/homeLogin.html">
-									<span class="icon-login ti-user"></span>
-									<span class="text-login">Log in</span>
+								<a href="../../views/login/home.html" class="pull-right-login">
+									<span class="pull-right-icon-login ti-user"></span>
+									<span class="pull-right-text-login">Log in</span>
 								</a>
 							</div>
 						</div>
@@ -42,9 +42,9 @@
 								<img src="../../styles/img/logo.png" alt="" />
 							</a>
 						</div>
-						<nav id="htv-navbar" class="js-htv-navbar">
+						<nav id="htv-navbar">
 							<ul id="nav">
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/phones.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/mobile.svg);">
@@ -55,7 +55,7 @@
 										<span class="text">Phones</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/laptops.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/laptop.svg);">
@@ -66,7 +66,7 @@
 										<span class="text">Laptops</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/tablets.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/tables.svg)">
@@ -77,7 +77,7 @@
 										<span class="text">Tablets</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/wearables.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/wearables.svg)">
@@ -88,7 +88,7 @@
 										<span class="text">Wearables</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item">
 									<a href="../../views/product/audio.html">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/audio.svg)">
@@ -99,7 +99,7 @@
 										<span class="text">Audios</span>
 									</a>
 								</li>
-								<li class="hide-nav">
+								<li class="nav-item nav-item-slide-up">
 									<a onclick="subnavSlideY()" href="#">
 										<span class="icon-font"
 											style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
@@ -126,7 +126,7 @@
 								</li>
 							</ul>
 						</nav>
-						<div class="nav-right js-nav-right">
+						<div class="nav-right">
 							<span class="icon-font hidden"
 								style="background-image: url(../../styles/font/SVG/shopping.svg)">
 							</span>
@@ -137,19 +137,18 @@
 							<span class="icon-font ti-angle-down hidden" style="margin-top:2px"></span>
 							<span class="icon-font-white change-icon-font ti-angle-down hidden"
 								style="margin-top: 2px; margin-left: 2px"></span>
-							<span class="icon-search ti-search" onclick="showSearchBox()"></span>
+							<span class="icon-search ti-search"></span>
 							<span class="btn-menu icon-menu ti-menu"></span>
 						</div>
-						<div class="nav-search js-nav-search">
-							<div class="search-box">
-								<input type="text" placeholder="Search htv.com"
-									class="search-header js-search-header" />
-								<a href="#" class="btn-search">
-									<span class="icon-btn-search ti-search"></span>
+						<div class="nav-search">
+							<div class="nav-search-box">
+								<input type="text" placeholder="Search htv.com" class="nav-search-box-header">
+								<a href="#" class="nav-search-box-btn">
+									<span class="nav-search-box-icon-search ti-search"></span>
 								</a>
 							</div>
-							<a href="#" class="btn-close">
-								<span class="icon-btn-close ti-close" onclick="hideSearchBox()"></span>
+							<a href="#" class="nav-search-btn-close">
+								<span class="nav-search-icon-close ti-close" onclick="hideSearchBox()"></span>
 							</a>
 						</div>
 					</div>
@@ -157,7 +156,7 @@
 			</div>
 		</header>
 		<section class="slider margin">
-			<img src="../../styles/img/bannner/iphone-13.jpg" alt="">
+			<img src="../../styles/img/bannner/iphone-13.jpg" class="slider-img" alt="">
 		</section>
 		<section class="filter">
 			<div class="filter-box">
@@ -462,25 +461,27 @@
 					</div>
 				</div>
 			</div>
-			<div id="brand" class="margin">
-				<div id="lst-brand" class="mb-10">
-					<a href="" class="brand-item rd-52 pr-10">
-						<img src="../../styles/img/brand/iphone.png" alt="" class="no-text">
+		</section>
+		<section class="brands margin">
+			<div class="brand">
+				<div class="brand-lst">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/iphone.png" alt="" class="brand-lst-img">
 					</a>
-					<a href="" class="brand-item rd-52">
-						<img src="../../styles/img/brand/oppo.jpg" alt="" class="no-text">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/oppo.jpg" alt="" class="brand-lst-img">
 					</a>
-					<a href="" class="brand-item rd-52">
-						<img src="../../styles/img/brand/realme.png" alt="" class="no-text">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/realme.png" alt="" class="brand-lst-img">
 					</a>
-					<a href="" class="brand-item rd-52">
-						<img src="../../styles/img/brand/samsung.png" alt="" class="no-text">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/samsung.png" alt="" class="brand-lst-img">
 					</a>
-					<a href="" class="brand-item rd-52">
-						<img src="../../styles/img/brand/vivo.jpg" alt="" class="no-text">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/vivo.jpg" alt="" class="brand-lst-img">
 					</a>
-					<a href="" class="brand-item rd-52">
-						<img src="../../styles/img/brand/xiaomi.png" alt="" class="no-text">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/xiaomi.png" alt="" class="brand-lst-img">
 					</a>
 				</div>
 			</div>
@@ -496,11 +497,11 @@
 							<img src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold-3-green-1-600x600.jpg"
 								alt="" class="card-image" />
 							<div class="card-content">
-								<h3 class="card-name">Samsung Galaxy Z Fold 5G</h3>
-								<div class="card-price">
+								<h3 class="card-content-name">Samsung Galaxy Z Fold 5G</h3>
+								<div class="card-content-price">
 									44.990.000₫
 								</div>
-								<div class="card-discount">
+								<div class="card-content-discount">
 									Sale 1.000.000₫
 								</div>
 							</div>
@@ -514,11 +515,11 @@
 							<img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-do-new-2-600x600.jpg"
 								alt="" class="card-image" />
 							<div class="card-content">
-								<h3 class="card-name">Iphone 12</h3>
-								<div class="card-price">
+								<h3 class="card-content-name">Iphone 12</h3>
+								<div class="card-content-price">
 									44.990.000₫
 								</div>
-								<div class="card-discount">
+								<div class="card-content-discount">
 									Sale 1.000.000₫
 								</div>
 							</div>
@@ -532,11 +533,11 @@
 							<img src="https://cdn.tgdd.vn/Products/Images/42/248293/xiaomi-11t-white-1-2-600x600.jpg"
 								alt="" class="card-image" />
 							<div class="card-content">
-								<h3 class="card-name">Xiaomi 11T 5G 128GB</h3>
-								<div class="card-price">
+								<h3 class="card-content-name">Xiaomi 11T 5G 128GB</h3>
+								<div class="card-content-price">
 									44.990.000₫
 								</div>
-								<div class="card-discount">
+								<div class="card-content-discount">
 									Sale 1.000.000₫
 								</div>
 							</div>
@@ -550,11 +551,11 @@
 							<img src="https://cdn.tgdd.vn/Products/Images/42/241049/samsung-galaxy-a03s-black-600x600.jpg"
 								alt="" class="card-image" />
 							<div class="card-content">
-								<h3 class="card-name">Samsung Galaxy A03S</h3>
-								<div class="card-price">
+								<h3 class="card-content-name">Samsung Galaxy A03S</h3>
+								<div class="card-content-price">
 									44.990.000₫
 								</div>
-								<div class="card-discount">
+								<div class="card-content-discount">
 									Sale 1.000.000₫
 								</div>
 							</div>
@@ -568,11 +569,11 @@
 							<img src="https://cdn.tgdd.vn/Products/Images/42/239747/oppo-reno6-z-5g-aurora-1-600x600.jpg"
 								alt="" class="card-image" />
 							<div class="card-content">
-								<h3 class="card-name">Oppo Reno6 Z 5G</h3>
-								<div class="card-price">
+								<h3 class="card-content-name">Oppo Reno6 Z 5G</h3>
+								<div class="card-content-price">
 									44.990.000₫
 								</div>
-								<div class="card-discount">
+								<div class="card-content-discount">
 									Sale 1.000.000₫
 								</div>
 							</div>

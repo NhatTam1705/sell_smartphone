@@ -1,6 +1,7 @@
 .filter-beetle {
     margin: 20px auto;
     width: 1200px;
+    padding: 0 10px;
 
     &:after{
         content: '';
@@ -230,34 +231,8 @@
     }
 }
 
-#brand {
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-
-    #lst-brand {
-        display: flex;
-        flex-wrap: wrap;
-
-        .brand-item {
-            display: flex;
-            border: 2px solid $gray-color;
-            cursor: pointer;
-            margin-right: 8px;
-            margin-bottom: 10px;
-            padding: 6px 13px;
-            background-color: $white-color;
-
-            &:hover {
-                border: 2px solid $primary-color;
-                transition: 1s;
-            }
-        }
-
-        img.no-text {
-            margin-right: 0;
-            width: auto;
-            height: 30px;
-        }
-    }
-}
+// @include maxw(767px){
+//     .filter-beetle{
+//         padding: 0 10px;    
+//     }
+// }

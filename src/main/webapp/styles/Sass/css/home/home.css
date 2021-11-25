@@ -917,6 +917,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  #navbar .nav-right .icon-search {
+    display: none !important;
+  }
+
   #content .new-content {
     --width-content: 100%;
   }

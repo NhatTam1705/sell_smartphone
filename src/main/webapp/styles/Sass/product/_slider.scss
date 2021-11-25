@@ -1,11 +1,19 @@
 .slider {
     position: relative;
     margin-top: 108px;
-    width: 1200px;
+    max-width: 1200px;
+    display: flex;
 
-    img {
+    &-img {
         height: 285px;
-        width: 1200px;
         object-fit: cover;
+        width: 100vw;
+        padding: 0 10px;
     }
 }
+
+// @include maxw(767px){
+//     .slider{
+//         padding: 0 10px;
+//     }
+// }

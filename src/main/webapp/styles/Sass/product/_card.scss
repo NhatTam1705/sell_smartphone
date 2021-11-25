@@ -34,6 +34,8 @@
         border: 1px solid $border-card-color;
         border-radius: 0;
         width: calc(calc(100% / var(--columns)) - var(--spacing));
+        display: flex;
+        flex-direction: column;
         // margin-left: var(--spacing);
         // margin-bottom: var(--spacing);
 
@@ -49,67 +51,63 @@
         &:hover .card-name {
             color: $primary-color;
         }
-    }
 
-    .card-sale {
-        --font-size: 12px;
-        padding: 10px 15px;
-        font-size: var(--font-size);
-        color: #000;
-        display: flex;
-
-        p {
-            display: inline-block;
-            background-color: #e6e6e6;
-            margin-bottom: 0;
-        }
-    }
-
-    .card-image {
-        --height: 250px;
-        padding: 10px 0;
-        height: var(--height);
-        width: 100%;
-        object-fit: cover;
-        flex-shrink: 0;
-        margin-top: 3px;
-        transition: 0.3s ease-in-out;
-    }
-
-    .card-content {
-        flex-direction: column;
-        flex: 1;
-        display: flex;
-        padding: 10px;
-
-        .card-name {
-            --font-size: 16px;
-            font-weight: 400;
+        &-sale {
+            --font-size: 12px;
+            padding: 10px 15px;
             font-size: var(--font-size);
-            margin-bottom: 10px;
+            color: #000;
+            display: flex;
+
+            p {
+                display: inline-block;
+                background-color: #e6e6e6;
+                margin-bottom: 0;
+            }
         }
 
-        .card-price {
-            --font-size: 17px;
-            font-size: 17px;
-            padding-bottom: 5px;
-            font-weight: bold;
-            margin-toP: auto;
+        &-image {
+            --height: 250px;
+            padding: 10px 0;
+            height: var(--height);
+            width: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            margin-top: 3px;
+            transition: 0.3s ease-in-out;
         }
 
-        .card-discount {
-            --font-size: 14px;
-            font-size: var(--font-size);
+        &-content {
+            flex-direction: column;
+            flex: 1;
+            display: flex;
+            padding: 10px;
+
+            &-name {
+                --font-size: 16px;
+                font-weight: 400;
+                font-size: var(--font-size);
+                margin-bottom: 10px;
+            }
+
+            &-price {
+                --font-size: 17px;
+                font-size: 17px;
+                padding-bottom: 5px;
+                font-weight: bold;
+                margin-toP: auto;
+            }
+
+            &-discount {
+                --font-size: 14px;
+                font-size: var(--font-size);
+            }
         }
     }
 
-    .card {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
-@media screen and (max-width: 1023px) {
+@include maxw (1023px) {
     .cards {
         --columns: 4;
 
@@ -119,7 +117,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@include maxw (767px) {
     .cards {
         --spacing: 15px;
         --columns: 3;
@@ -130,7 +128,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@include maxw (500px) {
     .cards {
         --spacing: 15px;
         --columns: 2;
@@ -141,7 +139,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@include maxw (1200px) {
     html {
         width: 1200px;
     }
