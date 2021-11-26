@@ -9,23 +9,23 @@ menu.addEventListener('click', () => {
 });
 
 
-var nav = document.getElementById('header')
-let lastScrollY = window.scrollY;
-var hideNavbar = document.querySelectorAll('.nav-item')
-window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-        nav.classList.add('header-hidden');
-        hideNavbar.forEach((hide) => {
-            hide.classList.remove('nav-item-show')
-        });
-        click = 0;
-    } else {
-        nav.classList.remove('header-hidden');
-    }
-    lastScrollY = window.scrollY;
-});
+// var nav = document.getElementById('header')
+// let lastScrollY = window.scrollY;
+// window.addEventListener("scroll", () => {
+    //     if (lastScrollY < window.scrollY) {
+        //         nav.classList.add('header-hidden');
+        //         hideNavbar.forEach((hide) => {
+            //             hide.classList.remove('nav-item-show')
+            //         });
+            //         click = 0;
+            //     } else {
+                //         nav.classList.remove('header-hidden');
+                //     }
+                //     lastScrollY = window.scrollY;
+// });
 
 //nav-product-hide
+var hideNavbar = document.querySelectorAll('.nav-item')
 let slideUp = document.querySelector('.nav-item-slide-up')
 let showSubnav = document.querySelector('.subnav')
 let rotateAngleDown = document.querySelector('.angle-down')

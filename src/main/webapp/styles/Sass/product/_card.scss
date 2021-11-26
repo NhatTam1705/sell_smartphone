@@ -1,20 +1,21 @@
 .container-productbox {
     display: block;
     overflow: hidden;
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 20px;
 }
 
 .cards {
-    --spacing: 2px;
     --columns: 5;
     display: flex;
     flex-wrap: wrap;
     // margin-left: calc(-1 * var(--spacing));
-    margin: 0 10px 0 8px;
+    border-top: 1px solid $border-card-color;
+    border-left: 1px solid $border-card-color;
+    margin: 0 10px 50px 8px;
     position: relative;
     z-index: 10;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
 
     a {
         width: 100%;
@@ -28,16 +29,15 @@
 
 
     .card {
-        // border-radius: 2px;
         overflow: hidden;
         background-color: $white-color;
-        border: 1px solid $border-card-color;
+        border: none;
+        border-right: 1px solid $border-card-color;
+        border-bottom: 1px solid $border-card-color;
         border-radius: 0;
-        width: calc(calc(100% / var(--columns)) - var(--spacing));
+        width: calc(calc(100% / var(--columns)));
         display: flex;
         flex-direction: column;
-        // margin-left: var(--spacing);
-        // margin-bottom: var(--spacing);
 
         &:hover {
             box-shadow: 0 2px 12px rgb(0 0 0 / 12%)
@@ -66,11 +66,19 @@
             }
         }
 
+        &-box {
+            width: 100%;
+            text-align: center;
+            // display: flex;
+            // justify-content: space-around;
+        }
+
         &-image {
             --height: 250px;
-            padding: 10px 0;
+            --width: 100%;
+            padding: 10px 5px;
             height: var(--height);
-            width: 100%;
+            width: var(--width);
             object-fit: cover;
             flex-shrink: 0;
             margin-top: 3px;
@@ -107,40 +115,33 @@
 
 }
 
-@include maxw (1023px) {
+@include maxw (1024px) {
     .cards {
-        --columns: 4;
+        --columns: 5;
 
         .card-image {
-            --height: 307px;
+            // --height: 14rem;
+            // --width: 13rem;
+            --height: 100%;
+            min-width: 50%;
         }
     }
 }
 
-@include maxw (767px) {
+@include maxw (768px) {
     .cards {
-        --spacing: 15px;
         --columns: 3;
-
-        .card-image {
-            --height: 400px;
-        }
     }
 }
 
 @include maxw (500px) {
     .cards {
-        --spacing: 15px;
         --columns: 2;
-
-        .card-image {
-            --height: 590px;
-        }
     }
 }
 
-@include maxw (1200px) {
-    html {
-        width: 1200px;
-    }
-}
+// @include maxw (1200px) {
+//     html {
+//         width: 1200px;
+//     }
+// }

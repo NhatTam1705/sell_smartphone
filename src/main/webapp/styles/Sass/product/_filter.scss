@@ -1,7 +1,10 @@
 .filter-beetle {
     margin: 20px auto;
-    width: 1200px;
-    padding: 0 10px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    gap: 10px;
 
     &:after{
         content: '';
@@ -21,10 +24,6 @@
         ul {
             list-style-type: none;
         }
-
-        &:first-child {
-            margin-left: -10px;
-        }
     }
 
     .dropdown__select {
@@ -36,7 +35,6 @@
         background-color: $white-color;
         cursor: pointer;
         line-height: 17px;
-        margin-left: 10px;
 
         &:hover {
             border: 1px solid $primary-color;

@@ -1,19 +1,20 @@
 .slider {
+    --height-slider: 250px;
     position: relative;
     margin-top: 108px;
     max-width: 1200px;
     display: flex;
 
     &-img {
-        height: 285px;
+        height: var(--height-slider);
         object-fit: cover;
         width: 100vw;
         padding: 0 10px;
     }
 }
 
-// @include maxw(767px){
-//     .slider{
-//         padding: 0 10px;
-//     }
-// }
+@include maxw(767px){
+    .slider{
+        --height-slider: 200px;
+    }
+}
