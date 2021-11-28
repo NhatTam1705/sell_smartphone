@@ -6,237 +6,563 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
-	<link rel="stylesheet" href="../../styles/home/css/mainHome.css" type="text/css" />
-	<link rel="stylesheet" href="../../styles/home/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="../../styles/Sass/css/product/laptop.css">
 	<link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<title>HTV Phones</title>
 </head>
 
+
 <body>
 	<div id="main">
-		<div id="header" class="js-header">
-			<div id="top-nav">
-				<div class="top-nav-height">
-					<div class="container-header">
-						<div class="pull-right">
-							<a href="">
-								<span class="icon-login ti-user"></span>
-								<span class="text-login">Log in</span>
+		<header>
+			<div id="header" class="js-header">
+				<div id="top-nav">
+					<div class="top-nav-height">
+						<div class="container-header">
+							<div class="pull-right">
+								<a href="../../views/login/home.html" class="pull-right-login">
+									<span class="pull-right-icon-login ti-user"></span>
+									<span class="pull-right-text-login">Log in</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="navbar">
+					<div class="container-header nav-container">
+						<div class="navbar-header">
+							<a href="../../views/home/index.html" class="logo navbar-brand">
+								<img src="../../styles/img/logo.png" alt="" />
+							</a>
+						</div>
+						<nav id="htv-navbar">
+							<ul id="nav">
+								<li class="nav-item">
+									<a href="../../views/product/phones.html">
+										<span class="text">Phones</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="../../views/product/laptops.html">
+										<span class="text">Laptops</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="../../views/product/tablets.html">
+										<span class="text">Tablets</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="../../views/product/wearables.html">
+										<span class="text">Wearables</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="../../views/product/audio.html">
+										<span class="text">Audios</span>
+									</a>
+								</li>
+								<li class="nav-item nav-item-slide-up">
+									<a onclick="subnavSlideY()" href="#">
+										<span class="icon-font"
+											style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
+										<span class="icon-font-white change-icon-font"
+											style="background-image: url(../../styles/font/SVG/accessories-white.svg)"></span>
+										<span class="text">Accessories</span>
+										<span class="icon-angle ti-angle-down" style="font-size: 13px"></span>
+									</a>
+									<span class="icon-font-white change-icon-font angle-down"
+										style="background-image: url(../../styles/font/SVG/angle-down-white.svg)">
+									</span>
+									<ul class="subnav">
+										<li><a href="">Backup Charger</a></li>
+										<li><a href="">Adapter, Cap</a></li>
+										<li><a href="">Screen Protector</a></li>
+										<li><a href="">Case</a></li>
+										<li><a href="">Memory Cart</a></li>
+										<li><a href="">Selfie Stick</a></li>
+										<li><a href="">Waterproof Bag</a></li>
+										<li><a href="">Keychains</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="nav-right">
+							<div class="icon">
+								<span class="icon-font icon-hide"
+									style="background-image: url(../../styles/font/SVG/shopping.svg)">
+								</span>
+								<span class="icon-font-white change-icon-font icon-hide"
+									style="background-image: url(../../styles/font/SVG/shopping-white.svg)">
+								</span>
+								<span class="text icon-hide">Buy</span>
+								<span class="icon-font ti-angle-down icon-hide" style="margin-top:2px"></span>
+								<span class="icon-font-white change-icon-font ti-angle-down icon-hide"
+									style="margin-top: 2px; margin-left: 2px"></span>
+								<input type="text" class="input-search" placeholder="Search htv.com">
+								<span class="icon-search ti-search"></span>
+								<span class="btn-menu icon-menu ti-menu"></span>
+							</div>
+						</div>
+						<div class="nav-search">
+							<div class="nav-search-box">
+								<input type="text" placeholder="Search htv.com" class="nav-search-box-header">
+								<a href="#" class="nav-search-box-btn">
+									<span class="nav-search-box-icon-search ti-search"></span>
+								</a>
+							</div>
+							<a href="#" class="nav-search-btn-close">
+								<span class="nav-search-icon-close ti-close" onclick="hideSearchBox()"></span>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="navbar">
-				<div class="container-header nav-container">
-					<div class="navbar-header">
-						<a href="../../views/home/index.html" class="logo navbar-brand">
-							<img src="../../styles/img/logo.png" alt="" />
-						</a>
+		</header>
+		<section class="banner">
+			<img src="../../styles/img/bannner/banner-laptop 1920x200.jpg" class="banner-img banner-img__pc" alt="">
+			<img src="../../styles/img/bannner/baner-laptop 720x340.jpg" class="banner-img banner-img__mobile" alt="">
+		</section>
+		<section class="filter">
+			<div class="filter-box">
+				<div class="filter-beetle margin">
+					<div class="filter-title filter-all-items">
+						<div class="dropdown__select" aria-valuetext="1">
+							<i class="fa fa-filter" aria-hidden="true"></i>
+							<span class="filter-text">Filter</span>
+						</div>
 					</div>
-					<nav id="htv-navbar" class="js-htv-navbar">
-						<ul id="nav">
-							<li class="hide-nav">
-								<a href="../../views/product/phones.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/mobile.svg);">
-									</span>
-									<span class="text">Phones</span>
+					<div class="filter-title filter-price">
+						<div class="dropdown__select dropdown__price">
+							<span class="filter-text">Price</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__price">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Less than 2 million</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 2 - 4 million</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 4 - 7 million</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 7 - 13 million</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 13 - 20 million</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Over 20 million</span>
+								</li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel button__cancel-price" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
 								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/laptops.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/laptop.svg);">
-									</span>
-									<span class="text">Laptops</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/tablets.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/tables.svg)">
-									</span>
-									<span class="text">Tablets</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/wearables.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/wearables.svg)">
-									</span>
-									<span class="text">Wearables</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a href="../../views/product/audio.html">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/audio.svg)">
-									</span>
-									<span class="text">Audios</span>
-								</a>
-							</li>
-							<li class="hide-nav">
-								<a onclick="subnavSlideY()" href="#">
-									<span class="icon-font"
-										style="background-image: url(../../styles/font/SVG/accessories.svg)"></span>
-									<span class="text">Accessories</span>
-									<span class="icon-font angle-down"
-										style="background-image: url(../../styles/font/themify-icons/SVG/angle-down.svg)">
-									</span>
-								</a>
-								<ul class="subnav">
-									<li><a href="">Backup Charger</a></li>
-									<li><a href="">Adapter, Cap</a></li>
-									<li><a href="">Screen Protector</a></li>
-									<li><a href="">Case</a></li>
-									<li><a href="">Memory Cart</a></li>
-									<li><a href="">Selfie Stick</a></li>
-									<li><a href="">Waterproof Bag</a></li>
-									<li><a href="">Keychains</a></li>
-								</ul>
-							</li>
+							</div>
 						</ul>
-					</nav>
-					<div class="nav-right js-nav-right">
-						<span class="icon-font hidden"
-							style="background-image: url(../../styles/font/SVG/shopping.svg)">
-						</span>
-						<span class="text hidden">Buy</span>
-						<span class="icon-font ti-angle-down hidden"></span>
-						<span class="icon-search ti-search" onclick="showSearchBox()"></span>
-						<span onclick="menu()" class="icon-menu ti-menu"></span>
 					</div>
-					<div class="nav-search js-nav-search">
-						<div class="search-box">
-							<input type="text" placeholder="Search htv.com" class="search-header js-search-header" />
-							<a href="#" class="btn-search">
-								<span class="icon-btn-search ti-search"></span>
-							</a>
+					<div class="filter-title filter-type">
+						<div class="dropdown__select dropdown__type">
+							<span class="filter-text">Type of phone</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
 						</div>
-						<a href="#" class="btn-close">
-							<span class="icon-btn-close ti-close" onclick="hideSearchBox()"></span>
+						<ul class="dropdown__list dropdown-list__type">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Android</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">iOS</span>
+								</li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-pin">
+						<div class="dropdown__select dropdown__pin">
+							<span class="filter-text">Pin</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__pin">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Over 5000mAh</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Fast battery charger</span>
+								</li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-ram">
+						<div class="dropdown__select dropdown__ram">
+							<span class="filter-text">RAM</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__ram">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">1GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">2GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">3GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">4GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">6GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">8GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">12GB</span></li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-rom">
+						<div class="dropdown__select dropdown__rom">
+							<span class="filter-text">ROM</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__rom">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">32GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">64GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">128GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">256GB</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">512GB</span></li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-camera">
+						<div class="dropdown__select dropdown__camera">
+							<span class="filter-text">Camera</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__camera">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Macro</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Wide original camera</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Font removal camera</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown_text">Long zoom shooting</span></li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-future">
+						<div class="dropdown__select dropdown__future">
+							<span class="filter-text">Special futures</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__future">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Support 5G</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Face Security</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Fingerprint security</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Wireless charging</span></li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Water and dust resistant
+									</span></li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-design">
+						<div class="dropdown__select dropdown__design">
+							<span class="filter-text">Design</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__design">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Border overflow</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Thin and light</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Glass back</span>
+								</li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+					<div class="filter-title filter-screen">
+						<div class="dropdown__select dropdown__screen">
+							<span class="filter-text">Screen</span>
+							<ion-icon name="caret-down-outline"></ion-icon>
+						</div>
+						<ul class="dropdown__list dropdown-list__screen">
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Compact and easy to hold</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">From 6 inches and up
+									</span>
+								</li>
+							</a>
+							<a href="" class="c-btnbox">
+								<li class="dropdown__item">
+									<span class="dropdown__text">Folding screen</span>
+								</li>
+							</a>
+							<div class="button-find__item">
+								<input type="button" class="button__cancel" value="Cancel">
+								<a href="" class="c-btnbox">
+									<input type="button" class="button__submit" value="Submit">
+								</a>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="brands margin">
+			<div class="brand">
+				<div class="brand-lst">
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/iphone.png" alt="" class="brand-lst-img">
+					</a>
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/oppo.jpg" alt="" class="brand-lst-img">
+					</a>
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/realme.png" alt="" class="brand-lst-img">
+					</a>
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/samsung.png" alt="" class="brand-lst-img">
+					</a>
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/vivo.jpg" alt="" class="brand-lst-img">
+					</a>
+					<a href="" class="brand-lst-item rd-52">
+						<img src="../../styles/img/brand/xiaomi.png" alt="" class="brand-lst-img">
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="category-page" data-name="phone">
+			<div class="container-productbox margin">
+				<div class="cards">
+					<div class="card">
+						<a href="" class="c-btnbox">
+							<div class="card-sale">
+								<p class=text-sale>Sale 0%</p>
+							</div>
+							<div class="card-box">
+								<img src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold-3-green-1-600x600.jpg"
+									alt="" class="card-image" />
+							</div>
+							<div class="card-content">
+								<h3 class="card-content-name">Samsung Galaxy Z Fold 5G</h3>
+								<div class="card-content-price">
+									44.990.000₫
+								</div>
+								<div class="card-content-discount">
+									Sale 1.000.000₫
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="">
+							<div class="card-sale">
+								<p class=text-sale>Sale 0%</p>
+							</div>
+							<div class="card-box">
+								<img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-do-new-2-600x600.jpg"
+									alt="" class="card-image" />
+							</div>
+							<div class="card-content">
+								<h3 class="card-content-name">Iphone 12</h3>
+								<div class="card-content-price">
+									44.990.000₫
+								</div>
+								<div class="card-content-discount">
+									Sale 1.000.000₫
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="">
+							<div class="card-sale">
+								<p class=text-sale>Sale 0%</p>
+							</div>
+							<div class="card-box">
+								<img src="https://cdn.tgdd.vn/Products/Images/42/248293/xiaomi-11t-white-1-2-600x600.jpg"
+									alt="" class="card-image" />
+							</div>
+							<div class="card-content">
+								<h3 class="card-content-name">Xiaomi 11T 5G 128GB</h3>
+								<div class="card-content-price">
+									44.990.000₫
+								</div>
+								<div class="card-content-discount">
+									Sale 1.000.000₫
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="">
+							<div class="card-sale">
+								<p class=text-sale>Sale 0%</p>
+							</div>
+							<div class="card-box">
+								<img src="https://cdn.tgdd.vn/Products/Images/42/241049/samsung-galaxy-a03s-black-600x600.jpg"
+									alt="" class="card-image" />
+							</div>
+							<div class="card-content">
+								<h3 class="card-content-name">Samsung Galaxy A03S</h3>
+								<div class="card-content-price">
+									44.990.000₫
+								</div>
+								<div class="card-content-discount">
+									Sale 1.000.000₫
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="">
+							<div class="card-sale">
+								<p class=text-sale>Sale 0%</p>
+							</div>
+							<div class="card-box">
+								<img src="https://cdn.tgdd.vn/Products/Images/42/239747/oppo-reno6-z-5g-aurora-1-600x600.jpg"
+									alt="" class="card-image" />
+							</div>
+							<div class="card-content">
+								<h3 class="card-content-name">Oppo Reno6 Z 5G</h3>
+								<div class="card-content-price">
+									44.990.000₫
+								</div>
+								<div class="card-content-discount">
+									Sale 1.000.000₫
+								</div>
+							</div>
 						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-
-
-        <div id="silder" class="slider">
-			<p>Undeveloped Feature</p>
-        </div>
-
-        <div id="content">
-
-        </div>
-
-		<footer class="text-center text-lg-start bg-light text-muted">
-			<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-				<div class="me-5 d-none d-lg-block">
-					<span>Get connected with us on social networks:</span>
-				</div>
-				<div>
-					<a href="" class="me-4 text-reset">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="" class="me-4 text-reset">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="" class="me-4 text-reset">
-						<i class="fab fa-google"></i>
-					</a>
-					<a href="" class="me-4 text-reset">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="" class="me-4 text-reset">
-						<i class="fab fa-linkedin"></i>
-					</a>
-					<a href="" class="me-4 text-reset">
-						<i class="fab fa-github"></i>
-					</a>
-				</div>
-			</section>
-			<section class="">
-				<div class="container text-center text-md-start mt-5">
-					<div class="row mt-3">
-						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-							<h6 class="text-uppercase fw-bold mb-4">
-								<i class="fas fa-gem me-3"></i> Company HTV
-							</h6>
-							<p>
-								Ho Chi Minh City University of Technology and Education
-							</p>
-						</div>
-
-						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-							<h6 class="text-uppercase fw-bold mb-4">
-								Products
-							</h6>
-							<p>
-								<a href="#!" class="text-reset">Phones</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Laptops</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Tablets</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Wearables</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Audios</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Accessories</a>
-							</p>
-						</div>
-						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-							<h6 class="text-uppercase fw-bold mb-4">
-								Useful links
-							</h6>
-							<p>
-								<a href="#!" class="text-reset">Pricing</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Settings</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Orders</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Help</a>
-							</p>
-						</div>
-
-						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-							<h6 class="text-uppercase fw-bold mb-4">
-								Contact
-							</h6>
-							<p><i class="fas fa-home me-3"></i> HCMUTE</p>
-							<p>
-								<i class="fas fa-envelope me-3"></i>
-								19110283@student.hcmute.edu.vn
-							</p>
-							<p><i class="fas fa-phone me-3"></i> 033 4193816</p>
-							<p><i class="fas fa-print me-3"></i> 078 2883817</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<div class="text-center p-4 top-footer">
-				© 2021 Copyright:
-				<a class="text-reset fw-bold">HTV Company</a>
-			</div>
-
-		</footer>
+		</section>
 		<div id="back-to-top" class="back-to-top">
 			<button id="back-to-top-btn" title="Back to top">
 				<i class="fas fa-angle-double-up"></i>
@@ -250,7 +576,18 @@
 				<i class="fas fa-moon-cloud"></i>
 			</button>
 		</div>
-		<script src="../../scripts/script.js"></script>
+		<footer>
+		</footer>
+	</div>
 </body>
+
+<script>
+	$(function () {
+		$("footer").load("../../views/common/footer.html");
+	});
+</script>
+
+<script src="../../scripts/product/SCommon.js"></script>
+<script src="../../scripts/product/phone.js"></script>
 
 </html>

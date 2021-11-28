@@ -37,13 +37,13 @@ window.addEventListener("scroll", () => {
 var hideNavbar = document.querySelectorAll('.nav-item')
 let slideUp = document.querySelector('.nav-item-slide-up')
 let showSubnav = document.querySelector('.subnav')
-let rotateAngleDown = document.querySelector('.angle-down')
+let rotateAngleDown = document.querySelector('.icon-angle')
 slideUp.addEventListener('click', (e) => {
     e.preventDefault()
     for (var i = 0; i < 5; i++)
         hideNavbar[i].classList.toggle('nav-product-hide')
     showSubnav.classList.toggle('show-subnav')
-    rotateAngleDown.classList.toggle('rotate-angle-down')
+    rotateAngleDown.classList.toggle('icon-angle-down')
 })
 
 

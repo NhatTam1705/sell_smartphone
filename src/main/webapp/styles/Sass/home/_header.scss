@@ -275,7 +275,7 @@
         z-index: 20;
 
         &:hover:last-child .subnav {
-            display: block;
+                display: block;
         }
 
         a {
@@ -317,6 +317,10 @@
 }
 
 @include minw(1025px) {
+    .icon-angle{
+        transition: 0.3s ease;
+        display: inline-block;
+    }
     .nav-right {
         .icon {
             display: flex;
@@ -325,6 +329,10 @@
             &-menu {
                 display: none;
             }
+        }
+        &:hover .ti-angle-down{
+        transform: rotate(180deg) translateX(16px);
+        transition: 0.3s ease;
         }
     }
 
@@ -346,6 +354,12 @@
                 >a {
                     border-bottom: 2px solid var(--bs-color-change-nav);
                 }
+            }
+
+            &:hover:last-child .icon-angle{
+                display: inline-block;
+                transform: rotate(180deg);
+                transition: 0.3s ease;
             }
         }
     }

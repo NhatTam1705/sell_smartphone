@@ -1,0 +1,40 @@
+.banner {
+    --height-slider: 250px;
+    position: relative;
+    margin-top: var(--bs-height-header);
+    // margin-top: calc(var(--bs-height-navbar) + 24px);
+    max-width: 1200px;
+    display: flex;
+
+    &-img {
+        height: var(--height-slider);
+        object-fit: cover;
+        width: 100vw;
+        padding: 0 10px;
+    }
+}
+
+@include minw(1025px){
+    .banner{
+        &-img{
+            &__pc{
+                display: block;
+            }
+
+            &__mobile{
+                display: none;
+            }
+        }
+    }
+}
+
+@include maxw(767px){
+    .banner{
+        --height-slider: 200px;
+        margin-top: calc(var(--bs-height-header) - $reduce-height-navbar);
+
+        &-img__pc{
+            display: none;
+        }
+    }
+}

@@ -130,13 +130,17 @@
 
 @include maxw (768px) {
     .cards {
-        --columns: 3;
+        --columns: 4;
     }
 }
 
-@include maxw (500px) {
+@include maxw (600px) {
     .cards {
-        --columns: 2;
+        --columns: 3;
+
+        .card-content-price{
+            font-size: 15px;
+        }
     }
 }
 
