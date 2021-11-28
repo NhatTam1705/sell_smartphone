@@ -211,7 +211,7 @@
 
 #navbar {
   height: var(--bs-height-navbar);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #e6e6e6;
 }
 #navbar .logo > img {
   width: 59%;
@@ -236,26 +236,35 @@
   z-index: 20;
   float: right;
   width: 150px;
-  height: 40px;
-  display: flex;
-  margin-top: 19px;
+  height: 84px;
   margin-right: -15px;
   padding-right: 15px;
   transition: 0.3s linear;
 }
-#navbar .nav-right span {
+#navbar .nav-right .icon {
+  height: 84px;
+  display: inline-block;
+}
+#navbar .nav-right .icon > span {
   float: left;
   cursor: pointer;
-  line-height: 40px;
+  line-height: 84px;
   padding-right: 3px;
   color: var(--bs-font-color-light);
-  width: 30px;
+}
+#navbar .nav-right .icon-angle {
+  line-height: 82px !important;
 }
 #navbar .nav-right .icon-search {
   right: 0;
   font-size: 25px;
   margin-right: 15px;
+  line-height: 84px;
   position: absolute;
+  cursor: pointer;
+}
+#navbar .nav-right .fa-shopping-bag {
+  font-size: 24px;
 }
 #navbar .nav-right.hide-nav-right {
   display: none;
@@ -409,16 +418,40 @@
     display: inline-block;
   }
 
-  .nav-right .icon {
-    display: flex;
-    gap: 2px;
-  }
   .nav-right .icon-menu {
     display: none;
   }
-  .nav-right:hover .ti-angle-down {
-    transform: rotate(180deg) translateX(16px);
+  .nav-right .icon:hover .ti-angle-down {
+    transform: rotate(180deg);
     transition: 0.3s ease;
+  }
+  .nav-right .icon:hover .shopping {
+    visibility: visible;
+    transform: 0.3s linear;
+  }
+  .nav-right .shopping {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 100%;
+    float: left;
+    background-color: #fff;
+    transform: translate(-25%, -2%);
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid #fff;
+    visibility: hidden;
+    cursor: pointer;
+  }
+  .nav-right .shopping span {
+    display: inline-block;
+    line-height: 50px;
+  }
+  .nav-right .shopping-icon {
+    font-size: 22px;
+    padding-left: 10px;
+  }
+  .nav-right .shopping-text {
+    padding-left: 20px;
   }
 
   #nav .subnav {
@@ -505,6 +538,9 @@
   }
   .nav-right .icon {
     display: flex;
+  }
+  .nav-right .icon span:not(.btn-menu) {
+    visibility: hidden;
   }
   .nav-right .icon-hide {
     display: none;
