@@ -415,9 +415,6 @@
 }
 
 @include maxw(768px){
-    #navbar .nav-right .icon-search{
-        display: none !important;
-    }
     #content{
         .new-content {
             --width-content: 100%;

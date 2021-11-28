@@ -17,6 +17,18 @@ body {
     color: var(--bs-font-color-light);
 }
 
+.htv-navbar__state, 
+.nav-right__state{
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s linear;
+}
+
+.nav-search__state{
+    visibility: visible !important;
+    transform: scale(1) !important;
+}
+
 .mb-25 {
     margin-bottom: 25px;
 }

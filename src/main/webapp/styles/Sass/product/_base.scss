@@ -6,7 +6,6 @@
 }
 
 
-
 .pd-10 {
     padding: 10px;
 }
@@ -34,6 +33,18 @@
 
 .ml-negative-8 {
     margin-left: -8px;
+}
+
+.htv-navbar__state, 
+.nav-right__state{
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s linear;
+}
+
+.nav-search__state{
+    visibility: visible !important;
+    transform: scale(1) !important;
 }
 
 .check {

@@ -8,21 +8,25 @@ menu.addEventListener('click', () => {
     })
 });
 
+$(function () {
+    $(window).bind("resize", function () {
+        if ($(this).width() > '1024') {
+            $('li').removeClass('nav-item-show')
+        }
+    })
+})
 
-// var nav = document.getElementById('header')
-// let lastScrollY = window.scrollY;
-// window.addEventListener("scroll", () => {
-    //     if (lastScrollY < window.scrollY) {
-        //         nav.classList.add('header-hidden');
-        //         hideNavbar.forEach((hide) => {
-            //             hide.classList.remove('nav-item-show')
-            //         });
-            //         click = 0;
-            //     } else {
-                //         nav.classList.remove('header-hidden');
-                //     }
-                //     lastScrollY = window.scrollY;
-// });
+
+var nav = document.getElementById('header')
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        nav.classList.add('header-hidden');
+    } else {
+        nav.classList.remove('header-hidden');
+    }
+    lastScrollY = window.scrollY;
+});
 
 //nav-product-hide
 var hideNavbar = document.querySelectorAll('.nav-item')
@@ -38,21 +42,39 @@ slideUp.addEventListener('click', (e) => {
 })
 
 
-const htvNavBar = document.getElementById('nav')
+const htvNavBar = document.getElementById('htv-navbar')
 const navRight = document.querySelector('.nav-right')
 const showSearchBox = document.querySelector('.icon-search')
 const navSearch = document.querySelector('.nav-search')
 const hideSearchBox = document.querySelector('.nav-search-btn-close')
-showSearchBox.addEventListener('click',() =>{
-    navRight.style.visibility = 'hidden'
-    navSearch.style.visibility = 'visible';
-    htvNavBar.style.visibility = 'hidden'
+
+$(function () {
+    $(window).bind("resize", function () {
+        // console.log($(this).width())
+        if ($(this).width() <= screenWidth) {
+            $('nav').removeClass('htv-navbar__state')
+            $('div').removeClass('nav-search__state')
+            $('div').removeClass('nav-right__state')
+        }
+    })
 })
 
-hideSearchBox.addEventListener('click',() =>{
-    navRight.style.visibility = 'visible'
-    navSearch.style.visibility = 'hidden';
-    htvNavBar.style.visibility = 'visible'
+var screenWidth = "767"
+showSearchBox.addEventListener('click', () => {
+    if (screenWidth < innerWidth) {
+        navRight.classList.add('nav-right__state')
+        navSearch.classList.add('nav-search__state')
+        htvNavBar.classList.add('htv-navbar__state')
+    }
+})
+
+
+hideSearchBox.addEventListener('click', () => {
+    if (screenWidth < innerWidth) {
+        navRight.classList.remove('nav-right__state')
+        navSearch.classList.remove('nav-search__state')
+        htvNavBar.classList.remove('htv-navbar__state')
+    }
 })
 
 const slider = document.querySelector(".slider");
