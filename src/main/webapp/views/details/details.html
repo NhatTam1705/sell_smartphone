@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css" />
+        <link rel="stylesheet" href="../../styles/Sass/css/details/details.css">
+        <link rel="stylesheet" href="../../styles/font/themify-icons/themify-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>HTV Phones</title>
+    </head>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="js-header">
+            <div id="top-nav">
+                <div class="top-nav-height">
+                    <div class="container-header">
+                        <div class="pull-right">
+                            <a href="../../views/login/home.html" class="pull-right-login">
+                                <span class="pull-right-icon-login ti-user"></span>
+                                <span class="pull-right-text-login">Log in</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar">
+                <div class="container-header nav-container">
+                    <div class="navbar-header">
+                        <a href="../../views/home/index.html" class="logo navbar-brand">
+                            <img src="../../styles/img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <nav id="htv-navbar">
+                        <ul id="nav">
+                            <li class="nav-item nav-item__hide">
+                                <a href="../../views/product/phones.html">
+
+                                    <span class="text">Phones</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item__hide">
+                                <a href="../../views/product/laptops.html">
+
+                                    <span class="text">Laptops</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item__hide">
+                                <a href="../../views/product/tablets.html">
+
+                                    <span class="text">Tablets</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item__hide">
+                                <a href="../../views/product/wearables.html">
+
+                                    <span class="text">Wearables</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item__hide">
+                                <a href="../../views/product/audio.html">
+                                    <span class="text">Audios</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item__up">
+                                <!-- <a onclick="subnavSlideY()" href="#"> -->
+                                <a href="#">
+                                    <span class="text">Accessories</span>
+                                    <span class="icon-angle nav-icon-angle ti-angle-down"
+                                        style="font-size: 13px"></span>
+                                </a>
+
+                                <span class="icon-font-white change-icon-font angle-down">
+                                </span>
+                                <ul class="subnav">
+                                    <li><a href="">Backup Charger</a></li>
+                                    <li><a href="">Adapter, Cap</a></li>
+                                    <li><a href="">Screen Protector</a></li>
+                                    <li><a href="">Case</a></li>
+                                    <li><a href="">Memory Cart</a></li>
+                                    <li><a href="">Selfie Stick</a></li>
+                                    <li><a href="">Waterproof Bag</a></li>
+                                    <li><a href="">Keychains</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="nav-right">
+                        <span class="icon-search ti-search"></span>
+                        <input class="card-quantity" max=10 min=0 value="" type="number">
+                        <div class="icon">
+                            <!-- <span class="icon-font ti-shopping-cart icon-hide"></span> -->
+                            <span class="fal fa-shopping-bag"></span>
+                            <span class="text icon-hide">Buy</span>
+                            <span class="icon-font icon-angle ti-angle-down icon-hide"
+                                style="margin-top:2px; font-size: 13px"></span>
+                            <span class="icon-font-white change-icon-font ti-angle-down icon-hide"
+                                style="margin-top: 2px; margin-left: 2px"></span>
+                            <input type="text" class="input-search" placeholder="Search htv.com">
+                            <span class="btn-menu icon-menu ti-menu"></span>
+                            <div class="shopping">
+                                <!-- <span class="shopping-icon fal fal-shopping-cart"></span> -->
+                                <span class="shopping-icon fal fa-shopping-cart"></span>
+                                <span class="shopping-text">HV cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-search">
+                        <div class="nav-search-box">
+                            <input type="text" placeholder="Search htv.com" class="nav-search-box-header">
+                            <a href="#" class="nav-search-box-btn">
+                                <span class="nav-search-box-icon-search ti-search"></span>
+                            </a>
+                        </div>
+                        <a href="#" class="nav-search-btn-close">
+                            <span class="nav-search-icon-close ti-close" onclick="hideSearchBox()"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="content-header">
+                <ul class="bread-crumbs">
+                    <li>
+                        <a href="../../views/product/phones.html">Home</a>
+                        <meta>
+                    </li>
+                    <li>
+                        &nbsp
+                        <i class="fal fa-chevron-right"></i>
+                        &nbsp
+                        <a href="#">Phone</a>
+                    </li>
+                </ul>
+                <div class="name-phone">
+                    Samsung Galaxy Z Fold3 5G 256GB
+                </div>
+                <hr>
+            </div>
+            <div class="content-bottom">
+                <div class="details">
+                    <div class="details-box">
+                        <div class="details-box-left">
+                            <div class="details-box-img">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/226935/Slider/samsung-galaxy-z-fold-3-slider-tong-quan-1020x570.jpg"
+                                    alt="" class="procduct-img">
+                            </div>
+
+                            <div class="delivery">
+                                <span class="delivery-text">
+                                    Stocking
+                                </span>
+                            </div>
+                            <div class="policy">
+                                <div class="policy-box">
+                                    <i class="fad fa-ballot"></i>
+                                    <div class="policy-text">
+                                        What's bad, 12 months at 2869 supermarkets nationwide (first month free)
+                                    </div>
+                                </div>
+                                <div class="policy-box">
+                                    <i class="fad fa-shield-check"></i>
+                                    <div class="policy-text">
+                                        Genuine phone warranty 1 year
+                                    </div>
+                                </div>
+                                <div class="policy-box">
+                                    <i class="fad fa-box"></i>
+                                    <div class="policy-text">
+                                        Package includes: Box, Manual, Sim tree, Type C Cable
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay">
+                                <div class="pay-top">
+                                    <button class="pay-btn">ADD TO CARD</button>
+                                </div>
+                                <div class="pay-bottom">
+                                    <button class="pay-left">installment purchase</button>
+                                    <button class="pay-right">Installment via card</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-box-right">
+                            <div class="ram">
+                                <div class="ram-select">
+                                    <span>256GB</span>
+                                </div>
+                                <div class="ram-select">
+                                    <span>512GB</span>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <div class="color-select">
+                                    <span>Black</span>
+                                </div>
+                                <div class="color-select">
+                                    <span>White</span>
+                                </div>
+                                <div class="color-select">
+                                    <span>Blue</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price-location">
+                                    Price at Dong Thap
+                                </div>
+                                <div class="price-text">
+                                    <span class="price-text-cost">41.990.000₫</span>
+                                    <span class="price-text-discount">0% installment</span>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-box-top">
+                                        <div class="price-promotion">
+                                            <span class="price-promotion-text">
+                                                Promotion worth 1,000,000 VND
+                                            </span>
+                                            <span class="price-promotion-text">
+                                                Prices and promotions are expected to be applied until 23:00 December 31
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="price-box-bottom">
+                                        <div class="price-info">
+                                            <div class="price-info-number">1</div>
+                                            <div class="price-info-text">
+                                                Discount 1,000,000 VND (Not applicable with old and new collection)
+                                            </div>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="price-info-number">2</div>
+                                            <div class="price-info-text">
+                                                Extra 5% off when buying the same product with any higher price
+                                            </div>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="price-info-number">3</div>
+                                            <div class="price-info-text">
+                                                Premium Priority Packages and Business Class Lounge
+                                            </div>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="price-info-number">4</div>
+                                            <div class="price-info-text">
+                                                Discount up to 4,000,000 VND when participating in new and old
+                                                collection (Depending on old model, not applicable with 1 million
+                                                discount)
+                                            </div>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="price-info-number">5</div>
+                                            <div class="price-info-text">
+                                                Installment 0% credit card
+                                            </div>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="price-info-number">6</div>
+                                            <div class="price-info-text">
+                                                Enter code TGDD12, get 5% off up to 500,000 VND for bill from 500,000
+                                                VND when paying via Moca Wallet on Grab app
+                                            </div>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="price-info-number">7</div>
+                                            <div class="price-info-text">
+                                                Enter code DMX100, discount 3%, up to 100,000 VND when paying by
+                                                scanning QRcode via the bank's App
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../scripts/product/SCommon.js"></script>
+<script src="../../scripts/details/details.js"></script>
+
+</html>

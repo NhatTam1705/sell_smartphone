@@ -117,6 +117,12 @@
     }
 }
 
+@include maxw(767px){
+    .slider{
+        margin-top: calc(var(--bs-height-header) - $reduce-height-navbar);
+    }
+}
+
 @include maxw(500px){
     .slider .slide .info h2 {
         font-size: 1.8em;

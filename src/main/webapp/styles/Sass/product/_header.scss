@@ -132,6 +132,7 @@
         .icon {
             height: $nav-li-height;
             display: inline-block;
+            
             >span {
                 float: left;
                 cursor: pointer;
@@ -153,6 +154,7 @@
             line-height: $nav-li-height;
             position: absolute;
             cursor: pointer;
+            z-index: 2;
         }
 
         .fa-shopping-bag {
@@ -378,10 +380,19 @@
             border-top: 1px solid $white-color;
             visibility: hidden;
             cursor: pointer;
+            display: block;
+            color: var(--bs-font-color-light);
+
+            &:hover span{
+                opacity: 1;
+                transition: 0.2s;
+            }
 
             span {
                 display: inline-block;
                 line-height: 50px;
+                opacity: 0.6;
+                transition: 0.2s;
             }
 
             &-icon {
@@ -403,13 +414,17 @@
                 border-top: 2px solid var(--bs-color-change-nav);
             }
         }
+        
+        li {
+            transition: all 1s;
+        }
 
         >li {
             >a {
                 height: $nav-li-height;
             }
 
-            &:not(.nav-item-slide-up):hover {
+            &:not(.nav-item__up):hover {
                 >a {
                     border-bottom: 2px solid var(--bs-color-change-nav);
                 }
@@ -447,10 +462,6 @@
         &,
         li {
             display: block;
-        }
-
-        li {
-            transition: all 1s;
         }
 
         >li>a {
@@ -522,6 +533,7 @@
                 right: 0;
                 margin-right: 15px;
                 font-size: 30px;
+                z-index: 2;
             }
         }
     }
@@ -577,6 +589,7 @@
             padding-top: 0px;
             margin-top: 0;
         }
+        height: calc(var(--bs-height-header) - $reduce-height-navbar);
     }
 
     #navbar {
@@ -609,20 +622,25 @@
 
             .icon-menu {
                 font-size: 22px;
+                line-height: 40px !important;
+                top: 0;
             }
         }
 
         .input-search {
-            position: relative;
+            // position: relative;
+            position: absolute;
             height: 32px;
+            line-height: 32px;
             right: 50%;
-            top: 10%;
             display: block;
-            transform: translateX(-37%);
+            // transform: translateX(-37%);
+            transform: translate(12%, 15%);
+            right: 100%;
             border: 1px solid $gray-color;
             border-radius: 4px;
             padding-left: 10px;
-            padding-right: 20px;
+            padding-right: 30px;
         }
     }
 }

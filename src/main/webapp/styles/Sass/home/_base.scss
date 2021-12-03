@@ -29,6 +29,15 @@ body {
     transform: scale(1) !important;
 }
 
+.trans__li{
+    transition: all 1s;
+}
+
+.rotate-angle__180{
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
 .mb-25 {
     margin-bottom: 25px;
 }

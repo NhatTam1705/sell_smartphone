@@ -1,0 +1,292 @@
+.card-quantity {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 40%;
+    transform: translate(50%, -50%);
+    border: none;
+    background-color: #ff0000;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    visibility: hidden;
+}
+
+.main,
+.content,
+.content-bottom,
+.details-box,
+.price-box-bottom {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+ul,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none !important;
+    margin-bottom: 0;
+}
+
+.main {
+    $margin-top: 108px;
+    margin-top: $margin-top;
+    height: calc(100% - $margin-top);
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+
+    &-header {
+        .bread-crumbs {
+            height: 34px;
+            padding-top: 10px;
+            font-size: 14px;
+            margin-bottom: 10px;
+
+            li {
+                display: inline-block;
+                line-height: 24px;
+            }
+
+            .fal {
+                font-size: 10px;
+                opacity: 0.6;
+                line-height: 24px;
+            }
+        }
+
+        .name-phone {
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 16px;
+        }
+
+        hr {
+            margin: 0;
+        }
+    }
+
+    &-bottom {
+        padding-top: 10px;
+
+        .details {
+            &-box {
+                &-left {
+                    width: 715px;
+                    height: 400px;
+                    display: inline-block;
+
+                    .delivery {
+                        padding: 10px;
+                        padding-left: 0;
+
+                        &-text {
+                            color: #219653;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .policy {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 10px;
+
+                        &-box {
+                            display: inline-flex;
+                            width: 50%;
+                            padding: 10px;
+
+                            .fad {
+                                color: #50b0e7;
+                                transform: translateY(5px);
+                                font-size: 20px;
+                            }
+                        }
+
+                        &-text {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+
+                &-img {
+                    display: flex;
+                    width: 715px;
+                    height: 400px;
+                    justify-content: center;
+                }
+
+                .pay {
+                    &-btn:active{
+                        background-color: #9c3809; 
+                    }
+                    &-btn,
+                    &-left,
+                    &-right {
+                        height: 46px;
+                        width: 100%;
+                        border: none;
+                        color: #fff;
+                        font-weight: bold;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        outline: none;
+                    }
+
+                    &-top {
+                        margin-bottom: 10px;
+                    }
+
+                    &-btn {
+                        background-color: #fb6e2e;
+                    }
+
+                    &-bottom {
+                        display: flex;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 10px;
+                    }
+
+                    &-left,
+                    &-right {
+                        background-color: #2f80ed;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &-right {
+                    float: right;
+                    width: 460px;
+                    text-align: center;
+                }
+
+                .ram-select:first-child,
+                .color-select:first-child {
+                    border: 1px solid #2f80ed;
+                    color: #2f80ed;
+                }
+
+                .ram-select,
+                .color-select {
+                    border: 1px solid #ccc;
+                    color: #333;
+                    line-height: 34px;
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 74px;
+                    height: 34px;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+
+                .ram,
+                .color {
+                    margin-bottom: 10px;
+                    display: block;
+                    text-align: left;
+                }
+
+                .price {
+                    text-align: left;
+
+                    &-text {
+                        &-cost {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #ff0000;
+                        }
+
+                        &-discount {
+                            background-color: #f1f1f1;
+                            font-size: 12px;
+                            line-height: 24px;
+                            padding: 0 10px;
+                        }
+                    }
+
+                    &-box {
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+
+                        &-top {
+                            border-bottom: 1px solid #ccc;
+                            background: #f1f1f1;
+                            padding: 10px;
+
+                            .price-promotion {
+                                &-text {
+                                    width: 100%;
+                                    display: block;
+                                }
+
+                                &-text:first-child {
+                                    font-weight: bold;
+                                }
+
+                                &-text:last-child {
+                                    font-size: 12px;
+                                    line-height: 1.4;
+                                }
+                            }
+                        }
+
+                        &-bottom {
+                            padding: 10px;
+
+                            .price-info {
+                                float: left;
+                                display: inline-flex;
+                                padding-bottom: 10px;
+
+                                &-number {
+                                    width: 16px;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    background-color: #4a90e2;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    font-size: 11px;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                    transform: translateY(7px);
+                                }
+
+                                &-text {
+                                    padding-left: 15px;
+                                    display: inline-block;
+                                    word-wrap: break-word;
+                                    width: 420px;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

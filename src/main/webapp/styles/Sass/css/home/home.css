@@ -29,6 +29,15 @@ body {
   transform: scale(1) !important;
 }
 
+.trans__li {
+  transition: all 1s;
+}
+
+.rotate-angle__180 {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -244,6 +253,7 @@ body {
   line-height: 84px;
   position: absolute;
   cursor: pointer;
+  z-index: 2;
 }
 #navbar .nav-right .fa-shopping-bag {
   font-size: 24px;
@@ -424,9 +434,15 @@ body {
     visibility: hidden;
     cursor: pointer;
   }
+  .nav-right .shopping:hover span {
+    opacity: 1;
+    transition: 0.2s;
+  }
   .nav-right .shopping span {
     display: inline-block;
     line-height: 50px;
+    opacity: 0.6;
+    transition: 0.2s;
   }
   .nav-right .shopping-icon {
     font-size: 22px;
@@ -442,10 +458,13 @@ body {
   #nav .subnav li:first-child {
     border-top: 2px solid var(--bs-color-change-nav);
   }
+  #nav li {
+    transition: all 1s;
+  }
   #nav > li > a {
     height: 84px;
   }
-  #nav > li:not(.nav-item-slide-up):hover > a {
+  #nav > li:not(.nav-item__up):hover > a {
     border-bottom: 2px solid var(--bs-color-change-nav);
   }
   #nav > li:hover:last-child .icon-angle {
@@ -476,9 +495,6 @@ body {
   #nav,
 #nav li {
     display: block;
-  }
-  #nav li {
-    transition: all 1s;
   }
   #nav > li > a {
     height: 60px;
@@ -536,6 +552,7 @@ body {
     right: 0;
     margin-right: 15px;
     font-size: 30px;
+    z-index: 2;
   }
 
   .text {
@@ -579,6 +596,9 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .js-header {
+    height: calc(var(--bs-height-header) - 20px);
+  }
   .js-header .logo {
     padding-top: 0px;
     margin-top: 0;
@@ -609,18 +629,21 @@ body {
   }
   #navbar .nav-right .icon-menu {
     font-size: 22px;
+    line-height: 40px !important;
+    top: 0;
   }
   #navbar .input-search {
-    position: relative;
+    position: absolute;
     height: 32px;
+    line-height: 32px;
     right: 50%;
-    top: 10%;
     display: block;
-    transform: translateX(-37%);
+    transform: translate(12%, 15%);
+    right: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 30px;
   }
 }
 .slider {
@@ -725,6 +748,11 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    margin-top: calc(var(--bs-height-header) - 20px);
   }
 }
 @media screen and (max-width: 500px) {

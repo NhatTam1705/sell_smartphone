@@ -1,0 +1,77 @@
+$primary-color: #f30;
+$gray-color: #ccc;
+$white-color: #fff;
+$border-card-color: #f1f1f1;
+$blue-color: #288ad6;
+$gray-color-d4: #d4d4d4;
+$gray-color-f8: #f8f8f8;
+$gray-color-e6: #e6e6e6;
+$nav-li-height: 84px;
+$res-li-height: 60px;
+$res-height-navbar: 84px;
+$reduce-height-navbar: 20px;
+
+:root {
+    --bs-color-top-nav: #5c5858;
+    --bs-font-color-dark: #ced6e0;
+    --bs-font-color-light: #1e272e;
+    --bs-color-header-footer: #fff;
+    --bs-color-body: #ffffff;
+    --bs-color-border: #000000;
+    --bs-color-change-nav: #d81414;
+    --bs-background-btn-back-top: #6e3c3c;
+    --bs-color-btn-back-top: #333333;
+    --bs-color-event-box: #f1f1f1;
+    --bs-color-topic: #535c68;
+    --bs-colo-footer: #f8f9fa;
+    --bs-color-btn-more: #a71547;
+    --bs-color-change-mode: #d1d8e0;
+    --bs-background-btn-change-mode: #2f3640;
+    --bs-color-red: #d81414;
+    // --bs-font-family: Arial, Helvetica, sans-serif;
+    --bs-height-navbar: 84px;
+    --bs-height-header: 108px;  
+}
+
+:root.light {
+    --bs-color-top-nav: #3d3d3d;
+    --bs-font-color-dark: #ced6e0;
+    --bs-font-color-light: #1e272e;
+    --bs-color-header-footer: #fff;
+    --bs-color-body: #ffffff;
+    --bs-color-border: #000000;
+    --bs-color-change-nav: #d81414;
+    --bs-background-btn-back-top: #ffffff;
+    --bs-color-btn-back-top: #333333;
+    --bs-color-event-box: #dcdde1;
+    --bs-color-topic: #535c68;
+    --bs-colo-footer: #f8f9fa;
+    --bs-color-btn-more: #ff5252;
+    --bs-color-change-mode: #d1d8e0;
+    --bs-background-btn-change-mode: #2f3640;
+    --bs-font-family: Arial, Helvetica, sans-serif;
+    --bs-height-navbar: 84px;
+    --bs-height-header: 108px;
+}
+
+:root.dark {
+    --bs-color-top-nav: #d1d8e0;
+    --bs-font-color-dark: #1e272e;
+    --bs-font-color-light: #ced6e0;
+    // --bs-color-header-footer: #4b4b4b;
+    --bs-color-header-footer: #535c68;
+    --bs-color-body: #535c68;
+    --bs-color-border: #cad3c8;
+    --bs-color-change-nav: #f0932b;
+    --bs-background-btn-back-top: #333333;
+    --bs-color-btn-back-top: #ffffff;
+    --bs-color-event-box: #576574;
+    --bs-color-topic: #c8d6e5;
+    --bs-colo-footer: #596275;
+    --bs-color-btn-more: #cc8e35;
+    --bs-color-change-mode: #fa983a;
+    --bs-background-btn-change-mode: #82ccdd;
+    --bs-font-family: Arial, Helvetica, sans-serif;
+    --bs-height-navbar: 84px;
+    --bs-height-header: 108px;
+}
