@@ -16,7 +16,7 @@ $('.card-number').each(function (e) {
         $('.card-plus').css({
             'pointer-events': 'all'
         })
-        $this.attr('value', x).val(x)
+        $(this).attr('value', x).val(x)
     })
     $('.card-plus').click(function () {
         x += 1
@@ -32,10 +32,11 @@ $('.card-number').each(function (e) {
         $('.card-minus').css({
             'pointer-events': 'all'
         })
-        $this.attr('value', x).val(x)
+        $(this).attr('value', x).val(x)
     })
 })
 
+
 $('.btn-close').click(function () {
-    $('.card-item').slideToggle()
+    $(this).parent().parent().remove()
 })
