@@ -1,3 +1,31 @@
+// $(function () {
+//     var Accordion = function (el, multiple) {
+//         this.el = el || {};
+//         this.multiple = multiple || false;
+//         var dropdownSelect = this.el.find('.dropdown__select');
+//         dropdownSelect.on('click', {
+//             el: this.el,
+//             multiple: this.multiple
+//         }, this.dropdown)
+//     }
+
+//     Accordion.prototype.dropdown = function (e) {
+//         var $el = e.data.el;
+//             $this = $(this),
+//             $next = $this.next();
+
+//         $next.slideToggle();
+//         $this.parent().toggleClass('border-dropdown__select');
+
+//         if (!e.data.multiple) {
+//             $el.find('.dropdown__list').not($next).slideUp().parent().removeClass('open');
+//         };
+//     }
+
+//     var accordion = new Accordion($('#accordion'), false);
+// });
+
+
 let dropDownPrice = document.querySelector('.dropdown__price')
 let dropDownListPrice = document.querySelector('.dropdown-list__price')
 let buttonCancelPrice = document.querySelector('.button__cancel-price')
@@ -33,6 +61,7 @@ function filter(s1, s2){
     s1.classList.toggle('block-dropdown__list')
     s2.classList.add('border-dropdown__select')
 }
+
 
 dropDownPrice.addEventListener('click',()=>{
     filter(dropDownListPrice,dropDownPrice)
@@ -77,10 +106,10 @@ item.forEach((items) => {
     })
 })
 
-// dropDownPrice.addEventListener('click', () => {
-//     dropDownListPrice.classList.toggle('block-dropdown__list')
-//     dropDownPrice.classList.add('border-dropdown__select')
-// });
+dropDownPrice.addEventListener('click', () => {
+    dropDownListPrice.classList.toggle('block-dropdown__list')
+    dropDownPrice.classList.add('border-dropdown__select')
+});
 
 buttonCancelPrice.addEventListener('click', () => {
     dropDownListPrice.classList.remove('block-dropdown__list')
@@ -90,10 +119,10 @@ buttonCancelPrice.addEventListener('click', () => {
     // })
 })
 
-// window.onclick = function (e) {
-//     if (!e.target.matches('.dropdown__price')) {
-//         if (dropDownListPrice.classList.contains('block-dropdown__list')) {
-//             dropDownListPrice.classList.remove('block-dropdown__list');
-//         }
-//     }
-// }
+window.onclick = function (e) {
+    if (!e.target.matches('.dropdown__price')) {
+        if (dropDownListPrice.classList.contains('block-dropdown__list')) {
+            dropDownListPrice.classList.remove('block-dropdown__list');
+        }
+    }
+}
