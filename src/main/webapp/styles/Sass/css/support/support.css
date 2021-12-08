@@ -9,6 +9,13 @@ html {
   font-family: Poppins, sans-serif;
 }
 
+.main {
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+}
+
 .content {
   max-width: 1140px;
   width: 100%;
@@ -20,7 +27,7 @@ html {
 .content-left .title {
   font-size: 60px;
   font-weight: bold;
-  color: black;
+  color: #fff;
   opacity: 0.8;
 }
 .content-left p {
@@ -49,12 +56,14 @@ html {
   display: block;
   width: 100%;
   margin-bottom: 5px;
+  color: #fff;
 }
 .content-right input {
   width: 80%;
   margin-bottom: 20px;
 }
-.content-right input:nth-of-type(1), .content-right input:nth-of-type(2) {
+.content-right input:nth-of-type(1),
+.content-right input:nth-of-type(2) {
   height: 40px;
 }
 .content-right input:nth-of-type(3) {

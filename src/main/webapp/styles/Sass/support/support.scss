@@ -1,13 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
-html{
+
+html {
     font-family: Poppins, sans-serif;
 }
-.content{
+
+.main {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+.content {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -15,15 +24,15 @@ html{
     padding: 60px 0;
     justify-content: space-between;
 
-    &-left{
-        .title{
+    &-left {
+        .title {
             font-size: 60px;
             font-weight: bold;
-            color: black;
+            color: #fff;
             opacity: 0.8;
         }
 
-        p{
+        p {
             width: 445px;
             line-height: 2;
             font-style: italic;
@@ -33,37 +42,44 @@ html{
             opacity: 0.7;
         }
 
-        .info{
+        .info {
             width: 445px;
             display: flex;
             flex-direction: column;
             line-height: 2;
-            span{
+
+            span {
                 padding-left: 30px;
                 transform: translateY(-24px);
             }
         }
     }
 
-    &-right{
+    &-right {
         width: 600px;
-        label{
+
+        label {
             display: block;
             width: 100%;
             margin-bottom: 5px;
+            color: #fff;
         }
-        input{
+
+        input {
             width: 80%;
             margin-bottom: 20px;
         }
-        input:nth-of-type(1), input:nth-of-type(2){
+
+        input:nth-of-type(1),
+        input:nth-of-type(2) {
             height: 40px;
         }
 
-        input:nth-of-type(3){
+        input:nth-of-type(3) {
             height: 150px;
         }
-        button{
+
+        button {
             width: 200px;
             height: 50px;
             cursor: pointer;
@@ -77,7 +93,8 @@ html{
             letter-spacing: 1px;
             transition: 0.25s;
         }
-        button:hover{
+
+        button:hover {
             background-color: #fff;
             color: orange;
             border: 1px solid orange;
